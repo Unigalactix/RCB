@@ -18,9 +18,13 @@
     <a class="brand" href="./index.html" aria-label="RCB Forever home"><img class="brand-crest" src="./assets/mark.svg" alt="Royal Challengers Bengaluru crest" width="38" height="53"><span>RCB<span class="brand-sub">BENGALURU · FOREVER</span></span></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
     <nav id="main-nav" aria-label="Main navigation">
-      <a href="./index.html">Overview</a><a href="./squad.html">Squad &amp; Stars</a><a href="./seasons.html" class="active">Seasons &amp; Rosters</a><a href="./history.html">History &amp; Crests</a><a href="./moments.html">Moments &amp; Quiz</a>
+      <a href="./index.html">Overview</a><a href="./history.html">Eras &amp; Crests</a><a href="./squad.html">Legends &amp; Squad</a><a href="./seasons.html" class="active">Seasons</a><a href="./moments.html">Fan Zone</a>
     </nav>
-    <a class="header-cta" href="./moments.html#fan-zone">Join the roar <span aria-hidden="true">↗</span></a>
+    <div class="header-utilities">
+      <button id="go-green-toggle" class="green-mode-btn" type="button" aria-pressed="false" title="Toggle between Classic Red &amp; Gold and Go Green Jersey Theme"><span class="green-dot" aria-hidden="true"></span><span class="toggle-text">Go Green Mode</span></button>
+      <button id="championship-star-btn" class="star-easter-btn" type="button" aria-label="Trigger Championship Star Confetti &amp; Trophy Celebration" title="Championship Star Easter Egg">★</button>
+      <a class="header-cta" href="./moments.html#fan-tribute-wall">Join the roar <span aria-hidden="true">↗</span></a>
+    </div>
   </header>
   <nav class="multipage-subnav section-shell" aria-label="Page navigation">
     <a href="./index.html" class="subnav-pill">← Club Hub</a>
@@ -47,5 +51,15 @@
   </main>
   <footer class="footer section-shell"><div class="footer-top"><a class="brand" href="./index.html"><img class="brand-crest" src="./assets/mark.svg" alt="Royal Challengers Bengaluru crest" width="38" height="53"><span>RCB<span class="brand-sub">BENGALURU · FOREVER</span></span></a><p>Made of red. Made of belief.<br>An independent tribute to the Royal Challengers.</p><a class="back-top" href="#main">Back to top ↑</a></div><div class="footer-bottom"><span>UNOFFICIAL FAN PROJECT · NOT AFFILIATED WITH RCB, IPL OR WPL.</span><button id="sources-button" class="footer-button">Sources &amp; credits ↗</button><span>PLAY BOLD. ALWAYS.</span></div></footer>
   <dialog id="sources-dialog" class="modal sources-modal" aria-labelledby="sources-title"><button class="modal-close" aria-label="Close sources">×</button><p class="eyebrow">TRANSPARENT BY DESIGN</p><h2 id="sources-title">Sources &amp; credits</h2><div id="research-credits"></div><h3 class="credits-heading">Photography &amp; licenses</h3><div id="photo-credits"></div></dialog>
+  <div id="trophy-easter-egg" class="trophy-easter-overlay" role="dialog" aria-modal="true" aria-labelledby="easter-egg-title" hidden>
+    <canvas id="confetti-canvas" class="confetti-canvas" aria-hidden="true"></canvas>
+    <div class="easter-egg-card glass-card">
+      <button id="close-easter-egg" class="modal-close" type="button" aria-label="Close championship celebration">×</button>
+      <img src="./assets/trophy.svg" alt="Glowing RCB Championship Trophy" class="easter-trophy-img" width="160" height="186">
+      <p class="eyebrow">★ THE CHAMPIONSHIP STAR EASTER EGG ★</p>
+      <h2 id="easter-egg-title">4× Franchise Crowns.<br><em>Ee Sala Cup Namdu!</em></h2>
+      <p>IPL Champions (2025 &amp; 2026 Back-to-Back) · WPL Champions (2024 &amp; 2026).</p>
+    </div>
+  </div>
 </body>
 </html>

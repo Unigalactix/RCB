@@ -18,24 +18,34 @@
     <a class="brand" href="./index.html" aria-label="RCB Forever home"><img class="brand-crest" src="./assets/mark.svg" alt="Royal Challengers Bengaluru crest" width="38" height="53"><span>RCB<span class="brand-sub">BENGALURU · FOREVER</span></span></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
     <nav id="main-nav" aria-label="Main navigation">
-      <a href="./index.html" class="active">Overview</a><a href="./squad.html">Squad &amp; Stars</a><a href="./seasons.html">Seasons &amp; Rosters</a><a href="./history.html">History &amp; Crests</a><a href="./moments.html">Moments &amp; Quiz</a>
+      <a href="./index.html" class="active">Overview</a><a href="./history.html">Eras &amp; Crests</a><a href="./squad.html">Legends &amp; Squad</a><a href="./seasons.html">Seasons</a><a href="./moments.html">Fan Zone</a>
     </nav>
-    <a class="header-cta" href="./moments.html#fan-zone">Join the roar <span aria-hidden="true">↗</span></a>
+    <div class="header-utilities">
+      <button id="go-green-toggle" class="green-mode-btn" type="button" aria-pressed="false" title="Toggle between Classic Red &amp; Gold and Go Green Jersey Theme"><span class="green-dot" aria-hidden="true"></span><span class="toggle-text">Go Green Mode</span></button>
+      <button id="championship-star-btn" class="star-easter-btn" type="button" aria-label="Trigger Championship Star Confetti &amp; Trophy Celebration" title="Championship Star Easter Egg">★</button>
+      <a class="header-cta" href="#fan-tribute-wall">Join the roar <span aria-hidden="true">↗</span></a>
+    </div>
   </header>
   <nav class="multipage-subnav section-shell" aria-label="Section &amp; page shortcuts">
     <a href="#club-dashboard" class="subnav-pill active">Club Team Hub</a>
-    <a href="./squad.html" class="subnav-pill">24 IPL &amp; WPL Stars ↗</a>
-    <a href="./seasons.html" class="subnav-pill">2008–2026 Season Archive ↗</a>
-    <a href="./history.html" class="subnav-pill">Logo Evolution &amp; 6 Eras ↗</a>
-    <a href="./moments.html" class="subnav-pill">Matchday &amp; Fan Quiz ↗</a>
+    <a href="#vertical-evolution" class="subnav-pill">Jersey &amp; Logo Timeline</a>
+    <a href="#legends-infographic" class="subnav-pill">Legends Wagon Wheel</a>
+    <a href="#jersey-customizer" class="subnav-pill">12th Man Customizer</a>
+    <a href="#decibel-engine" class="subnav-pill">125dB Roar Meter</a>
+    <a href="#fan-tribute-wall" class="subnav-pill">Fan Wall &amp; Horn</a>
   </nav>
   <main id="main">
     <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+      <canvas id="stadium-ambient-canvas" class="stadium-ambient-canvas" width="600" height="320" aria-hidden="true"></canvas>
       <div class="hero-copy">
-        <p class="eyebrow"><span></span> IPL + WPL CHAMPIONS · 2026</p>
-        <h1 id="hero-title">CROWNED.<br>AGAIN.<br><span class="word-team">2026<span class="red-period">.</span></span></h1>
-        <p class="hero-description">Back-to-back IPL champions. Two-time WPL champions.<br>One city. Two teams. A year that belongs to Bengaluru.</p>
-        <div class="hero-actions"><a class="button button-red" href="#champions">Explore the 2026 double <span aria-hidden="true">↗</span></a><a class="text-link" href="#championship"><span class="play-icon" aria-hidden="true">▶</span> The final scorecards</a></div>
+        <p class="eyebrow"><span></span> THE CHRONICLES OF BOLD · IPL + WPL CHAMPIONS 2026</p>
+        <h1 id="hero-title"><span class="chronicles-kicker">THE CHRONICLES OF BOLD</span>CROWNED.<br>AGAIN.<br><span class="word-team">2026<span class="red-period">.</span></span></h1>
+        <p class="hero-description">Back-to-back IPL champions. Two-time WPL champions.<br>One city. Two teams. M. Chinnaswamy Stadium’s roar, immortalized.</p>
+        <div class="countdown-box glass-card" aria-label="Countdown to next RCB season kickoff">
+          <div class="countdown-head"><span class="live-dot"></span><span>COUNTDOWN TO NEXT SEASON OPENER · CHINNASWAMY</span></div>
+          <div id="season-countdown" class="countdown-grid" role="timer" aria-live="off"></div>
+        </div>
+        <div class="hero-actions"><a class="button button-red" href="#legends-infographic">Explore Legends Infographic <span aria-hidden="true">↗</span></a><a class="text-link" href="#vertical-evolution"><span class="play-icon" aria-hidden="true">▶</span> 2008–2026 Kit &amp; Crest Evolution</a></div>
         <div class="believers"><span class="avatar-stack" aria-hidden="true"><i>18</i><i>RC</i><i>♥</i><i>12</i></span><p>Different people. One heartbeat.<strong>Always a Challenger.</strong></p></div>
       </div>
       <div class="hero-art">
@@ -138,6 +148,30 @@
       <div id="logo-era-grid" class="logo-era-grid" role="group" aria-label="Select an RCB logo era from 2008 to 2026"></div>
       <article id="logo-era-detail" class="logo-era-detail" aria-live="polite"></article>
     </section>
+    <section id="vertical-evolution" class="vertical-evolution-section section-shell" aria-labelledby="vertical-evo-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SCROLL-DRIVEN LOGO &amp; JERSEY EVOLUTION · 2008 TO 2026</p>
+          <h2 id="vertical-evo-title">Every thread.<br><em>Every transformation.</em></h2>
+        </div>
+        <p>Scroll or click through the vertical timeline below—the stage dynamically transitions the official RCB crest, jersey silhouette, and ambient era glow from 2008 to the 2026 championship armor.</p>
+      </div>
+      <div class="vertical-evo-layout">
+        <div id="evo-timeline-steps" class="evo-timeline-steps" aria-label="Vertical timeline of RCB jersey and logo eras"></div>
+        <div id="evo-sticky-stage" class="evo-sticky-stage" aria-live="polite"></div>
+      </div>
+    </section>
+    <section id="legends-infographic" class="legends-infographic-section section-shell" aria-labelledby="legends-info-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">DIGITAL INFOGRAPHIC · HALL OF FAME &amp; ALL-TIME LEGENDS</p>
+          <h2 id="legends-info-title">The titans of<br><em>Chinnaswamy.</em></h2>
+        </div>
+        <p>Interactive career progression bars, 360° Chinnaswamy run-scoring wagon wheels, milestone badges, and insider trivia for Kohli, AB de Villiers, Chris Gayle, and Smriti Mandhana.</p>
+      </div>
+      <div id="legend-infographic-tabs" class="legend-infographic-tabs" role="group" aria-label="Select an all-time RCB legend"></div>
+      <div id="legend-infographic-board" class="legend-infographic-board" aria-live="polite"></div>
+    </section>
     <section id="championship" class="matchday section-shell" aria-labelledby="championship-title">
       <div class="matchday-heading"><div><p class="eyebrow light">THE MATCHDAY ARCHIVE</p><h2 id="championship-title">Big nights. <em>Bolder memories.</em></h2></div><div class="match-switch" role="group" aria-label="Choose an archived match"><button data-match="ipl-2026-final" aria-pressed="true" class="active">IPL final ’26</button><button data-match="wpl-2026-final" aria-pressed="false">WPL final ’26</button><button data-match="ipl-final" aria-pressed="false">IPL final ’25</button><button data-match="wpl-final" aria-pressed="false">WPL final ’24</button><button data-match="hyderabad" aria-pressed="false">Hyderabad ’24</button></div></div>
       <div class="matchday-layout">
@@ -229,8 +263,99 @@
       </div>
     </section>
     <section id="fan-zone" class="fan-zone section-shell" aria-labelledby="fan-title"><div><p class="eyebrow light">THE 12TH PLAYER IS YOU.</p><h2 id="fan-title">How red is<br><em>your heart?</em></h2><p>Five questions. A whole lot of RCB.<br>Put your Challenger knowledge to the test.</p><span class="quiz-note">No sign-up. Just bragging rights.</span></div><div class="quiz-panel" id="quiz-panel"></div></section>
+    <section id="interactive-fan-engines" class="fan-engines-section section-shell" aria-labelledby="engines-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">12TH MAN INTERACTIVE STUDIO · JERSEY LAB &amp; ROAR METER</p>
+          <h2 id="engines-title">Wear the armour.<br><em>Unleash the roar.</em></h2>
+        </div>
+        <p>Customize your own 12th Man RCB jersey wallpaper and test the M. Chinnaswamy Stadium decibel engine up to 125 dB.</p>
+      </div>
+      <div class="engines-grid">
+        <article id="jersey-customizer" class="customizer-card glass-card" aria-labelledby="customizer-title">
+          <div class="engine-head">
+            <p class="eyebrow">THE 12TH MAN JERSEY CUSTOMIZER</p>
+            <h3 id="customizer-title">Your Name. Your Number.</h3>
+          </div>
+          <div class="customizer-layout">
+            <div class="customizer-controls">
+              <label>Player / Fan Name
+                <input id="customizer-name" type="text" maxlength="12" value="KOHLI" placeholder="Enter your name">
+              </label>
+              <label>Jersey Number
+                <input id="customizer-number" type="text" maxlength="3" value="18" placeholder="18">
+              </label>
+              <label>Kit Edition
+                <select id="customizer-kit">
+                  <option value="championship">2026 Championship Red &amp; Royal Blue</option>
+                  <option value="gogreen">Go Green Conservation Edition</option>
+                  <option value="obsidian">2016 Classic Obsidian &amp; Crimson</option>
+                </select>
+              </label>
+              <button id="download-jersey-btn" type="button" class="button button-red">Download Wallpaper (PNG) ↗</button>
+              <p id="customizer-status" class="archive-note" role="status">Live vector preview mapped onto the RCB jersey silhouette.</p>
+            </div>
+            <div id="customizer-preview" class="customizer-preview" aria-live="polite"></div>
+          </div>
+        </article>
+        <article id="decibel-engine" class="decibel-card glass-card" aria-labelledby="decibel-title">
+          <div class="engine-head">
+            <p class="eyebrow">M. CHINNASWAMY STADIUM DECIBEL ENGINE</p>
+            <h3 id="decibel-title">80 dB to 125 dB Stadium Roar.</h3>
+          </div>
+          <div class="decibel-visualizer-wrap">
+            <div id="decibel-ring" class="decibel-ring">
+              <div class="decibel-core">
+                <strong id="decibel-value">80 dB</strong>
+                <span>CHINNASWAMY METER</span>
+              </div>
+            </div>
+          </div>
+          <p id="decibel-tier" class="decibel-tier" role="status">80 dB AMBIENT CROWD · PRESS &amp; HOLD TO UNLEASH THE ROAR</p>
+          <button id="roar-trigger-btn" type="button" class="button button-gold roar-trigger-btn">🔊 UNLEASH THE ROAR (HOLD OR TAP)</button>
+        </article>
+      </div>
+    </section>
+    <section id="fan-tribute-wall" class="tribute-wall-section section-shell" aria-labelledby="tribute-wall-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE 12TH MAN MOSAIC · CHANTS &amp; STADIUM HORN</p>
+          <h2 id="tribute-wall-title">The wall of<br><em>unbroken belief.</em></h2>
+        </div>
+        <div class="horn-cta-box">
+          <button id="stadium-horn-btn" type="button" class="button button-red">📯 Virtually Sound the Stadium Horn</button>
+        </div>
+      </div>
+      <form id="fan-tribute-form" class="fan-tribute-form glass-card" aria-label="Add your tribute to the Fan Wall">
+        <label>Your Handle<input id="fan-handle-input" type="text" placeholder="@YourHandle" maxlength="24"></label>
+        <label>Chant<input id="fan-chant-input" type="text" placeholder="R-C-B! R-C-B!" maxlength="28" value="R-C-B! R-C-B!"></label>
+        <label class="fan-msg-field">Your Tribute Message<input id="fan-msg-input" type="text" placeholder="Share your favourite Chinnaswamy or championship memory…" maxlength="180" required></label>
+        <button type="submit" class="button button-gold">Post to Tribute Wall ↗</button>
+      </form>
+      <div id="tribute-mosaic-grid" class="tribute-mosaic-grid" aria-live="polite"></div>
+    </section>
     <section class="manifesto section-shell"><p class="eyebrow">WIN OR LOSE. ALWAYS OURS.</p><h2>A team you support.<br><em>A feeling you keep.</em></h2><p>From Bangalore to Bengaluru. From the first ball to the first title.<br>Some things change. Our colours never do.</p><a class="button button-red" href="https://www.royalchallengers.com/" target="_blank" rel="noopener noreferrer">Stay connected with RCB <span aria-hidden="true">↗</span></a></section>
   </main>
+  <div id="horn-soundwave-overlay" class="horn-soundwave-overlay" hidden aria-hidden="true">
+    <span class="wave-ring r1"></span><span class="wave-ring r2"></span><span class="wave-ring r3"></span>
+    <strong class="horn-chant-banner">📯 R - C - B ! &nbsp; R - C - B ! &nbsp; PLAY BOLD !</strong>
+  </div>
+  <div id="trophy-easter-egg" class="trophy-easter-overlay" role="dialog" aria-modal="true" aria-labelledby="easter-egg-title" hidden>
+    <canvas id="confetti-canvas" class="confetti-canvas" aria-hidden="true"></canvas>
+    <div class="easter-egg-card glass-card">
+      <button id="close-easter-egg" class="modal-close" type="button" aria-label="Close championship celebration">×</button>
+      <img src="./assets/trophy.svg" alt="Glowing RCB Championship Trophy" class="easter-trophy-img" width="160" height="186">
+      <p class="eyebrow">★ THE CHAMPIONSHIP STAR EASTER EGG ★</p>
+      <h2 id="easter-egg-title">4× Franchise Crowns.<br><em>Ee Sala Cup Namdu!</em></h2>
+      <p>IPL Champions (2025 &amp; 2026 Back-to-Back) · WPL Champions (2024 &amp; 2026). The first franchise in history to win both the WPL and IPL titles in the same calendar year.</p>
+      <div class="bento-trophies" style="justify-content:center;margin-top:14px">
+        <span class="trophy-pill gold">🏆 WPL 2024</span>
+        <span class="trophy-pill red">🏆 IPL 2025</span>
+        <span class="trophy-pill gold">🏆 WPL 2026</span>
+        <span class="trophy-pill red">🏆 IPL 2026</span>
+      </div>
+    </div>
+  </div>
   <footer class="footer section-shell"><div class="footer-top"><a class="brand" href="#home"><img class="brand-crest" src="./assets/mark.svg" alt="Royal Challengers Bengaluru crest" width="38" height="53"><span>RCB<span class="brand-sub">BENGALURU · FOREVER</span></span></a><p>Made of red. Made of belief.<br>An independent tribute to the Royal Challengers.</p><a class="back-top" href="#home">Back to top ↑</a></div><div class="footer-bottom"><span>UNOFFICIAL FAN PROJECT · NOT AFFILIATED WITH RCB, IPL OR WPL.</span><button id="sources-button" class="footer-button">Sources &amp; credits ↗</button><span>PLAY BOLD. ALWAYS.</span></div></footer>
   <dialog id="player-dialog" class="modal" aria-labelledby="profile-name"><button class="modal-close" aria-label="Close player profile">×</button><div id="profile-content"></div></dialog>
   <dialog id="moment-dialog" class="modal moment-modal" aria-labelledby="moment-title"><button class="modal-close" aria-label="Close moment">×</button><div id="moment-content"></div><div class="moment-navigation"><button id="moment-prev" aria-label="Previous moment">← Previous</button><span id="moment-counter" aria-live="polite"></span><button id="moment-next" aria-label="Next moment">Next →</button></div></dialog>

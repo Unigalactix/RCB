@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile, readdir, stat } from 'node:fs/promises';
 import { players } from '../data.js';
 import { competitions, snapshots, moments, matchSpotlights, comebackStreak, logoHistory, eraChapters, researchSources, metrics, rankStats, compareStats } from '../archive.js';
+import { legendsInfographicData, jerseyEvolutionEras, initialTributeMessages } from '../infographic.js';
 import { photos } from '../media.js';
 import { photoMarkup, photoCredit, profileStats } from '../hub.js';
 
@@ -168,6 +169,18 @@ test('logo history covers all five RCB crest eras from 2008 to 2026 with individ
   for (const chapter of eraChapters) {
     assert.ok(chapter.highlights.length >= 2);
   }
+});
+
+test('interactive infographic modules cover legends wagon wheels, jersey evolution eras, and tribute wall messages', () => {
+  assert.deepEqual(Object.keys(legendsInfographicData), ['virat', 'ab', 'gayle', 'smriti']);
+  for (const legend of Object.values(legendsInfographicData)) {
+    assert.equal(legend.metrics.length, 4);
+    assert.equal(legend.wagonWheel.length, 5);
+    assert.ok(legend.badges.length >= 4);
+    assert.ok(legend.trivia.length > 30);
+  }
+  assert.equal(jerseyEvolutionEras.length, 5);
+  assert.equal(initialTributeMessages.length, 6);
 });
 
 test('official photo and squad destinations open externally without embedding restricted images', async () => {

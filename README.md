@@ -32,7 +32,16 @@ Repository: [Unigalactix/RCB](https://github.com/Unigalactix/RCB). Commit and pu
 
 ## Features
 
-- **Multi-page architecture** (`index.html`, `squad.html`, `seasons.html`, `history.html`, `moments.html`) with a Dribbble-inspired Club Team Page Bento Dashboard (`#club-dashboard`) and unified RCB black, red, and gold visual system.
+- **Multi-page architecture** (`index.html`, `squad.html`, `seasons.html`, `history.html`, `moments.html`) with a Dribbble-inspired Club Team Page Bento Dashboard (`#club-dashboard`) and unified RCB Obsidian Black (`#0B0B0B`), Crimson Red (`#CC1F26`), and Championship Gold (`#D4AF37`) glassmorphic visual system.
+- **"The Chronicles of Bold" Interactive Infographic & Fan Experience (`infographic.js`)**:
+  - **Cinematic Hero & Live Season Countdown (`#season-countdown` & `#stadium-ambient-canvas`)**: Ambient M. Chinnaswamy floodlight/crowd canvas loop and real-time countdown to the next season opener.
+  - **Scroll-Driven Logo & Jersey Evolution (`#vertical-evolution`)**: Vertical timeline dynamically transitioning the 2008–2026 RCB crests, SVG jersey silhouettes, and era background glow.
+  - **All-Time Legends Digital Infographic (`#legends-infographic`)**: Career progression bars, interactive 360° Chinnaswamy run-scoring wagon wheels (`#wagon-wheel-svg`), milestone badges, and insider trivia for Virat Kohli, AB de Villiers, Chris Gayle, and Smriti Mandhana.
+  - **Global Red & Green ("Go Green") Toggle (`#go-green-toggle`)**: Switches the entire site between Classic Red & Gold and RCB's Go Green conservation jersey theme.
+  - **The 12th Man Jersey Customizer (`#jersey-customizer`)**: Live Name, Number, and Kit Edition preview with instant 1080×1350 PNG wallpaper download (`#download-jersey-btn`).
+  - **125 dB Chinnaswamy Decibel Meter Engine (`#decibel-engine`)**: Press-and-hold "UNLEASH THE ROAR" visualizer scaling from 80 dB to 125 dB with screen-shake micro-animations.
+  - **Fan Tribute Wall & Virtual Stadium Horn (`#fan-tribute-wall` & `#stadium-horn-btn`)**: Live fan tribute mosaic, Chinnaswamy chants, and full-screen soundwave horn ripple.
+  - **Championship Star Easter Egg (`#championship-star-btn`)**: Top-navbar gold star launching full-screen red and gold canvas confetti (`#confetti-canvas`) and a glowing 4× Trophy overlay.
 - **2008–2026 RCB Crest & Logo Evolution** (`#logo-history` & `assets/logos/`): Displays all five historical RCB crests (`2008`, `2009–2015`, `2016–2019`, `2020–2023`, `2024–2026`), plus a pure-vector `assets/mark.svg` and `assets/photos/rcb-logo.png` used across the header, hero, championship cards, jerseys, and footer.
 - **2026-first hero**, dedicated IPL/WPL 2026 title cards, interactive final scoreboards, and the **2024 6-Match Miracle Comeback Streak** (`#comeback-streak` covering every win from 25 April in Hyderabad to the 18 May knockout against CSK).
 - **Full seasonal match-participant tables** across **IPL 2008–2026 and WPL 2023–2026**, sourced from licensed Cricsheet JSON, with search, sorting, coverage counts, and original source links.

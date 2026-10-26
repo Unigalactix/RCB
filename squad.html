@@ -18,17 +18,32 @@
     <a class="brand" href="./index.html" aria-label="RCB Forever home"><img class="brand-crest" src="./assets/mark.svg" alt="Royal Challengers Bengaluru crest" width="38" height="53"><span>RCB<span class="brand-sub">BENGALURU · FOREVER</span></span></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
     <nav id="main-nav" aria-label="Main navigation">
-      <a href="./index.html">Overview</a><a href="./squad.html" class="active">Squad &amp; Stars</a><a href="./seasons.html">Seasons &amp; Rosters</a><a href="./history.html">History &amp; Crests</a><a href="./moments.html">Moments &amp; Quiz</a>
+      <a href="./index.html">Overview</a><a href="./history.html">Eras &amp; Crests</a><a href="./squad.html" class="active">Legends &amp; Squad</a><a href="./seasons.html">Seasons</a><a href="./moments.html">Fan Zone</a>
     </nav>
-    <a class="header-cta" href="./moments.html#fan-zone">Join the roar <span aria-hidden="true">↗</span></a>
+    <div class="header-utilities">
+      <button id="go-green-toggle" class="green-mode-btn" type="button" aria-pressed="false" title="Toggle between Classic Red &amp; Gold and Go Green Jersey Theme"><span class="green-dot" aria-hidden="true"></span><span class="toggle-text">Go Green Mode</span></button>
+      <button id="championship-star-btn" class="star-easter-btn" type="button" aria-label="Trigger Championship Star Confetti &amp; Trophy Celebration" title="Championship Star Easter Egg">★</button>
+      <a class="header-cta" href="./moments.html#fan-tribute-wall">Join the roar <span aria-hidden="true">↗</span></a>
+    </div>
   </header>
   <nav class="multipage-subnav section-shell" aria-label="Page navigation">
     <a href="./index.html" class="subnav-pill">← Club Hub</a>
-    <a href="#squad" class="subnav-pill active">25 IPL &amp; WPL Challengers</a>
+    <a href="#legends-infographic" class="subnav-pill active">Legends Wagon Wheel</a>
+    <a href="#squad" class="subnav-pill">25 IPL &amp; WPL Challengers</a>
     <a href="#stats" class="subnav-pill">Star Leaderboards &amp; Head-to-Head</a>
-    <a href="./seasons.html" class="subnav-pill">All-Season Player Tables ↗</a>
   </nav>
   <main id="main">
+    <section id="legends-infographic" class="legends-infographic-section section-shell" aria-labelledby="legends-info-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">DIGITAL INFOGRAPHIC · HALL OF FAME &amp; ALL-TIME LEGENDS</p>
+          <h2 id="legends-info-title">The titans of<br><em>Chinnaswamy.</em></h2>
+        </div>
+        <p>Interactive career progression bars, 360° Chinnaswamy run-scoring wagon wheels, milestone badges, and insider trivia for Kohli, AB de Villiers, Chris Gayle, and Smriti Mandhana.</p>
+      </div>
+      <div id="legend-infographic-tabs" class="legend-infographic-tabs" role="group" aria-label="Select an all-time RCB legend"></div>
+      <div id="legend-infographic-board" class="legend-infographic-board" aria-live="polite"></div>
+    </section>
     <section id="squad" class="players section-shell" aria-labelledby="players-title">
       <div class="section-heading"><div><p class="eyebrow">THE PEOPLE BEHIND THE BELIEF · IPL &amp; WPL</p><h1 id="players-title" class="page-hero-heading">The challengers.<br><em>Always our own.</em></h1></div><div class="official-squad-link"><p>Featured IPL, WPL &amp; Hall of Fame stars.</p><a class="text-link" href="https://www.iplt20.com/teams/royal-challengers-bengaluru/squad" target="_blank" rel="noopener noreferrer">IPL squad ↗</a><a class="text-link" href="https://www.wplt20.com/teams/royal-challengers-bengaluru" target="_blank" rel="noopener noreferrer">WPL team ↗</a></div></div>
       <div class="player-toolbar"><div class="filters" role="group" aria-label="Filter players"><button class="filter active" data-team="all" aria-pressed="true">All challengers</button><button class="filter" data-team="men" aria-pressed="false">Men's IPL</button><button class="filter" data-team="women" aria-pressed="false">Women's WPL</button><button class="filter" data-team="legends" aria-pressed="false">Icons &amp; alumni</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="player-search" type="search" placeholder="Search Virat, Smriti, Perry, Lauren Bell…" aria-label="Search players"></label></div>
@@ -46,5 +61,15 @@
   <footer class="footer section-shell"><div class="footer-top"><a class="brand" href="./index.html"><img class="brand-crest" src="./assets/mark.svg" alt="Royal Challengers Bengaluru crest" width="38" height="53"><span>RCB<span class="brand-sub">BENGALURU · FOREVER</span></span></a><p>Made of red. Made of belief.<br>An independent tribute to the Royal Challengers.</p><a class="back-top" href="#main">Back to top ↑</a></div><div class="footer-bottom"><span>UNOFFICIAL FAN PROJECT · NOT AFFILIATED WITH RCB, IPL OR WPL.</span><button id="sources-button" class="footer-button">Sources &amp; credits ↗</button><span>PLAY BOLD. ALWAYS.</span></div></footer>
   <dialog id="player-dialog" class="modal" aria-labelledby="profile-name"><button class="modal-close" aria-label="Close player profile">×</button><div id="profile-content"></div></dialog>
   <dialog id="sources-dialog" class="modal sources-modal" aria-labelledby="sources-title"><button class="modal-close" aria-label="Close sources">×</button><p class="eyebrow">TRANSPARENT BY DESIGN</p><h2 id="sources-title">Sources &amp; credits</h2><div id="research-credits"></div><h3 class="credits-heading">Photography &amp; licenses</h3><div id="photo-credits"></div></dialog>
+  <div id="trophy-easter-egg" class="trophy-easter-overlay" role="dialog" aria-modal="true" aria-labelledby="easter-egg-title" hidden>
+    <canvas id="confetti-canvas" class="confetti-canvas" aria-hidden="true"></canvas>
+    <div class="easter-egg-card glass-card">
+      <button id="close-easter-egg" class="modal-close" type="button" aria-label="Close championship celebration">×</button>
+      <img src="./assets/trophy.svg" alt="Glowing RCB Championship Trophy" class="easter-trophy-img" width="160" height="186">
+      <p class="eyebrow">★ THE CHAMPIONSHIP STAR EASTER EGG ★</p>
+      <h2 id="easter-egg-title">4× Franchise Crowns.<br><em>Ee Sala Cup Namdu!</em></h2>
+      <p>IPL Champions (2025 &amp; 2026 Back-to-Back) · WPL Champions (2024 &amp; 2026).</p>
+    </div>
+  </div>
 </body>
 </html>

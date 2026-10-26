@@ -1,6 +1,7 @@
 import { players, milestones, questions, filterPlayers, quizVerdict } from './data.js';
 import { initHub, photoMarkup, photoCredit, profileStats } from './hub.js';
 import { initSeasonArchive, initRosters } from './seasonal.js';
+import { initInfographicExperience } from './infographic.js';
 
 const grid = document.querySelector('#player-grid');
 const search = document.querySelector('#player-search');
@@ -85,6 +86,7 @@ document.querySelector('#sources-button')?.addEventListener('click', () => docum
 initHub(openPlayer);
 initSeasonArchive();
 initRosters();
+initInfographicExperience();
 
 const years = document.querySelector('#timeline-years');
 if (years) {
