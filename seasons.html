@@ -28,13 +28,53 @@
   </header>
   <nav class="multipage-subnav section-shell" aria-label="Page navigation">
     <a href="./index.html" class="subnav-pill">← Club Hub</a>
-    <a href="#season-stats" class="subnav-pill active">23-Season Player Stats</a>
-    <a href="#roster-directory" class="subnav-pill">Historical Squad Rosters</a>
-    <a href="#ipl-record-panel" class="subnav-pill">19-Season Team Record</a>
+    <a href="#sheet-seasons-section" class="subnav-pill active">23 IPL &amp; WPL Seasons</a>
+    <a href="#sheet-captains-section" class="subnav-pill">10 RCB Captains</a>
+    <a href="#sheet-records-section" class="subnav-pill">23 Franchise Records</a>
+    <a href="#season-stats" class="subnav-pill">Ball-by-Ball &amp; Squad Archive</a>
   </nav>
   <main id="main">
+    <section id="sheet-seasons-section" class="sheet-seasons-section section-shell" aria-labelledby="sheet-seasons-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SEASONS SHEET · COMPLETE 23-SEASON JOURNEY (IPL 2008–2026 &amp; WPL 2023–2026)</p>
+          <h1 id="sheet-seasons-title" class="page-hero-heading">Every campaign.<br><em>Four championship crowns.</em></h1>
+        </div>
+        <p>Every season’s finish, captain, head coach, and defining highlight across IPL and WPL. Championship seasons (WPL 2024, IPL 2025, WPL 2026, IPL 2026) are highlighted in gold.</p>
+      </div>
+      <div id="sheet-seasons-filter" class="filters" role="group" aria-label="Filter seasons by league">
+        <button type="button" class="filter active" data-s-league="all">All 23 Seasons (19 IPL + 4 WPL)</button>
+        <button type="button" class="filter" data-s-league="IPL">IPL Seasons (2008–2026)</button>
+        <button type="button" class="filter" data-s-league="WPL">WPL Seasons (2023–2026)</button>
+      </div>
+      <div class="leaderboard-wrap"><table class="leaderboard"><caption>Official RCB Season-by-Season Finishes, Captains &amp; Head Coaches</caption><thead><tr><th scope="col">League</th><th scope="col">Season</th><th scope="col">Captain</th><th scope="col">Head Coach</th><th scope="col">Finish</th><th scope="col">Season Highlight</th></tr></thead><tbody id="sheet-seasons-body"></tbody></table></div>
+    </section>
+    <section id="sheet-captains-section" class="sheet-captains-section section-shell" aria-labelledby="sheet-captains-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CAPTAINS SHEET · EVERY LEADER OF THE ROYAL CHALLENGERS</p>
+          <h2 id="sheet-captains-title">Ten captains.<br><em>One torch passed forward.</em></h2>
+        </div>
+        <p>From inaugural icon Rahul Dravid (2008) and 143-match leader Virat Kohli (2013–2021) to two-time WPL champion Smriti Mandhana (2024, 2026) and back-to-back IPL champion Rajat Patidar (2025, 2026).</p>
+      </div>
+      <div id="sheet-captains-timeline" class="db-captains-grid"></div>
+    </section>
+    <section id="sheet-records-section" class="sheet-records-section section-shell" aria-labelledby="sheet-records-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">RECORDS SHEET · THE OFFICIAL RCB RECORD BOOK</p>
+          <h2 id="sheet-records-title">23 all-time records.<br><em>IPL &amp; WPL benchmarks.</em></h2>
+        </div>
+        <div id="sheet-records-filter" class="filters" role="group" aria-label="Filter records by league">
+          <button type="button" class="filter active" data-rec-league="all">All 23 Records</button>
+          <button type="button" class="filter" data-rec-league="IPL">IPL Records (15)</button>
+          <button type="button" class="filter" data-rec-league="WPL">WPL Records (8)</button>
+        </div>
+      </div>
+      <div id="sheet-records-grid" class="db-records-grid"></div>
+    </section>
     <section id="season-stats" class="season-stats-section section-shell" aria-labelledby="season-stats-title">
-      <div class="section-heading"><div><p class="eyebrow">BEYOND THE FEATURED STARS</p><h1 id="season-stats-title" class="page-hero-heading">Every season.<br><em>Every recorded player.</em></h1></div><p>IPL 2008–2026 · WPL 2023–2026.<br>Locally bundled, source-attributed match data.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">BEYOND THE FEATURED STARS</p><h2 id="season-stats-title">Every season.<br><em>Every recorded player.</em></h2></div><p>IPL 2008–2026 · WPL 2023–2026.<br>Locally bundled, source-attributed match data.</p></div>
       <div class="stats-controls"><label>Competition<select id="archive-league"><option value="ipl">IPL · Men</option><option value="wpl">WPL · Women</option></select></label><label>Season<select id="archive-year"></select></label><label>Sort by<select id="archive-sort"><option value="runs">Runs</option><option value="wickets">Wickets</option><option value="matchListings">Match listings</option><option value="strikeRate">Batting strike rate</option><option value="name">Player name</option></select></label><label class="archive-search-label">Find a player<input id="archive-search" type="search" placeholder="Search source name"></label></div>
       <p id="archive-coverage" class="archive-coverage" role="status">Loading the locally bundled season archive…</p>
       <div class="leaderboard-wrap" tabindex="0" role="region" aria-label="Scroll the full season statistics table horizontally"><table class="leaderboard full-season-table"><caption id="archive-caption">Season match-participant statistics</caption><thead><tr><th scope="col">Player</th><th scope="col">Listings*</th><th scope="col">Bat inns</th><th scope="col">Runs</th><th scope="col">Balls</th><th scope="col">SR</th><th scope="col">HS</th><th scope="col">4s</th><th scope="col">6s</th><th scope="col">Overs</th><th scope="col">Wickets</th><th scope="col">Economy</th><th scope="col">Catches</th><th scope="col">Stumpings</th></tr></thead><tbody id="archive-body"></tbody></table></div>

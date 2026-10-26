@@ -122,13 +122,50 @@
         <article class="bento-card bento-pages">
           <div class="bento-card-top"><span>MULTI-PAGE CLUB DIRECTORY</span><span>5 DEDICATED PAGES</span></div>
           <div class="page-portal-grid">
-            <a class="portal-link" href="./squad.html"><strong>01 · Squad &amp; Star Stats</strong><span>24 IPL, WPL &amp; Hall of Fame profiles + Head-to-Head Lab ↗</span></a>
-            <a class="portal-link" href="./seasons.html"><strong>02 · Seasons &amp; Rosters</strong><span>All 23 IPL/WPL player tables + 25 historical squads ↗</span></a>
-            <a class="portal-link" href="./history.html"><strong>03 · History, Eras &amp; Crests</strong><span>2008–2026 logo evolution, 6 eras &amp; 2024 miracle streak ↗</span></a>
-            <a class="portal-link" href="./moments.html"><strong>04 · Moments &amp; Fan Zone</strong><span>5 finals scoreboards, 9 video reels &amp; Challenger quiz ↗</span></a>
+            <a class="portal-link" href="./squad.html"><strong>01 · 223 Players &amp; Top 40 Stars</strong><span>179 IPL + 43 WPL + 1 CLT20 players, Top 25/15 Stars &amp; 21 Squad-Only ↗</span></a>
+            <a class="portal-link" href="./seasons.html"><strong>02 · 23 Seasons, Captains &amp; Records</strong><span>All 23 IPL/WPL seasons, 10 captains, 23 records &amp; match archive ↗</span></a>
+            <a class="portal-link" href="./history.html"><strong>03 · Crests, 31 Grounds &amp; 20 Teams</strong><span>4 crest eras, all 31 RCB venues &amp; all 20 IPL/WPL franchises ↗</span></a>
+            <a class="portal-link" href="./moments.html"><strong>04 · 45 Key Moments &amp; Fan Zone</strong><span>All 45 defining moments (2008–2026), Jersey Lab &amp; 125dB Roar ↗</span></a>
           </div>
         </article>
       </div>
+      <div class="db-omnibox-panel glass-card">
+        <div class="db-omnibox-head">
+          <div>
+            <p class="eyebrow">OFFICIAL 13-SHEET DATABASE OMNIBOX · 2008 TO 2026</p>
+            <h3>Search 223 Players, 45 Key Moments, 31 Grounds &amp; 23 Records</h3>
+          </div>
+          <a class="text-link" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml" target="_blank" rel="noopener noreferrer">Open Published Source Sheet ↗</a>
+        </div>
+        <label class="db-omnibox-search"><span aria-hidden="true">⌕</span><input id="db-omnibox-input" type="search" placeholder="Search any RCB player (e.g. Kohli, Chahal, Perry, Nayan Doshi), ground (Chinnaswamy, Wanderers), or moment…"></label>
+        <div id="db-omnibox-results" aria-live="polite"></div>
+      </div>
+    </section>
+    <section id="top5-icons-section" class="top5-icons-section section-shell" aria-labelledby="top5-icons-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE FIVE PILLARS OF BENGALURU · STAR PLAYERS SHEET</p>
+          <h2 id="top5-icons-title">Five icons.<br><em>One eternal badge.</em></h2>
+        </div>
+        <div>
+          <p>The top IPL icons (Kohli, AB de Villiers, Gayle, Patidar) and WPL trailblazer Smriti Mandhana.</p>
+          <a class="text-link" href="./squad.html#hall-of-fame-stars">Explore all 25 IPL Icons + 15 WPL Stars &amp; 223 RCB Players ↗</a>
+        </div>
+      </div>
+      <div id="top5-icons-grid" class="db-star-grid top5-grid"></div>
+    </section>
+    <section id="record-counters-section" class="record-counters-section section-shell" aria-labelledby="record-counters-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE RCB RECORD BOOK · RECORDS SHEET</p>
+          <h2 id="record-counters-title">Numbers written<br><em>in gold.</em></h2>
+        </div>
+        <div>
+          <p>Headline franchise records across IPL (2008–2026) and WPL (2023–2026).</p>
+          <a class="text-link" href="./seasons.html#sheet-records-section">Open all 23 official IPL &amp; WPL records ↗</a>
+        </div>
+      </div>
+      <div id="record-counters-grid" class="db-counters-grid"></div>
     </section>
     <section id="champions" class="champions-section section-shell" aria-labelledby="champions-title">
       <div class="section-heading"><div><p class="eyebrow">THE LATEST CHAPTER · 2026</p><h2 id="champions-title">Two teams.<br><em>One historic year.</em></h2></div><p>Not just the first win.<br>The belief that became a legacy.</p></div>
@@ -359,7 +396,7 @@
   <footer class="footer section-shell"><div class="footer-top"><a class="brand" href="#home"><img class="brand-crest" src="./assets/mark.svg" alt="Royal Challengers Bengaluru crest" width="38" height="53"><span>RCB<span class="brand-sub">BENGALURU · FOREVER</span></span></a><p>Made of red. Made of belief.<br>An independent tribute to the Royal Challengers.</p><a class="back-top" href="#home">Back to top ↑</a></div><div class="footer-bottom"><span>UNOFFICIAL FAN PROJECT · NOT AFFILIATED WITH RCB, IPL OR WPL.</span><button id="sources-button" class="footer-button">Sources &amp; credits ↗</button><span>PLAY BOLD. ALWAYS.</span></div></footer>
   <dialog id="player-dialog" class="modal" aria-labelledby="profile-name"><button class="modal-close" aria-label="Close player profile">×</button><div id="profile-content"></div></dialog>
   <dialog id="moment-dialog" class="modal moment-modal" aria-labelledby="moment-title"><button class="modal-close" aria-label="Close moment">×</button><div id="moment-content"></div><div class="moment-navigation"><button id="moment-prev" aria-label="Previous moment">← Previous</button><span id="moment-counter" aria-live="polite"></span><button id="moment-next" aria-label="Next moment">Next →</button></div></dialog>
-  <dialog id="sources-dialog" class="modal sources-modal" aria-labelledby="sources-title"><button class="modal-close" aria-label="Close sources">×</button><p class="eyebrow">TRANSPARENT BY DESIGN</p><h2 id="sources-title">Sources &amp; credits</h2><p>Independent historical fan archive, not an official RCB service. Featured statistical snapshots are IPL 2025 and WPL 2024; CLT20 history covers RCB's participation in that discontinued competition. Not a live scores or current-roster service. All stats, results, and photographs are individually attributed below and in their relevant sections.</p><div id="research-credits"></div><h3 class="credits-heading">Photography &amp; licenses</h3><p>Openly licensed Wikimedia Commons photographs. Player photos were visually verified to show RCB franchise kit; no national-team, other-franchise, or casual portraits are included. Photos may predate the statistical season and are not automatically pictures of the featured match. Where permission and RCB kit could not both be verified, an original jersey illustration is used. The monogram, trophy, and jersey illustrations are not official assets.</p><div id="photo-credits"></div><p class="archive-note">Team and player names identify the subjects of this tribute; associated rights remain with their owners. Research checked 26 October 2026. See each snapshot for its historical cutoff.</p></dialog>
+  <dialog id="sources-dialog" class="modal sources-modal" aria-labelledby="sources-title"><button class="modal-close" aria-label="Close sources">×</button><p class="eyebrow">TRANSPARENT BY DESIGN</p><h2 id="sources-title">Sources &amp; credits</h2><p>Primary source of truth: <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml" target="_blank" rel="noopener noreferrer">RCB Fan Tribute Database (2008–2026) ↗</a>. Independent historical fan archive, not an official RCB service.</p><h3 class="credits-heading">Database Sheet Sources (2008–2026)</h3><ul id="sheet-sources-list" class="source-list"></ul><div id="research-credits"></div><h3 class="credits-heading">Photography &amp; licenses</h3><p>Openly licensed Wikimedia Commons photographs and source-credited public archive photos from the database.</p><div id="photo-credits"></div><p class="archive-note">Team and player names identify the subjects of this tribute; associated rights remain with their owners. Research checked 26 October 2026. See each snapshot for its historical cutoff.</p></dialog>
   <noscript><div class="noscript-notice">Enable JavaScript for player profiles, timeline navigation, and the quiz. The club story, final score, and source links remain available without it.</div></noscript>
 </body>
 </html>

@@ -28,17 +28,76 @@
   </header>
   <nav class="multipage-subnav section-shell" aria-label="Page navigation">
     <a href="./index.html" class="subnav-pill">← Club Hub</a>
-    <a href="#vertical-evolution" class="subnav-pill active">Scroll Kit &amp; Logo Timeline</a>
-    <a href="#logo-history" class="subnav-pill">5 Individual Crests</a>
-    <a href="#era-chronicles" class="subnav-pill">Six Historical Eras</a>
-    <a href="#comeback-streak" class="subnav-pill">2024 Miracle Comeback</a>
+    <a href="#sheet-logos-section" class="subnav-pill active">4 Crest Eras &amp; Logos</a>
+    <a href="#sheet-grounds-section" class="subnav-pill">All 31 RCB Grounds</a>
+    <a href="#sheet-all-teams-section" class="subnav-pill">All 20 IPL &amp; WPL Teams</a>
+    <a href="#vertical-evolution" class="subnav-pill">Kit Evolution &amp; 6 Eras</a>
   </nav>
   <main id="main">
+    <section id="sheet-logos-section" class="sheet-logos-section section-shell" aria-labelledby="sheet-logos-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">LOGOS SHEET · THE FOUR OFFICIAL CREST ERAS (2008–PRESENT)</p>
+          <h1 id="sheet-logos-title" class="page-hero-heading">The Royal Crest.<br><em>2008 to Bengaluru.</em></h1>
+        </div>
+        <p>All four official crest eras documented in the database (`2008–2015 Original Roundel`, `2016–2019 Modernised Roundel`, `2020–2023 Vertical Banner Crest`, `2024–Present Bengaluru Crest`), plus the interactive 5-logo inspector below.</p>
+      </div>
+      <div id="sheet-logos-grid" class="db-logos-sheet-grid"></div>
+    </section>
+    <section id="sheet-grounds-section" class="sheet-grounds-section section-shell" aria-labelledby="sheet-grounds-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">GROUNDS SHEET · ALL 31 VENUES ACROSS INDIA, SOUTH AFRICA &amp; UAE</p>
+          <h2 id="sheet-grounds-title">31 battlegrounds.<br><em>One fortress at Chinnaswamy.</em></h2>
+        </div>
+        <p>Every stadium RCB have played at in IPL, WPL, and Champions League T20—complete with capacity, venue story, and bidirectional links to the Key Moments that happened on that turf.</p>
+      </div>
+      <div class="db-filter-bar glass-card" role="region" aria-label="Filter all 31 RCB grounds">
+        <label>Country
+          <select id="ground-filter-country">
+            <option value="all">All Countries (31)</option>
+            <option value="India">India (22)</option>
+            <option value="South Africa">South Africa (6 · 2009 IPL &amp; 2010 CLT20)</option>
+            <option value="UAE">UAE (3 · 2014, 2020 &amp; 2021)</option>
+          </select>
+        </label>
+        <label>Venue Type
+          <select id="ground-filter-type">
+            <option value="all">All Venue Types</option>
+            <option value="home">HOME (M. Chinnaswamy Stadium)</option>
+            <option value="finals">Finals &amp; WPL Venues</option>
+            <option value="away">Away Venues</option>
+            <option value="neutral">Neutral / UAE Venues</option>
+          </select>
+        </label>
+        <label class="db-search-field">Search Ground / City / Moment
+          <input id="ground-filter-search" type="search" placeholder="Search Chinnaswamy, Ahmedabad, Vadodara, Wanderers, Wankhede…">
+        </label>
+      </div>
+      <p id="sheet-grounds-count" class="archive-coverage" role="status"></p>
+      <div id="sheet-grounds-grid" class="db-grounds-grid"></div>
+    </section>
+    <section id="sheet-all-teams-section" class="sheet-all-teams-section section-shell" aria-labelledby="sheet-all-teams-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">ALL TEAMS (IPL &amp; WPL) SHEET · 15 IPL FRANCHISES + 5 WPL FRANCHISES</p>
+          <h2 id="sheet-all-teams-title">Every franchise.<br><em>Complete league encyclopedia.</em></h2>
+        </div>
+        <p>Every team that has ever competed in the IPL (10 active + 5 defunct) and WPL (5 active): city, seasons, status, home ground, owners, titles, 2026 captain &amp; head coach, full name-change history, and logo evolution.</p>
+      </div>
+      <div id="sheet-all-teams-tabs" class="filters" role="group" aria-label="Filter franchises">
+        <button type="button" class="filter active" data-team-filter="all">All 20 Franchises (15 IPL + 5 WPL)</button>
+        <button type="button" class="filter" data-team-filter="ipl-active">Active IPL Teams (10)</button>
+        <button type="button" class="filter" data-team-filter="ipl-defunct">Defunct IPL Teams (5)</button>
+        <button type="button" class="filter" data-team-filter="wpl">WPL Teams (5)</button>
+      </div>
+      <div id="sheet-all-teams-grid" class="db-teams-grid"></div>
+    </section>
     <section id="vertical-evolution" class="vertical-evolution-section section-shell" aria-labelledby="vertical-evo-title">
       <div class="section-heading">
         <div>
           <p class="eyebrow">SCROLL-DRIVEN LOGO &amp; JERSEY EVOLUTION · 2008 TO 2026</p>
-          <h1 id="vertical-evo-title" class="page-hero-heading">Every thread.<br><em>Every transformation.</em></h1>
+          <h2 id="vertical-evo-title">Every thread.<br><em>Every transformation.</em></h2>
         </div>
         <p>Scroll or click through the vertical timeline below—the stage dynamically transitions the official RCB crest, jersey silhouette, and ambient era glow from 2008 to the 2026 championship armor.</p>
       </div>
@@ -51,7 +110,7 @@
       <div class="section-heading">
         <div>
           <p class="eyebrow">THE HERALDIC LION · 2008 TO 2026</p>
-          <h1 id="logo-history-title" class="page-hero-heading">Five crests.<br><em>One royal identity.</em></h1>
+          <h2 id="logo-history-title">Five crests.<br><em>One royal identity.</em></h2>
         </div>
         <p>From the inaugural 2008 Bangalore roundel to the crowned gold rampant lion of Royal Challengers Bengaluru.<br>Select any era below to inspect its badge, palette, captains, and defining moments.</p>
       </div>

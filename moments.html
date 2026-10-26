@@ -28,17 +28,47 @@
   </header>
   <nav class="multipage-subnav section-shell" aria-label="Page navigation">
     <a href="./index.html" class="subnav-pill">← Club Hub</a>
-    <a href="#jersey-customizer" class="subnav-pill active">12th Man Customizer</a>
-    <a href="#decibel-engine" class="subnav-pill">125dB Roar Meter</a>
+    <a href="#sheet-moments-section" class="subnav-pill active">All 45 Key Moments (2008–2026)</a>
+    <a href="#interactive-fan-engines" class="subnav-pill">12th Man Customizer &amp; 125dB Roar</a>
     <a href="#fan-tribute-wall" class="subnav-pill">Fan Tribute Wall &amp; Horn</a>
-    <a href="#championship" class="subnav-pill">Matchday &amp; Quiz</a>
+    <a href="#championship" class="subnav-pill">Final Scoreboards &amp; Quiz</a>
   </nav>
   <main id="main">
+    <section id="sheet-moments-section" class="sheet-moments-section section-shell" aria-labelledby="sheet-moments-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">KEY MOMENTS SHEET · ALL 45 DEFINING MOMENTS (2008–2026)</p>
+          <h1 id="sheet-moments-title" class="page-hero-heading">45 milestones.<br><em>Every roar remembered.</em></h1>
+        </div>
+        <p>From the 18 April 2008 IPL opener to the 2024 &amp; 2026 WPL titles, 6 Champions League T20 classics, and the 2025 &amp; 2026 back-to-back IPL championships. Each moment links directly to its Ground and Key Players.</p>
+      </div>
+      <div class="db-filter-bar glass-card" role="region" aria-label="Filter all 45 Key Moments">
+        <label>League
+          <select id="moment-filter-league">
+            <option value="all">All Leagues (45 Moments)</option>
+            <option value="IPL">IPL (31)</option>
+            <option value="WPL">WPL (7)</option>
+            <option value="CLT20">Champions League T20 (5)</option>
+            <option value="COMBINED">Combined IPL + WPL (2)</option>
+          </select>
+        </label>
+        <label>Category
+          <select id="moment-filter-category">
+            <option value="all">All Categories</option>
+          </select>
+        </label>
+        <label class="db-search-field">Search Moment / Player / Score / Venue
+          <input id="moment-filter-search" type="search" placeholder="Search 175*, 973, Kumble 5/5, Arun Karthik, Dayal, 204 Chased, Ee Sala Cup Namde…">
+        </label>
+      </div>
+      <p id="sheet-moments-count" class="archive-coverage" role="status"></p>
+      <div id="sheet-moments-grid" class="db-moments-grid"></div>
+    </section>
     <section id="interactive-fan-engines" class="fan-engines-section section-shell" aria-labelledby="engines-title">
       <div class="section-heading">
         <div>
           <p class="eyebrow">12TH MAN INTERACTIVE STUDIO · JERSEY LAB &amp; ROAR METER</p>
-          <h1 id="engines-title" class="page-hero-heading">Wear the armour.<br><em>Unleash the roar.</em></h1>
+          <h2 id="engines-title">Wear the armour.<br><em>Unleash the roar.</em></h2>
         </div>
         <p>Customize your own 12th Man RCB jersey wallpaper and test the M. Chinnaswamy Stadium decibel engine up to 125 dB.</p>
       </div>
@@ -106,7 +136,7 @@
       <div id="tribute-mosaic-grid" class="tribute-mosaic-grid" aria-live="polite"></div>
     </section>
     <section id="championship" class="matchday section-shell" aria-labelledby="championship-title">
-      <div class="matchday-heading"><div><p class="eyebrow light">THE MATCHDAY ARCHIVE</p><h1 id="championship-title" class="page-hero-heading">Big nights. <em>Bolder memories.</em></h1></div><div class="match-switch" role="group" aria-label="Choose an archived match"><button data-match="ipl-2026-final" aria-pressed="true" class="active">IPL final ’26</button><button data-match="wpl-2026-final" aria-pressed="false">WPL final ’26</button><button data-match="ipl-final" aria-pressed="false">IPL final ’25</button><button data-match="wpl-final" aria-pressed="false">WPL final ’24</button><button data-match="hyderabad" aria-pressed="false">Hyderabad ’24</button></div></div>
+      <div class="matchday-heading"><div><p class="eyebrow light">THE MATCHDAY ARCHIVE</p><h2 id="championship-title">Big nights. <em>Bolder memories.</em></h2></div><div class="match-switch" role="group" aria-label="Choose an archived match"><button data-match="ipl-2026-final" aria-pressed="true" class="active">IPL final ’26</button><button data-match="wpl-2026-final" aria-pressed="false">WPL final ’26</button><button data-match="ipl-final" aria-pressed="false">IPL final ’25</button><button data-match="wpl-final" aria-pressed="false">WPL final ’24</button><button data-match="hyderabad" aria-pressed="false">Hyderabad ’24</button></div></div>
       <div class="matchday-layout">
         <figure class="matchday-photo" id="matchday-photo"><img src="./assets/photos/stadium.jpg" alt="An archival view of RCB’s home ground, M. Chinnaswamy Stadium" width="2241" height="1212" loading="lazy"><figcaption>Illustrative RCB home-ground photograph, not the venue or a photograph of the 2026 final.</figcaption></figure>
         <div class="matchday-content" id="matchday-content" aria-live="polite"></div>

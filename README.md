@@ -32,6 +32,15 @@ Repository: [Unigalactix/RCB](https://github.com/Unigalactix/RCB). Commit and pu
 
 ## Features
 
+- **Published Google Sheet Source of Truth (`RCB Fan Tribute Database 2008–2026`)**:
+  - Imported via `scripts/import-sheet.js` into `assets/data/database.json` and rendered across all 5 pages by `database.js`:
+    - **All 223 RCB Players (`Players` sheet)**: 179 IPL men + 43 WPL women + 1 CLT20-only player (Nayan Doshi), with photo credits, RCB matches/runs/wickets, and 2026 status (`Still RCB`, `Moved`, `Retired`).
+    - **Top 40 Ranked Star Players (`Star Players` sheet)**: Top 25 IPL icons (#1 Virat Kohli to #25 Wanindu Hasaranga) and Top 15 WPL stars (#1 Smriti Mandhana to #15 S. Meghana & K. Ahuja), plus the Homepage Top 5 Icons showcase.
+    - **All 45 Defining Key Moments (`Key Moments` sheet)**: 2008 debut to 2026 Back-to-Back IPL & WPL titles (including 6 CLT20 moments), with `TITLE` moments highlighted in gold and bidirectional links to Grounds and Key Players.
+    - **All 31 RCB Grounds (`Grounds` sheet)**: 22 India + 6 South Africa + 3 UAE venues with capacity, RCB venue story, and linked moments.
+    - **4 Official Crest Eras (`Logos` sheet)** & **5 Individual Transparent Crests (`assets/logos/`)**.
+    - **All 20 IPL & WPL Franchises Encyclopedia (`All Teams (IPL & WPL)` sheet)**: 15 IPL teams (10 active + 5 defunct) and 5 WPL teams with full ownership, titles, 2026 captains/coaches, name history, and logo history.
+    - **All 23 Seasons (`Seasons` sheet)**, **10 RCB Captains (`Captains` sheet)**, **23 Franchise Records (`Records` sheet)**, and **21 Squad-Only Zero-Match Members (`Squad Only (Never Played)` sheet)**.
 - **Multi-page architecture** (`index.html`, `squad.html`, `seasons.html`, `history.html`, `moments.html`) with a Dribbble-inspired Club Team Page Bento Dashboard (`#club-dashboard`) and unified RCB Obsidian Black (`#0B0B0B`), Crimson Red (`#CC1F26`), and Championship Gold (`#D4AF37`) glassmorphic visual system.
 - **"The Chronicles of Bold" Interactive Infographic & Fan Experience (`infographic.js`)**:
   - **Cinematic Hero & Live Season Countdown (`#season-countdown` & `#stadium-ambient-canvas`)**: Ambient M. Chinnaswamy floodlight/crowd canvas loop and real-time countdown to the next season opener.
