@@ -1,5 +1,6 @@
 import { players } from './data.js';
 import { photos } from './media.js';
+import { existingPlayerPhoto, existingPlayerPhotoMarkup, existingPhotoCreditMarkup } from './player-media.js';
 import { competitions, snapshots, moments, matchSpotlights, comebackStreak, logoHistory, eraChapters, highlightVideos, teamSeasons, seasonWinRate, researchSources, metrics, rankStats, compareStats } from './archive.js';
 
 const escapeHtml = value => String(value).replace(/[&<>"']/g, character =>
@@ -18,6 +19,8 @@ function transitionIn(element) {
 }
 
 export function photoMarkup(id, alt, className = '') {
+  const playerPhoto = existingPlayerPhoto(id);
+  if (playerPhoto) return existingPlayerPhotoMarkup(id, alt, className);
   const photo = photos[id];
   const expectedType = id === 'stadium' ? 'venue' : id === 'logo' ? 'crest' : 'rcb-kit';
   if (photo && photo.photoType !== expectedType) throw new Error(`Photo kit verification is missing: ${id}`);
@@ -25,8 +28,7 @@ export function photoMarkup(id, alt, className = '') {
 }
 
 export function photoCredit(id) {
-  const photo = photos[id];
-  return photo ? `<p class="photo-credit">Photo: ${escapeHtml(photo.author)} · <a href="${photo.source}" target="_blank" rel="noopener noreferrer">Source</a> · <a href="${photo.licenseUrl}" target="_blank" rel="noopener noreferrer">${escapeHtml(photo.license)}</a> · ${photo.width} × ${photo.height}px${photo.width < 500 ? ' · Archival image, displayed at a restrained size' : ''}. ${escapeHtml(photo.changes)}</p>` : '';
+  return existingPhotoCreditMarkup(existingPlayerPhoto(id) || photos[id]);
 }
 
 export function profileStats(id) {
@@ -319,6 +321,6 @@ export function initHub(openPlayer) {
     document.querySelector('#research-credits').innerHTML = `<h3 class="credits-heading">Research &amp; statistical snapshots</h3><ul class="source-list">${researchSources.map(source => `<li><a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.title}</a><small> · ${source.scope}</small></li>`).join('')}</ul>`;
   }
   if (document.querySelector('#photo-credits')) {
-    document.querySelector('#photo-credits').innerHTML = Object.entries(photos).map(([id, photo]) => `<div class="credit-entry"><strong>${id === 'stadium' ? 'M. Chinnaswamy Stadium' : id === 'logo' ? 'Royal Challengers Bengaluru Crest (2024–2026)' : playerById(id).name}</strong>${escapeHtml(photo.author)} · <a href="${photo.source}" target="_blank" rel="noopener noreferrer">Original file &amp; attribution</a> · <a href="${photo.licenseUrl}" target="_blank" rel="noopener noreferrer">${escapeHtml(photo.license)}</a><small>${photo.changes}</small></div>`).join('');
+    document.querySelector('#photo-credits').innerHTML = Object.entries(photos).map(([id, photo]) => `<div class="credit-entry"><strong>${id === 'stadium' ? 'M. Chinnaswamy Stadium' : id === 'logo' ? 'Royal Challengers Bengaluru Crest (2024–2026)' : playerById(id).name}</strong>${existingPhotoCreditMarkup(photo)}</div>`).join('');
   }
 }

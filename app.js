@@ -3,6 +3,7 @@ import { initHub, photoMarkup, photoCredit, profileStats } from './hub.js';
 import { initSeasonArchive, initRosters } from './seasonal.js';
 import { initInfographicExperience } from './infographic.js';
 import { initSpreadsheetDashboard } from './database.js';
+import { existingPlayerPhoto, playerPhotoReferenceMarkup, registerPlayerPhotoReferences } from './player-media.js';
 
 const grid = document.querySelector('#player-grid');
 const search = document.querySelector('#player-search');
@@ -20,10 +21,10 @@ function playerVisual(player, large = false) {
 }
 
 function renderPlayers() {
-  const matching = filterPlayers(selectedTeam, search.value).sort((a, b) => Number(Boolean(photoMarkup(b.id, ''))) - Number(Boolean(photoMarkup(a.id, ''))));
+  const matching = filterPlayers(selectedTeam, search.value).sort((a, b) => Number(Boolean(existingPlayerPhoto(b.name))) - Number(Boolean(existingPlayerPhoto(a.name))));
   const canExpand = selectedTeam === 'all' && !search.value.trim() && matching.length > 8;
   const visible = canExpand && !expandedPlayers ? matching.slice(0, 8) : matching;
-  grid.innerHTML = visible.map(player => `<button class="player-card ${player.accent}" data-player="${player.id}" aria-label="View ${player.name}'s profile"><div class="player-art ${photoMarkup(player.id, '') ? 'has-photo' : ''}"><span class="player-label">${player.label}</span><span class="player-team">${player.team === 'women' ? 'WPL · 2024' : player.team === 'men' ? 'IPL · 2025' : 'RCB ALUMNI'}</span>${playerVisual(player)}<span class="player-open" aria-hidden="true">↗</span></div><div class="player-info"><p>${player.role} <span>${player.country}</span></p><h3>${player.name}</h3><span class="player-social">${player.socialHandle}</span><div class="player-stat"><strong>${player.stat}</strong><span>${player.statLabel}</span></div></div></button>`).join('');
+  grid.innerHTML = visible.map(player => `<article class="featured-player-entry"><button class="player-card ${player.accent}" data-player="${player.id}" aria-label="View ${player.name}'s profile"><div class="player-art ${existingPlayerPhoto(player.name) ? 'has-photo' : ''}"><span class="player-label">${player.label}</span><span class="player-team">${player.team === 'women' ? 'WPL · 2024–2026' : player.team === 'men' ? 'IPL · 2025–2026' : 'RCB ALUMNI'}</span>${playerVisual(player)}<span class="player-open" aria-hidden="true">↗</span></div><div class="player-info"><p>${player.role} <span>${player.country}</span></p><h3>${player.name}</h3><span class="player-social">${player.socialHandle}</span><div class="player-stat"><strong>${player.stat}</strong><span>${player.statLabel}</span></div></div></button><div class="featured-player-media">${photoCredit(player.id)}${playerPhotoReferenceMarkup(player.id)}</div></article>`).join('');
   if (!visible.length) {
     const empty = document.createElement('p');
     empty.className = 'empty-state';
@@ -37,11 +38,14 @@ function renderPlayers() {
 }
 
 const playerDialog = document.querySelector('#player-dialog');
+let activePlayerId = null;
 function openPlayer(id) {
   const player = players.find(item => item.id === id);
   if (!player) throw new Error('Player profile was not found');
+  activePlayerId = id;
   const officialTeam = player.team === 'women' ? 'https://www.wplt20.com/teams/royal-challengers-bengaluru' : 'https://www.iplt20.com/teams/royal-challengers-bengaluru/squad';
   document.querySelector('#profile-content').innerHTML = `<div class="profile-art ${player.accent} ${photoMarkup(id, '') ? 'has-photo' : ''}">${playerVisual(player, true)}</div><p class="eyebrow">${player.label}</p><h2 id="profile-name">${player.name}</h2><p class="profile-role">${player.role} · ${player.country}</p><p>${player.bio}</p><div class="profile-highlight"><strong>${player.stat}</strong><span>${player.statLabel}</span></div>${profileStats(id)}${photoCredit(id)}<p class="archive-note">Historical profile · ${player.team === 'women' ? '2024–2026 WPL archive' : player.team === 'men' ? '2025–2026 IPL archive' : 'RCB icons and alumni archive'}. Verified player photos show solo portraits in RCB kit. Otherwise, the jersey is an illustration, not a player photograph.</p><div class="profile-links"><a class="profile-stats-source" href="${player.socialUrl}" target="_blank" rel="noopener noreferrer">Latest solo photos on ${player.socialHandle} ↗</a> <a class="profile-stats-source" href="${officialTeam}" target="_blank" rel="noopener noreferrer">Official ${player.team === 'women' ? 'WPL' : 'IPL'} team directory ↗</a></div>`;
+  document.querySelector('#profile-content').insertAdjacentHTML('beforeend', `<div class="profile-photo-reference">${playerPhotoReferenceMarkup(id)}</div>`);
   playerDialog.showModal();
 }
 
@@ -88,7 +92,28 @@ initHub(openPlayer);
 initSeasonArchive();
 initRosters();
 initInfographicExperience();
-initSpreadsheetDashboard();
+initSpreadsheetDashboard().then(database => {
+  if (!database) return;
+  registerPlayerPhotoReferences(database.players);
+  if (grid && search && morePlayers) renderPlayers();
+  if (playerDialog?.open && activePlayerId) {
+    playerDialog.querySelector('.profile-photo-reference').innerHTML = playerPhotoReferenceMarkup(activePlayerId);
+  }
+}).catch(error => {
+  console.error('Unable to load featured-player photo references:', error);
+  const status = document.querySelector('#player-status');
+  if (status) status.textContent = 'Photo reference links are unavailable. Existing local photos and player profiles remain available.';
+});
+
+document.addEventListener('error', event => {
+  const image = event.target;
+  if (!(image instanceof HTMLImageElement) || !image.hasAttribute('data-shared-player-photo')) return;
+  console.error('Shared player photo failed to load:', image.getAttribute('src'));
+  const message = document.createElement('span');
+  message.className = 'player-photo-error';
+  message.textContent = 'Player photo unavailable';
+  image.replaceWith(message);
+}, true);
 
 const years = document.querySelector('#timeline-years');
 if (years) {

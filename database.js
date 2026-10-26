@@ -1,9 +1,13 @@
+import { existingPlayerPhoto, existingPlayerPhotoMarkup, existingPhotoCreditMarkup } from './player-media.js';
+
 const escapeHtml = value =>
   String(value ?? '').replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
 
 const fmtNum = value => (value === null || value === undefined || value === '' ? '—' : Number(value).toLocaleString('en-IN'));
 
 function mediaImgMarkup({ localPhoto, photoUrl, alt, credit, fallbackBadge = 'RCB', className = 'db-card-img' }) {
+  const sharedPhoto = existingPlayerPhotoMarkup(alt, `${alt} in RCB franchise kit`, className);
+  if (sharedPhoto) return sharedPhoto;
   const src = localPhoto || photoUrl || './assets/mark.svg';
   const fallbackAttr = `this.onerror=null;this.src='./assets/mark.svg';this.classList.add('img-fallback');`;
   return `<img class="${className}" src="${escapeHtml(src)}" alt="${escapeHtml(alt)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="${fallbackAttr}" data-credit="${escapeHtml(credit || '')}">`;
@@ -244,7 +248,7 @@ export async function initSpreadsheetDashboard() {
           </div>
           ${player.statusDetail ? `<p class="db-detail-note"><strong>Status / Career Note:</strong> ${escapeHtml(player.statusDetail)}</p>` : ''}
           ${player.whyStar ? `<div class="db-star-callout"><p><strong>Why an RCB Star:</strong> ${escapeHtml(player.whyStar)}</p><p><strong>Signature Moment / Stat:</strong> ${escapeHtml(player.signatureMoment)}</p></div>` : ''}
-          <p class="photo-credit">Photo Source / Credit: ${escapeHtml(player.photoCredit)}</p>
+          ${existingPlayerPhoto(player.name) ? existingPhotoCreditMarkup(existingPlayerPhoto(player.name)) : `<p class="photo-credit">Photo Source / Credit: ${escapeHtml(player.photoCredit)}</p>`}
         </div>
       </div>
       ${linkedMoments.length ? `<div class="db-modal-linked"><p class="eyebrow">LINKED KEY MOMENTS (${linkedMoments.length})</p><div class="db-chip-list">${linkedMoments.map(m => `<button type="button" class="db-link-chip" data-open-moment="${escapeHtml(m.id)}"><strong>${escapeHtml(m.year)} · ${escapeHtml(m.title)}</strong><span>${escapeHtml(m.date)}</span></button>`).join('')}</div></div>` : ''}
@@ -305,6 +309,7 @@ export async function initSpreadsheetDashboard() {
   }
 
   document.addEventListener('click', event => {
+    if (event.target.closest('a')) return;
     const pBtn = event.target.closest('[data-open-player]');
     if (pBtn) {
       openPlayerDetail(pBtn.dataset.openPlayer);
@@ -342,6 +347,7 @@ export async function initSpreadsheetDashboard() {
             <span><strong>${fmtNum(star.runs)}</strong> Runs</span>
             <span><strong>${fmtNum(star.wickets)}</strong> Wkts</span>
           </div>
+          ${existingPhotoCreditMarkup(existingPlayerPhoto(star.name))}
         </div>
       </article>
     `).join('');
@@ -428,6 +434,7 @@ export async function initSpreadsheetDashboard() {
               <span><strong>${fmtNum(star.runs)}</strong> Runs</span>
               <span><strong>${fmtNum(star.wickets)}</strong> Wkts</span>
             </div>
+            ${existingPhotoCreditMarkup(existingPlayerPhoto(star.name))}
           </div>
         </article>
       `).join('');
@@ -503,6 +510,7 @@ export async function initSpreadsheetDashboard() {
               <span><strong>${fmtNum(p.wickets)}</strong> Wkts</span>
             </div>
             ${p.statusDetail ? `<small class="db-player-note">${escapeHtml(p.statusDetail)}</small>` : ''}
+            ${existingPhotoCreditMarkup(existingPlayerPhoto(p.name))}
           </div>
         </article>
       `).join('');
@@ -767,4 +775,5 @@ export async function initSpreadsheetDashboard() {
   if (sheetSourcesContainer) {
     sheetSourcesContainer.innerHTML = db.sources.map(s => `<li><strong>${escapeHtml(s.topic)}:</strong> <span>${escapeHtml(s.source)}</span></li>`).join('');
   }
+  return db;
 }
