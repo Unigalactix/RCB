@@ -3,66 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#c91e32">
+  <meta name="theme-color" content="#101012">
   <meta name="description" content="One city. A million hearts. An independent Royal Challengers Bengaluru fan archive celebrating the players, the journey, and the championships.">
   <title>RCB Forever — More than a team.</title>
   <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./hub.css">
   <script type="module" src="./app.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="announcement"><span class="live-dot"></span> THE WAIT. THE BELIEF. THE GLORY. <span class="announcement-end">IPL CHAMPIONS 2025 <span aria-hidden="true">↗</span></span></div>
+  <div class="announcement"><span class="live-dot"></span> THE WAIT. THE BELIEF. THE GLORY. <span class="announcement-end">IPL + WPL CHAMPIONS 2026 <span aria-hidden="true">↗</span></span></div>
   <header class="header">
-    <a class="brand" href="#" aria-label="RCB Forever home"><img src="./assets/mark.svg" alt="" width="42" height="48"><span>RCB<span class="brand-sub">FOREVER</span></span></a>
+    <a class="brand" href="./index.html" aria-label="RCB Forever home"><img class="brand-crest" src="./assets/mark.svg" alt="Royal Challengers Bengaluru crest" width="38" height="53"><span>RCB<span class="brand-sub">BENGALURU · FOREVER</span></span></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
     <nav id="main-nav" aria-label="Main navigation">
-      <a href="#home" class="active">Home</a><a href="#squad">The players</a><a href="#legacy">Our legacy</a><a href="#clubhouse">Clubhouse</a>
+      <a href="./index.html" class="active">Overview</a><a href="./squad.html">Squad &amp; Stars</a><a href="./seasons.html">Seasons &amp; Rosters</a><a href="./history.html">History &amp; Crests</a><a href="./moments.html">Moments &amp; Quiz</a>
     </nav>
-    <a class="header-cta" href="#fan-zone">Join the roar <span aria-hidden="true">↗</span></a>
+    <a class="header-cta" href="./moments.html#fan-zone">Join the roar <span aria-hidden="true">↗</span></a>
   </header>
+  <nav class="multipage-subnav section-shell" aria-label="Section &amp; page shortcuts">
+    <a href="#club-dashboard" class="subnav-pill active">Club Team Hub</a>
+    <a href="./squad.html" class="subnav-pill">24 IPL &amp; WPL Stars ↗</a>
+    <a href="./seasons.html" class="subnav-pill">2008–2026 Season Archive ↗</a>
+    <a href="./history.html" class="subnav-pill">Logo Evolution &amp; 6 Eras ↗</a>
+    <a href="./moments.html" class="subnav-pill">Matchday &amp; Fan Quiz ↗</a>
+  </nav>
   <main id="main">
     <section class="hero section-shell" id="home" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span></span> BENGALURU IS NOT JUST A PLACE. IT'S A FEELING.</p>
-        <h1 id="hero-title">MORE THAN<br>A <span class="word-team">TEAM<span class="red-period">.</span></span><br><em>A way of life.</em></h1>
-        <p class="hero-description">For every heart that never stopped believing.<br>For the city that always roars a little louder.<br>This is Royal Challengers Bengaluru.</p>
-        <div class="hero-actions"><a class="button button-red" href="#legacy">Explore our story <span aria-hidden="true">↗</span></a><a class="text-link" href="#championship"><span class="play-icon" aria-hidden="true">▶</span> Relive the glory</a></div>
+        <p class="eyebrow"><span></span> IPL + WPL CHAMPIONS · 2026</p>
+        <h1 id="hero-title">CROWNED.<br>AGAIN.<br><span class="word-team">2026<span class="red-period">.</span></span></h1>
+        <p class="hero-description">Back-to-back IPL champions. Two-time WPL champions.<br>One city. Two teams. A year that belongs to Bengaluru.</p>
+        <div class="hero-actions"><a class="button button-red" href="#champions">Explore the 2026 double <span aria-hidden="true">↗</span></a><a class="text-link" href="#championship"><span class="play-icon" aria-hidden="true">▶</span> The final scorecards</a></div>
         <div class="believers"><span class="avatar-stack" aria-hidden="true"><i>18</i><i>RC</i><i>♥</i><i>12</i></span><p>Different people. One heartbeat.<strong>Always a Challenger.</strong></p></div>
       </div>
       <div class="hero-art">
-        <div class="art-topline"><span>THE CLASS OF 2025</span><span>EST. 2008</span></div>
-        <span class="art-outline" aria-hidden="true">BELIEVE.</span>
+        <div class="hero-view-switch" role="group" aria-label="Choose hero visual"><button data-hero-view="trophy" aria-pressed="true" class="active">Champions 2026</button><button data-hero-view="colours" aria-pressed="false">In our colours · #18</button></div>
+        <figure id="hero-colours" class="hero-photo-panel" hidden>
+          <img class="hero-player-photo" src="./assets/photos/virat-kohli.png" alt="Virat Kohli wearing the 2026 RCB franchise kit and gold helmet" width="612" height="408" fetchpriority="high">
+          <span class="hero-photo-number" aria-hidden="true">18</span>
+          <figcaption><p>VIRAT KOHLI · RCB 2026</p><strong>IN OUR<br>COLOURS.</strong><span>One franchise since 2008. Back-to-back IPL champion (2025 &amp; 2026).</span><small>Local archive asset: Virat Kohli in 2026 RCB kit (`assets/photos/virat-kohli.png`)</small></figcaption>
+        </figure>
+        <div id="hero-trophy">
+        <div class="art-topline"><span><img class="inline-crest" src="./assets/photos/rcb-logo.png" alt="" width="20" height="28"> THE 2026 CHAMPIONSHIP DOUBLE</span><span>EST. 2008</span></div>
+        <span class="art-outline" aria-hidden="true">CROWNED.</span>
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
         <div class="hero-star star-one" aria-hidden="true">✦</div><div class="hero-star star-two" aria-hidden="true">✦</div>
-        <img class="trophy-art" src="./assets/trophy.svg" alt="Original gold championship trophy illustration, framed by red and navy ribbons" width="500" height="580">
-        <div class="champion-stamp"><span>18 SEASONS.</span><strong>ONE<br>UNBREAKABLE<br>BELIEF.</strong><span>BENGALURU · 2025</span></div>
-        <div class="art-caption"><span class="tiny-label">FINALLY. FOREVER.</span><strong>CHAMPIONS<span>2025</span></strong><span class="art-caption-bottom">A DREAM THAT BELONGED TO ALL OF US.</span></div>
-        <span class="art-index">01 / THE BELIEF</span>
+        <img class="trophy-art" src="./assets/trophy.svg" alt="Original trophy illustration celebrating RCB’s 2026 IPL and WPL titles" width="500" height="580">
+        <div class="champion-stamp"><span>IPL · 2025 + 2026</span><strong>BACK<br>TO<br>BACK.</strong><span>BENGALURU FOREVER</span></div>
+        <div class="art-caption"><span class="tiny-label">TWO TEAMS. ONE HISTORIC YEAR.</span><strong>CHAMPIONS<span>2026</span></strong><span class="art-caption-bottom">IPL + WPL · THE DOUBLE BELONGS TO BENGALURU.</span></div>
+        <span class="art-index">2026 / THE NEXT CHAPTER</span>
+        </div>
       </div>
     </section>
     <div class="ticker" aria-label="Play bold. Bengaluru forever. Our team. Our pride."><div aria-hidden="true">PLAY BOLD <span>✦</span> BENGALURU FOREVER <span>✦</span> OUR TEAM. OUR PRIDE. <span>✦</span> PLAY BOLD <span>✦</span> BENGALURU FOREVER <span>✦</span> OUR TEAM. OUR PRIDE. <span>✦</span></div></div>
-    <section class="numbers section-shell" aria-label="Club milestones as of the 2025 IPL final">
-      <div><strong>2008<span>↗</span></strong><p>Where the story began</p></div><div><strong>18</strong><p>Seasons to the first IPL title</p></div><div><strong>01</strong><p>First IPL crown · 2025</p></div><div><strong>∞</strong><p>Reasons to believe</p></div>
+    <section class="numbers section-shell" aria-label="Club milestones and verified honours through 2026">
+      <div><strong>2008<span>↗</span></strong><p>Where the story began</p></div><div><strong>18</strong><p>Seasons to the first IPL title</p></div><div><strong>02</strong><p>IPL titles · 2025, 2026</p></div><div><strong>02</strong><p>WPL titles · 2024, 2026</p></div>
     </section>
-    <section id="championship" class="championship section-shell" aria-labelledby="championship-title">
-      <div class="championship-copy"><p class="eyebrow light">03 JUNE 2025 · AHMEDABAD</p><h2 id="championship-title">Not just a trophy.<br><em>An entire emotion.</em></h2><p>Eighteen seasons of almosts. A lifetime of loyalty. And one night that made every moment worth it.</p><a class="light-link" href="https://www.iplt20.com/news/article/tata-ipl-2025-final-rcb-vs-pbks-match-report" target="_blank" rel="noopener noreferrer">Read the official final report <span aria-hidden="true">↗</span></a></div>
-      <div class="scorecard"><div class="scorecard-top"><span>IPL 2025 · THE FINAL</span><span class="result-pill">COMPLETED</span></div><div class="team-score"><span><i class="team-token rcb-token">RCB</i>Royal Challengers<br><small>Bengaluru</small></span><strong>190/9<small>20 overs</small></strong></div><div class="team-score opponent"><span><i class="team-token">PBKS</i>Punjab Kings</span><strong>184/7<small>20 overs</small></strong></div><div class="scorecard-result"><span aria-hidden="true">★</span> Royal Challengers Bengaluru won by 6 runs</div><div class="scorecard-footer"><span>PLAYER OF THE MATCH</span><strong>Krunal Pandya <span>2/17</span></strong></div></div>
+    <section id="club-dashboard" class="club-dashboard section-shell" aria-labelledby="dashboard-title">
+      <div class="dashboard-bento">
+        <article class="bento-card bento-identity">
+          <div class="bento-club-head">
+            <img class="bento-crest" src="./assets/mark.svg" alt="Royal Challengers Bengaluru crest" width="72" height="100">
+            <div>
+              <p class="eyebrow">OFFICIAL CLUB IDENTITY · BENGALURU</p>
+              <h2 id="dashboard-title">Royal Challengers Bengaluru</h2>
+              <p class="bento-meta">M. Chinnaswamy Stadium · Founded 2008 · IPL &amp; WPL Champions</p>
+            </div>
+          </div>
+          <div class="bento-trophies">
+            <span class="trophy-pill gold">🏆 IPL Champions · 2025, 2026</span>
+            <span class="trophy-pill red">🏆 WPL Champions · 2024, 2026</span>
+            <span class="trophy-pill">CLT20 Runners-Up · 2011</span>
+          </div>
+          <div class="bento-form-row">
+            <span>2024 Miracle Comeback Form</span>
+            <div class="form-badges" aria-label="Six consecutive wins"><i>W</i><i>W</i><i>W</i><i>W</i><i>W</i><i>W</i></div>
+            <small>1–7 to Playoffs · 2025 100% Away Wins · 2026 #1 Table Toppers</small>
+          </div>
+        </article>
+        <article class="bento-card bento-fixtures">
+          <div class="bento-card-top"><span>CHAMPIONSHIP RESULTS</span><a href="./moments.html">Matchday hub ↗</a></div>
+          <div class="fixture-mini">
+            <span class="fixture-tag">IPL 2026 FINAL · AHMEDABAD</span>
+            <div class="fixture-scoreline"><strong>RCB 161/5 (18)</strong><span>beat</span><strong>GT 155/8 (20)</strong></div>
+            <small>Won by 5 wickets · Virat Kohli 75* (42) POTM · Rasikh Salam 3/27</small>
+          </div>
+          <div class="fixture-mini">
+            <span class="fixture-tag">WPL 2026 FINAL · VADODARA</span>
+            <div class="fixture-scoreline"><strong>RCB 204/4 (19.4)</strong><span>beat</span><strong>DC 203/4 (20)</strong></div>
+            <small>Won by 6 wickets · Smriti Mandhana 87 · Georgia Voll 79 · Radha Yadav finish</small>
+          </div>
+        </article>
+        <article class="bento-card bento-lineup">
+          <div class="bento-card-top"><span>FEATURED MEN’S &amp; WOMEN’S STARS</span><a href="./squad.html">Full Squad Page ↗</a></div>
+          <div class="lineup-chips">
+            <button class="lineup-chip" data-quick-player="virat"><b>#18</b> Virat Kohli <span>IPL · 973 / 75*</span></button>
+            <button class="lineup-chip" data-quick-player="smriti"><b>#18</b> Smriti Mandhana <span>WPL · ’24 &amp; ’26 Capt</span></button>
+            <button class="lineup-chip" data-quick-player="rajat"><b>#97</b> Rajat Patidar <span>IPL · ’25 &amp; ’26 Capt</span></button>
+            <button class="lineup-chip" data-quick-player="perry"><b>#8</b> Ellyse Perry <span>WPL · 347 &amp; 372 Runs</span></button>
+            <button class="lineup-chip" data-quick-player="bell"><b>#99</b> Lauren Bell <span>WPL ’26 · 12W (5.53 Econ)</span></button>
+            <button class="lineup-chip" data-quick-player="harris"><b>#44</b> Grace Harris <span>WPL ’26 · 237R (178 SR)</span></button>
+            <button class="lineup-chip" data-quick-player="deklerk"><b>#22</b> Nadine de Klerk <span>WPL ’26 · 16 Wkts</span></button>
+            <button class="lineup-chip" data-quick-player="voll"><b>#14</b> Georgia Voll <span>WPL ’26 · 79 in Final</span></button>
+          </div>
+        </article>
+        <article class="bento-card bento-pages">
+          <div class="bento-card-top"><span>MULTI-PAGE CLUB DIRECTORY</span><span>5 DEDICATED PAGES</span></div>
+          <div class="page-portal-grid">
+            <a class="portal-link" href="./squad.html"><strong>01 · Squad &amp; Star Stats</strong><span>24 IPL, WPL &amp; Hall of Fame profiles + Head-to-Head Lab ↗</span></a>
+            <a class="portal-link" href="./seasons.html"><strong>02 · Seasons &amp; Rosters</strong><span>All 23 IPL/WPL player tables + 25 historical squads ↗</span></a>
+            <a class="portal-link" href="./history.html"><strong>03 · History, Eras &amp; Crests</strong><span>2008–2026 logo evolution, 6 eras &amp; 2024 miracle streak ↗</span></a>
+            <a class="portal-link" href="./moments.html"><strong>04 · Moments &amp; Fan Zone</strong><span>5 finals scoreboards, 9 video reels &amp; Challenger quiz ↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="champions" class="champions-section section-shell" aria-labelledby="champions-title">
+      <div class="section-heading"><div><p class="eyebrow">THE LATEST CHAPTER · 2026</p><h2 id="champions-title">Two teams.<br><em>One historic year.</em></h2></div><p>Not just the first win.<br>The belief that became a legacy.</p></div>
+      <div class="champion-grid">
+        <article class="champion-card"><div class="champion-card-top"><span><img class="inline-crest" src="./assets/photos/rcb-logo.png" alt="" width="18" height="25"> IPL 2026</span><span>BACK-TO-BACK CHAMPIONS</span></div><h3>The crown.<br>Defended.</h3><p>31 May 2026 · Ahmedabad</p><div class="champion-final-score"><strong>RCB 161/5</strong><span>GT 155/8</span></div><p class="champion-result">Won by 5 wickets · 12 balls remaining</p><p>Kohli’s unbeaten 75 off 42 balls (Player of the Match) and Rasikh Salam’s 3/27 secured a second consecutive IPL title after RCB topped the league table (18 pts) and routed GT 254/5 in Qualifier 1.</p><a class="text-link" href="https://www.iplt20.com/news/article/tata-ipl-2026-final-rcb-v-gt-match-report" target="_blank" rel="noopener noreferrer">Official IPL 2026 final report ↗</a></article>
+        <article class="champion-card wpl-champion"><div class="champion-card-top"><span><img class="inline-crest" src="./assets/photos/rcb-logo.png" alt="" width="18" height="25"> WPL 2026</span><span>TWO-TIME CHAMPIONS</span></div><h3>She believed.<br>Again.</h3><p>5 February 2026 · Vadodara</p><div class="champion-final-score"><strong>RCB 204/4</strong><span>DC 203/4</span></div><p class="champion-result">Won by 6 wickets · 2 balls remaining</p><p>Mandhana’s 87 and Georgia Voll’s 79 powered the WPL-record chase of 204. Radha Yadav finished the job with back-to-back boundaries, making RCB the first franchise to win the WPL and IPL in the same calendar year.</p><a class="text-link" href="https://www.wplt20.com/news/article/match-report-tata-wpl-2026-final" target="_blank" rel="noopener noreferrer">Official WPL 2026 final report ↗</a></article>
+      </div>
+    </section>
+    <section id="logo-history" class="logo-history-section section-shell" aria-labelledby="logo-history-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE HERALDIC LION · 2008 TO 2026</p>
+          <h2 id="logo-history-title">Five crests.<br><em>One royal identity.</em></h2>
+        </div>
+        <p>From the inaugural 2008 Bangalore roundel to the crowned gold rampant lion of Royal Challengers Bengaluru.<br>Select any era below to inspect its badge, palette, captains, and defining moments.</p>
+      </div>
+      <div id="logo-era-grid" class="logo-era-grid" role="group" aria-label="Select an RCB logo era from 2008 to 2026"></div>
+      <article id="logo-era-detail" class="logo-era-detail" aria-live="polite"></article>
+    </section>
+    <section id="championship" class="matchday section-shell" aria-labelledby="championship-title">
+      <div class="matchday-heading"><div><p class="eyebrow light">THE MATCHDAY ARCHIVE</p><h2 id="championship-title">Big nights. <em>Bolder memories.</em></h2></div><div class="match-switch" role="group" aria-label="Choose an archived match"><button data-match="ipl-2026-final" aria-pressed="true" class="active">IPL final ’26</button><button data-match="wpl-2026-final" aria-pressed="false">WPL final ’26</button><button data-match="ipl-final" aria-pressed="false">IPL final ’25</button><button data-match="wpl-final" aria-pressed="false">WPL final ’24</button><button data-match="hyderabad" aria-pressed="false">Hyderabad ’24</button></div></div>
+      <div class="matchday-layout">
+        <figure class="matchday-photo" id="matchday-photo"><img src="./assets/photos/stadium.jpg" alt="An archival view of RCB’s home ground, M. Chinnaswamy Stadium" width="2241" height="1212" loading="lazy"><figcaption>Illustrative RCB home-ground photograph, not the venue or a photograph of the 2026 final. Photo: Aniket Suryavanshi · CC BY 2.0. See Sources &amp; credits.</figcaption></figure>
+        <div class="matchday-content" id="matchday-content" aria-live="polite"><p class="eyebrow light">31 MAY 2026 · AHMEDABAD</p><h3>The crown.<br>Defended.</h3><p class="matchday-description">Kohli’s unbeaten 75 guided RCB to a second consecutive IPL championship.</p><div class="matchday-board"><div class="matchday-board-top"><span>IPL 2026 · FINAL</span><span>COMPLETED</span></div><div class="matchday-scores"><div><span class="score-badge">RCB</span><strong>161/5</strong><small>18 overs</small></div><span class="versus">VS</span><div><span class="score-badge opponent">GT</span><strong>155/8</strong><small>20 overs</small></div></div><p class="matchday-result">RCB won by 5 wickets</p></div><a class="button button-gold" href="https://www.iplt20.com/news/article/tata-ipl-2026-final-rcb-v-gt-match-report" target="_blank" rel="noopener noreferrer">Read the official match report ↗</a></div>
+      </div>
+      <div class="comeback-streak" id="comeback-streak" aria-labelledby="comeback-title">
+        <div class="comeback-header">
+          <div>
+            <p class="eyebrow light">1 WIN IN FIRST 8 GAMES → 6 STRAIGHT WINS → PLAYOFFS</p>
+            <h3 id="comeback-title">The Miracle of May · <em>IPL 2024 Comeback Streak</em></h3>
+          </div>
+          <p>Sitting at the bottom of the table with just 1 win from their first 8 games, Royal Challengers Bengaluru mounted one of the greatest comebacks in IPL history—winning six straight from late April to the 18 May knockout against CSK.</p>
+        </div>
+        <div class="comeback-steps" id="comeback-steps" role="group" aria-label="Explore each match of the 2024 6-match winning streak"></div>
+        <article class="comeback-detail" id="comeback-detail" aria-live="polite"></article>
+      </div>
+    </section>
+    <section id="competitions" class="competition-hub section-shell" aria-labelledby="competitions-title">
+      <div class="section-heading"><div><p class="eyebrow">ONE FRANCHISE. MORE THAN ONE STAGE.</p><h2 id="competitions-title">Every league. <em>The same belief.</em></h2></div><p>Men's IPL. Women's WPL.<br>And the Champions League chapter.</p></div>
+      <div class="league-tabs" role="group" aria-label="Explore a competition"><button data-league="ipl" aria-pressed="true" class="active"><span>01 / MEN</span><strong>IPL</strong><small>Indian Premier League ↗</small></button><button data-league="wpl" aria-pressed="false"><span>02 / WOMEN</span><strong>WPL</strong><small>Women's Premier League ↗</small></button><button data-league="clt20" aria-pressed="false"><span>03 / INTERNATIONAL CLUBS</span><strong>CLT20</strong><small>Champions League Twenty20 ↗</small></button></div>
+      <article id="league-detail" class="league-detail" aria-live="polite"></article>
+      <p class="archive-note">A sourced historical collection, not a live feed. Stats snapshots: IPL 2025 and WPL 2024. Later seasons are not implied by those snapshots. CLT20 was a separate club competition; it is now discontinued.</p>
     </section>
     <section id="squad" class="players section-shell" aria-labelledby="players-title">
-      <div class="section-heading"><div><p class="eyebrow">THE NAMES. THE NUMBERS. THE EMOTIONS.</p><h2 id="players-title">Different game.<br><em>Same bold DNA.</em></h2></div><p>The icons who made us believe.<br>The champions who made it happen.</p></div>
-      <div class="player-toolbar"><div class="filters" role="group" aria-label="Filter players"><button class="filter active" data-team="all" aria-pressed="true">All challengers</button><button class="filter" data-team="men" aria-pressed="false">Men's team</button><button class="filter" data-team="women" aria-pressed="false">Women's team</button><button class="filter" data-team="legends" aria-pressed="false">The legends</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="player-search" type="search" placeholder="Find your challenger" aria-label="Search players"></label></div>
-      <p class="archive-note">Featured players from the 2025 IPL and 2024 WPL winning squads, plus club legends. Not a current squad list.</p>
-      <div id="player-grid" class="player-grid"></div><p id="player-status" class="sr-only" role="status"></p>
+      <div class="section-heading"><div><p class="eyebrow">THE PEOPLE BEHIND THE BELIEF</p><h2 id="players-title">The challengers.<br><em>Always our own.</em></h2></div><div class="official-squad-link"><p>Historical profiles. Current official directories.</p><a class="text-link" href="https://www.iplt20.com/teams/royal-challengers-bengaluru/squad" target="_blank" rel="noopener noreferrer">IPL squad ↗</a><a class="text-link" href="https://www.wplt20.com/teams/royal-challengers-bengaluru" target="_blank" rel="noopener noreferrer">WPL team ↗</a></div></div>
+      <div class="player-toolbar"><div class="filters" role="group" aria-label="Filter players"><button class="filter active" data-team="all" aria-pressed="true">All challengers</button><button class="filter" data-team="men" aria-pressed="false">Men's team</button><button class="filter" data-team="women" aria-pressed="false">Women's team</button><button class="filter" data-team="legends" aria-pressed="false">Icons &amp; alumni</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="player-search" type="search" placeholder="Find your challenger" aria-label="Search players"></label></div>
+      <p class="archive-note">Featured IPL 2025 and WPL 2024 players, plus icons and alumni. Player photographs show verified RCB kit only; they may be from a different season. If no reusable RCB-kit photograph was verified, a labeled jersey illustration is shown instead. No national-team or other-franchise portraits are used.</p>
+      <div class="photo-policy-note"><span aria-hidden="true">↗</span><p><strong>Solo RCB-kit portraits &amp; official social handles:</strong> Local photographs are strictly solo portraits in RCB franchise kit with verified open licenses (Virat Kohli, Cameron Green, Rahul Dravid). Because personal social-media posts and league squad portraits are copyrighted, each player card and profile links directly to their official social handle, <a href="https://www.iplt20.com/teams/royal-challengers-bengaluru/squad" target="_blank" rel="noopener noreferrer">IPL squad</a>, and <a href="https://www.wplt20.com/teams/royal-challengers-bengaluru" target="_blank" rel="noopener noreferrer">WPL team</a> for their latest solo photos.</p></div>
+      <div id="player-grid" class="player-grid"></div><button id="players-more" class="button button-outline" aria-expanded="false" aria-controls="player-grid">View all challengers ↗</button><p id="player-status" class="sr-only" role="status"></p>
       <p class="squad-footnote">Tap a player to discover their story. <span>One badge. Countless stories.</span></p>
     </section>
+    <section id="stats" class="stats-lab section-shell" aria-labelledby="stats-title">
+      <div class="section-heading"><div><p class="eyebrow">FEATURED CHAMPIONSHIP SNAPSHOTS</p><h2 id="stats-title">Star power. <em>In numbers.</em></h2></div><div class="official-squad-link"><p>Curated player comparisons for IPL 2025 and WPL 2024.</p><a class="text-link" href="#season-stats">All recorded players · Every IPL/WPL season ↗</a></div></div>
+      <div class="stats-controls"><label>Statistical snapshot<select id="stats-season"><option value="ipl">IPL 2025 · RCB</option><option value="wpl">WPL 2024 · RCB</option><option value="wpl2026">WPL 2026 · RCB Champions</option></select></label><label>Rank featured stars by<select id="stats-metric"><option value="runs">Runs</option><option value="wickets">Wickets</option><option value="strikeRate">Batting strike rate</option><option value="matches">Matches played</option></select></label><a id="stats-source" class="text-link" target="_blank" rel="noopener noreferrer">Verify the source ↗</a></div>
+      <div class="leaderboard-wrap"><table class="leaderboard"><caption id="leaderboard-caption"></caption><thead><tr><th scope="col">#</th><th scope="col">Player</th><th scope="col">Matches</th><th scope="col">Runs</th><th scope="col">Wickets</th><th scope="col">Batting SR</th></tr></thead><tbody id="leaderboard-body"></tbody></table></div>
+      <p class="archive-note">Rankings are among the featured RCB players, not the entire league. Batting SR = runs per 100 balls. “—” means not verified; it never means zero. No cross-season or cross-league totals are combined. Stats use credited secondary tables; open a player for the exact source links.</p>
+      <div class="comparison"><div class="comparison-heading"><p class="eyebrow">HEAD TO HEAD</p><h3>Two challengers. Side by side.</h3><p>Choose two players from the snapshot above.</p></div><div class="compare-pickers"><label>First player<select id="compare-a"></select></label><span aria-hidden="true">VS</span><label>Second player<select id="compare-b"></select></label></div><div id="comparison-result" aria-live="polite"></div></div>
+    </section>
+    <section id="season-stats" class="season-stats-section section-shell" aria-labelledby="season-stats-title">
+      <div class="section-heading"><div><p class="eyebrow">BEYOND THE FEATURED STARS</p><h2 id="season-stats-title">Every season.<br><em>Every recorded player.</em></h2></div><p>IPL 2008–2026 · WPL 2023–2026.<br>Locally bundled, source-attributed match data.</p></div>
+      <div class="stats-controls"><label>Competition<select id="archive-league"><option value="ipl">IPL · Men</option><option value="wpl">WPL · Women</option></select></label><label>Season<select id="archive-year"></select></label><label>Sort by<select id="archive-sort"><option value="runs">Runs</option><option value="wickets">Wickets</option><option value="matchListings">Match listings</option><option value="strikeRate">Batting strike rate</option><option value="name">Player name</option></select></label><label class="archive-search-label">Find a player<input id="archive-search" type="search" placeholder="Search source name"></label></div>
+      <p id="archive-coverage" class="archive-coverage" role="status">Loading the locally bundled season archive…</p>
+      <div class="leaderboard-wrap" tabindex="0" role="region" aria-label="Scroll the full season statistics table horizontally"><table class="leaderboard full-season-table"><caption id="archive-caption">Season match-participant statistics</caption><thead><tr><th scope="col">Player</th><th scope="col">Listings*</th><th scope="col">Bat inns</th><th scope="col">Runs</th><th scope="col">Balls</th><th scope="col">SR</th><th scope="col">HS</th><th scope="col">4s</th><th scope="col">6s</th><th scope="col">Overs</th><th scope="col">Wickets</th><th scope="col">Economy</th><th scope="col">Catches</th><th scope="col">Stumpings</th></tr></thead><tbody id="archive-body"></tbody></table></div>
+      <p class="archive-note">*Listings = matches where the source lists the player, not certified official appearances. Includes source-listed participants and recorded substitute fielders, not every registered bench player. Zero means no recorded contribution in covered matches; “—” means the rate is not applicable. Source names are retained (for example, V Kohli). Super overs are excluded. Some abandoned fixtures have no source file.</p>
+      <details class="archive-method"><summary>Sources, coverage, and calculation method</summary><p id="archive-methodology"></p><p><a href="https://cricsheet.org/" target="_blank" rel="noopener noreferrer">Cricsheet data</a> · <a href="https://cricsheet.org/licensing/" target="_blank" rel="noopener noreferrer">Open Data Commons Attribution License 1.0</a> · <a id="archive-download" target="_blank" rel="noopener noreferrer">Original competition download ↗</a></p><p>Registered squads and CLT20 statistics require separate roster and scorecard sources. They are not inferred from the IPL/WPL delivery data.</p></details>
+      <p class="archive-feedback" id="archive-error" role="alert" hidden></p>
+      <div id="roster-additional-sources" class="roster-additional-sources" aria-label="Additional sources for the selected historical roster"></div>
+      <div class="roster-explorer"><div class="section-heading"><div><p class="eyebrow">THE SQUAD, NOT JUST THE PLAYING XI</p><h3>Historical roster directory.</h3></div><p>Source squad tables retain bench players,<br>withdrawals, and replacement notes.</p></div><div class="stats-controls"><label>Competition<select id="roster-league"><option value="ipl">IPL</option><option value="wpl">WPL</option><option value="clt20">CLT20</option></select></label><label>Year<select id="roster-year"></select></label><a id="roster-source" class="text-link" target="_blank" rel="noopener noreferrer">View historical source ↗</a></div><p id="roster-status" class="archive-coverage" role="status">Loading historical roster sources…</p><div class="leaderboard-wrap" tabindex="0" role="region" aria-label="Historical roster table"><table class="leaderboard roster-table"><caption id="roster-caption">Historical squad source table</caption><thead><tr><th scope="col">Player</th><th scope="col">Country</th><th scope="col">Role group</th><th scope="col">Batting</th><th scope="col">Bowling</th><th scope="col">Source notes</th></tr></thead><tbody id="roster-body"></tbody></table></div><p class="archive-note">Wikipedia squad-table extracts are transformed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>; other reported rosters compile factual names and replacement notices from their linked publishers. These are historical sources, not independently certified final registrations. A missing field is not a zero. Withdrawn and replacement players can both appear; that does not mean they were registered simultaneously. Squad tables and match-derived statistics remain separate to avoid false identity matches.</p></div>
+    </section>
     <section id="legacy" class="legacy section-shell" aria-labelledby="legacy-title">
-      <div class="section-heading"><div><p class="eyebrow">BUILT ON BELIEF. WRITTEN IN RED.</p><h2 id="legacy-title">The road to <em>forever.</em></h2></div><span class="outline-tag">2008 — 2025 ARCHIVE</span></div>
+      <div class="section-heading"><div><p class="eyebrow">BUILT ON BELIEF. WRITTEN IN RED.</p><h2 id="legacy-title">The road to <em>forever.</em></h2></div><span class="outline-tag">2008 — 2026 ARCHIVE</span></div>
       <div class="timeline-layout"><div class="timeline-years" role="group" aria-label="Choose a club milestone" id="timeline-years"></div><article class="timeline-story" id="timeline-story" aria-live="polite"></article></div>
     </section>
     <section class="club-record section-shell" aria-labelledby="record-title">
-      <div class="section-heading"><div><p class="eyebrow">GET TO KNOW YOUR CHALLENGERS</p><h2 id="record-title">The club. <em>The complete journey.</em></h2></div><span class="outline-tag">IPL · 2008–2025</span></div>
-      <div class="record-layout"><dl class="club-facts"><div><dt>Full name</dt><dd>Royal Challengers Bengaluru</dd></div><div><dt>Founded</dt><dd>2008 · Bengaluru, Karnataka</dd></div><div><dt>Home ground</dt><dd>M. Chinnaswamy Stadium</dd></div><div><dt>Former name</dt><dd>Royal Challengers Bangalore</dd></div><div><dt>Name change</dt><dd>Bangalore → Bengaluru · 2024</dd></div><div><dt>Women's team</dt><dd>WPL debut · 2023</dd></div></dl><div class="season-explorer"><div class="season-picker"><label for="season-select">EXPLORE AN IPL SEASON</label><select id="season-select" aria-controls="season-result"></select></div><div id="season-result" aria-live="polite"></div><p class="archive-note">Final tournament finish, not league-table position. Archive ends with the 2025 final.</p><a class="text-link" href="https://cricindeed.com/rcb-ipl-results-every-year/" target="_blank" rel="noopener noreferrer">Season-by-season reference ↗</a></div></div>
+      <div class="section-heading"><div><p class="eyebrow">GET TO KNOW YOUR CHALLENGERS</p><h2 id="record-title">The club. <em>The complete journey.</em></h2></div><span class="outline-tag">IPL · WPL · CLT20</span></div>
+      <div class="record-layout"><dl class="club-facts"><div><dt>Full name</dt><dd>Royal Challengers Bengaluru</dd></div><div><dt>Founded</dt><dd>2008 · Bengaluru, Karnataka</dd></div><div><dt>Home ground</dt><dd>M. Chinnaswamy Stadium</dd></div><div><dt>Former name</dt><dd>Royal Challengers Bangalore</dd></div><div><dt>Name change</dt><dd>Bangalore → Bengaluru · 2024</dd></div><div><dt>Women's team</dt><dd>WPL debut · 2023</dd></div></dl><div class="season-explorer"><div class="season-picker"><label for="season-league">COMPETITION</label><select id="season-league"><option value="ipl">IPL</option><option value="wpl">WPL</option><option value="clt20">CLT20</option></select><label for="season-select" class="sr-only">Choose season</label><select id="season-select" aria-controls="season-result"></select></div><div id="season-result" aria-live="polite"></div><p class="archive-note">Final tournament finish, not league-table position. Explicitly scoped historical results.</p><a id="season-source" class="text-link" target="_blank" rel="noopener noreferrer">Season-by-season reference ↗</a></div></div>
+      <div id="ipl-record-panel" class="team-record-panel">
+        <div class="franchise-alltime-strip" aria-label="All-time RCB IPL franchise totals through 2026">
+          <div><strong>19</strong><span>IPL seasons (2008–2026)</span></div>
+          <div><strong>290</strong><span>Matches · 145W – 138L – 7 NR</span></div>
+          <div><strong>175* / 263</strong><span>Gayle’s record &amp; iconic 2013 total</span></div>
+          <div><strong>973</strong><span>Kohli’s all-time 2016 run record</span></div>
+          <div><strong>49</strong><span>Lowest IPL total (2017 nadir)</span></div>
+          <div><strong>2025 + 26</strong><span>Back-to-back IPL &amp; 2026 WPL–IPL Double</span></div>
+        </div>
+        <div class="era-chronicles" id="era-chronicles" aria-label="Six historical eras of Royal Challengers Bengaluru">
+          <div class="team-record-heading"><div><p class="eyebrow">THE SIX HISTORICAL ERAS (2008–2026)</p><h3>From perennial entertainers to back-to-back champions.</h3></div><p>Every era from the founding in 2008 to the 2026 WPL–IPL calendar double.</p></div>
+          <div id="era-tabs" class="era-tabs" role="group" aria-label="Choose a historical RCB era"></div>
+          <article id="era-detail" class="era-detail" aria-live="polite"></article>
+        </div>
+        <div class="team-record-heading"><div><p class="eyebrow">THE FULL IPL SEASON RECORD</p><h3>Nineteen seasons. Every chapter.</h3></div><p>Choose a year below.<br>Win rate excludes no-result matches.</p></div><div id="season-chart" class="season-chart" role="group" aria-label="Select an IPL season by win rate"></div><div id="team-season-summary" aria-live="polite"></div><details class="season-table-details"><summary>View all 19 season records (2008–2026)</summary><div class="leaderboard-wrap"><table class="leaderboard"><caption>IPL results · League position is distinct from the final tournament finish</caption><thead><tr><th scope="col">Year</th><th scope="col">Captain(s)</th><th scope="col">Played</th><th scope="col">Won</th><th scope="col">Lost</th><th scope="col">NR / Tied</th><th scope="col">League Pos</th><th scope="col">Final Result</th><th scope="col">Key Highlight</th></tr></thead><tbody id="season-table-body"></tbody></table></div></details><p class="archive-note">Season records and era notes incorporate the complete 2008–2026 franchise chronicle; final finishes are cross-referenced with the club-history archive. Super-over outcomes (2013, 2020) are already included in wins/losses and noted in the NR / Tied column.</p></div>
+    </section>
+    <section id="moments" class="moments-section section-shell" aria-labelledby="moments-title">
+      <div class="section-heading"><div><p class="eyebrow">SOME MOMENTS NEVER LEAVE YOU</p><h2 id="moments-title">Hit pause. <em>Feel it again.</em></h2></div><p>Explore the stories behind the milestones.<br>Open a card for the match, context, and sources.</p></div>
+      <div class="watch-heading"><div><p class="eyebrow">THE OFFICIAL WATCHLIST</p><h3>More than the final whistle.</h3></div><div class="watch-controls"><button id="watch-prev" aria-label="Scroll highlights left">←</button><button id="watch-next" aria-label="Scroll highlights right">→</button></div></div>
+      <div id="highlight-grid" class="highlight-grid" aria-label="Official RCB videos"></div><p class="archive-note">Match highlights, player reels, and interviews open on IPLT20 or WPLT20. Video assets and publisher thumbnails are not copied.</p>
+      <div class="filters moment-filters" role="group" aria-label="Filter historical moments"><button data-moment-league="all" class="filter active" aria-pressed="true">All moments</button><button data-moment-league="ipl" class="filter" aria-pressed="false">IPL</button><button data-moment-league="wpl" class="filter" aria-pressed="false">WPL</button><button data-moment-league="clt20" class="filter" aria-pressed="false">CLT20</button></div>
+      <div id="moments-grid" class="moments-grid"></div><p id="moments-status" class="sr-only" role="status"></p>
+      <aside class="official-gallery" aria-labelledby="official-gallery-title"><div><p class="eyebrow">FROM THE OFFICIAL &amp; EDITORIAL LENS</p><h3 id="official-gallery-title">The real moments.<br>At their source.</h3><p>Explore official IPL/WPL match photography, Getty Images’ editorial RCB archive, and community visual boards. Copyrighted agency and social-board images open directly at their publisher source.</p></div><div><a class="button button-red" href="https://www.iplt20.com/photos/royal-challengers-bengaluru-vs-gujarat-titans-final--2026" target="_blank" rel="noopener noreferrer">RCB’s 2026 final gallery ↗</a><a class="text-link" href="https://www.iplt20.com/photos" target="_blank" rel="noopener noreferrer">Official IPL photos ↗</a><a class="text-link" href="https://www.wplt20.com/teams/royal-challengers-bengaluru" target="_blank" rel="noopener noreferrer">RCB on WPLT20 ↗</a><a class="text-link" href="https://www.wplt20.com/teams" target="_blank" rel="noopener noreferrer">All WPL teams ↗</a><a class="text-link" href="https://www.gettyimages.com/photos/rcb" target="_blank" rel="noopener noreferrer">Getty Images RCB archive ↗</a><a class="text-link" href="https://www.pinterest.com/ideas/rcb-team/945061772190/" target="_blank" rel="noopener noreferrer">Pinterest RCB team board ↗</a></div></aside>
+      <p class="archive-note">Only verified RCB-kit player photographs and an archival home-stadium photo are used. Captions distinguish match photography from illustrative images. Match coverage remains with its original publisher and opens externally.</p>
     </section>
     <section id="clubhouse" class="clubhouse section-shell" aria-labelledby="clubhouse-title">
       <div class="section-heading"><div><p class="eyebrow">BEYOND THE BOUNDARY</p><h2 id="clubhouse-title">Inside the <em>clubhouse.</em></h2></div><a class="text-link" href="https://www.royalchallengers.com/" target="_blank" rel="noopener noreferrer">Visit the official RCB site <span aria-hidden="true">↗</span></a></div>
@@ -75,9 +231,10 @@
     <section id="fan-zone" class="fan-zone section-shell" aria-labelledby="fan-title"><div><p class="eyebrow light">THE 12TH PLAYER IS YOU.</p><h2 id="fan-title">How red is<br><em>your heart?</em></h2><p>Five questions. A whole lot of RCB.<br>Put your Challenger knowledge to the test.</p><span class="quiz-note">No sign-up. Just bragging rights.</span></div><div class="quiz-panel" id="quiz-panel"></div></section>
     <section class="manifesto section-shell"><p class="eyebrow">WIN OR LOSE. ALWAYS OURS.</p><h2>A team you support.<br><em>A feeling you keep.</em></h2><p>From Bangalore to Bengaluru. From the first ball to the first title.<br>Some things change. Our colours never do.</p><a class="button button-red" href="https://www.royalchallengers.com/" target="_blank" rel="noopener noreferrer">Stay connected with RCB <span aria-hidden="true">↗</span></a></section>
   </main>
-  <footer class="footer section-shell"><div class="footer-top"><a class="brand" href="#home"><img src="./assets/mark.svg" alt="" width="42" height="48"><span>RCB<span class="brand-sub">FOREVER</span></span></a><p>Made of red. Made of belief.<br>An independent tribute to the Royal Challengers.</p><a class="back-top" href="#home">Back to top ↑</a></div><div class="footer-bottom"><span>UNOFFICIAL FAN PROJECT · NOT AFFILIATED WITH RCB, IPL OR WPL.</span><button id="sources-button" class="footer-button">Sources &amp; credits ↗</button><span>PLAY BOLD. ALWAYS.</span></div></footer>
+  <footer class="footer section-shell"><div class="footer-top"><a class="brand" href="#home"><img class="brand-crest" src="./assets/mark.svg" alt="Royal Challengers Bengaluru crest" width="38" height="53"><span>RCB<span class="brand-sub">BENGALURU · FOREVER</span></span></a><p>Made of red. Made of belief.<br>An independent tribute to the Royal Challengers.</p><a class="back-top" href="#home">Back to top ↑</a></div><div class="footer-bottom"><span>UNOFFICIAL FAN PROJECT · NOT AFFILIATED WITH RCB, IPL OR WPL.</span><button id="sources-button" class="footer-button">Sources &amp; credits ↗</button><span>PLAY BOLD. ALWAYS.</span></div></footer>
   <dialog id="player-dialog" class="modal" aria-labelledby="profile-name"><button class="modal-close" aria-label="Close player profile">×</button><div id="profile-content"></div></dialog>
-  <dialog id="sources-dialog" class="modal sources-modal" aria-labelledby="sources-title"><button class="modal-close" aria-label="Close sources">×</button><p class="eyebrow">TRANSPARENT BY DESIGN</p><h2 id="sources-title">Sources &amp; credits</h2><p>This is an independent fan-made historical archive, not an official RCB service. Championship and squad content is intentionally scoped to the 2025 IPL and 2024 WPL seasons. It is not a live scores, news, or current-roster service.</p><ul><li><a href="https://www.royalchallengers.com/" target="_blank" rel="noopener noreferrer">Royal Challengers Bengaluru — official club website</a></li><li><a href="https://www.iplt20.com/news/article/tata-ipl-2025-final-rcb-vs-pbks-match-report" target="_blank" rel="noopener noreferrer">IPLT20 — 2025 final match report</a></li><li><a href="https://sports.ndtv.com/cricket/delhi-capitals-vs-royal-challengers-bangalore-live-score-wpl-2024-final-dc-vs-rcb-women-live-updates-5255877" target="_blank" rel="noopener noreferrer">NDTV Sports — 2024 WPL final</a></li><li><a href="https://www.iplt20.com/stats/2016" target="_blank" rel="noopener noreferrer">IPLT20 — historical player statistics</a></li></ul><p>Original site design, trophy illustration, monogram, and jersey graphics. No official logos or player photographs are reproduced. Team and player names identify the subjects of this tribute; all associated rights remain with their owners.</p><p class="archive-note">Design references: the official RCB site and sports-stat editorial layouts. The supplied Medium article was inaccessible during research. Facts compiled 26 October 2026; archive cutoff: 3 June 2025.</p></dialog>
+  <dialog id="moment-dialog" class="modal moment-modal" aria-labelledby="moment-title"><button class="modal-close" aria-label="Close moment">×</button><div id="moment-content"></div><div class="moment-navigation"><button id="moment-prev" aria-label="Previous moment">← Previous</button><span id="moment-counter" aria-live="polite"></span><button id="moment-next" aria-label="Next moment">Next →</button></div></dialog>
+  <dialog id="sources-dialog" class="modal sources-modal" aria-labelledby="sources-title"><button class="modal-close" aria-label="Close sources">×</button><p class="eyebrow">TRANSPARENT BY DESIGN</p><h2 id="sources-title">Sources &amp; credits</h2><p>Independent historical fan archive, not an official RCB service. Featured statistical snapshots are IPL 2025 and WPL 2024; CLT20 history covers RCB's participation in that discontinued competition. Not a live scores or current-roster service. All stats, results, and photographs are individually attributed below and in their relevant sections.</p><div id="research-credits"></div><h3 class="credits-heading">Photography &amp; licenses</h3><p>Openly licensed Wikimedia Commons photographs. Player photos were visually verified to show RCB franchise kit; no national-team, other-franchise, or casual portraits are included. Photos may predate the statistical season and are not automatically pictures of the featured match. Where permission and RCB kit could not both be verified, an original jersey illustration is used. The monogram, trophy, and jersey illustrations are not official assets.</p><div id="photo-credits"></div><p class="archive-note">Team and player names identify the subjects of this tribute; associated rights remain with their owners. Research checked 26 October 2026. See each snapshot for its historical cutoff.</p></dialog>
   <noscript><div class="noscript-notice">Enable JavaScript for player profiles, timeline navigation, and the quiz. The club story, final score, and source links remain available without it.</div></noscript>
 </body>
 </html>

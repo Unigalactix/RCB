@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101012">
+  <meta name="description" content="Royal Challengers Bengaluru Season Statistics & Historical Rosters — Every recorded player across IPL 2008–2026, WPL 2023–2026, and CLT20.">
+  <title>Seasons &amp; Rosters — RCB Forever</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./hub.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement"><span class="live-dot"></span> ROYAL CHALLENGERS BENGALURU · ALL-SEASON ARCHIVE <span class="announcement-end">IPL 2008–2026 · WPL 2023–2026 · CLT20 <span aria-hidden="true">↗</span></span></div>
+  <header class="header">
+    <a class="brand" href="./index.html" aria-label="RCB Forever home"><img class="brand-crest" src="./assets/mark.svg" alt="Royal Challengers Bengaluru crest" width="38" height="53"><span>RCB<span class="brand-sub">BENGALURU · FOREVER</span></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="./index.html">Overview</a><a href="./squad.html">Squad &amp; Stars</a><a href="./seasons.html" class="active">Seasons &amp; Rosters</a><a href="./history.html">History &amp; Crests</a><a href="./moments.html">Moments &amp; Quiz</a>
+    </nav>
+    <a class="header-cta" href="./moments.html#fan-zone">Join the roar <span aria-hidden="true">↗</span></a>
+  </header>
+  <nav class="multipage-subnav section-shell" aria-label="Page navigation">
+    <a href="./index.html" class="subnav-pill">← Club Hub</a>
+    <a href="#season-stats" class="subnav-pill active">23-Season Player Stats</a>
+    <a href="#roster-directory" class="subnav-pill">Historical Squad Rosters</a>
+    <a href="#ipl-record-panel" class="subnav-pill">19-Season Team Record</a>
+  </nav>
+  <main id="main">
+    <section id="season-stats" class="season-stats-section section-shell" aria-labelledby="season-stats-title">
+      <div class="section-heading"><div><p class="eyebrow">BEYOND THE FEATURED STARS</p><h1 id="season-stats-title" class="page-hero-heading">Every season.<br><em>Every recorded player.</em></h1></div><p>IPL 2008–2026 · WPL 2023–2026.<br>Locally bundled, source-attributed match data.</p></div>
+      <div class="stats-controls"><label>Competition<select id="archive-league"><option value="ipl">IPL · Men</option><option value="wpl">WPL · Women</option></select></label><label>Season<select id="archive-year"></select></label><label>Sort by<select id="archive-sort"><option value="runs">Runs</option><option value="wickets">Wickets</option><option value="matchListings">Match listings</option><option value="strikeRate">Batting strike rate</option><option value="name">Player name</option></select></label><label class="archive-search-label">Find a player<input id="archive-search" type="search" placeholder="Search source name"></label></div>
+      <p id="archive-coverage" class="archive-coverage" role="status">Loading the locally bundled season archive…</p>
+      <div class="leaderboard-wrap" tabindex="0" role="region" aria-label="Scroll the full season statistics table horizontally"><table class="leaderboard full-season-table"><caption id="archive-caption">Season match-participant statistics</caption><thead><tr><th scope="col">Player</th><th scope="col">Listings*</th><th scope="col">Bat inns</th><th scope="col">Runs</th><th scope="col">Balls</th><th scope="col">SR</th><th scope="col">HS</th><th scope="col">4s</th><th scope="col">6s</th><th scope="col">Overs</th><th scope="col">Wickets</th><th scope="col">Economy</th><th scope="col">Catches</th><th scope="col">Stumpings</th></tr></thead><tbody id="archive-body"></tbody></table></div>
+      <details class="archive-method"><summary>Sources, coverage, and calculation method</summary><p id="archive-methodology"></p><p><a href="https://cricsheet.org/" target="_blank" rel="noopener noreferrer">Cricsheet data</a> · <a href="https://cricsheet.org/licensing/" target="_blank" rel="noopener noreferrer">Open Data Commons Attribution License 1.0</a> · <a id="archive-download" target="_blank" rel="noopener noreferrer">Original competition download ↗</a></p></details>
+      <p class="archive-feedback" id="archive-error" role="alert" hidden></p>
+      <div id="roster-additional-sources" class="roster-additional-sources" aria-label="Additional sources for the selected historical roster"></div>
+      <div id="roster-directory" class="roster-explorer"><div class="section-heading"><div><p class="eyebrow">THE SQUAD, NOT JUST THE PLAYING XI</p><h3>Historical roster directory.</h3></div><p>Source squad tables retain bench players,<br>withdrawals, and replacement notes.</p></div><div class="stats-controls"><label>Competition<select id="roster-league"><option value="ipl">IPL</option><option value="wpl">WPL</option><option value="clt20">CLT20</option></select></label><label>Year<select id="roster-year"></select></label><a id="roster-source" class="text-link" target="_blank" rel="noopener noreferrer">View historical source ↗</a></div><p id="roster-status" class="archive-coverage" role="status">Loading historical roster sources…</p><div class="leaderboard-wrap" tabindex="0" role="region" aria-label="Historical roster table"><table class="leaderboard roster-table"><caption id="roster-caption">Historical squad source table</caption><thead><tr><th scope="col">Player</th><th scope="col">Country</th><th scope="col">Role group</th><th scope="col">Batting</th><th scope="col">Bowling</th><th scope="col">Source notes</th></tr></thead><tbody id="roster-body"></tbody></table></div></div>
+    </section>
+    <section class="club-record section-shell" aria-labelledby="record-title">
+      <div class="section-heading"><div><p class="eyebrow">ALL-TIME SEASON EXPLORER</p><h2 id="record-title">Nineteen IPL seasons. <em>Every record.</em></h2></div><span class="outline-tag">2008 — 2026</span></div>
+      <div class="record-layout"><dl class="club-facts"><div><dt>Full name</dt><dd>Royal Challengers Bengaluru</dd></div><div><dt>Founded</dt><dd>2008 · Bengaluru, Karnataka</dd></div><div><dt>Home ground</dt><dd>M. Chinnaswamy Stadium</dd></div><div><dt>All-time IPL</dt><dd>290 matches · 145W – 138L – 7 NR</dd></div><div><dt>IPL titles</dt><dd>2025 &amp; 2026 (Back-to-Back)</dd></div><div><dt>WPL titles</dt><dd>2024 &amp; 2026</dd></div></dl><div class="season-explorer"><div class="season-picker"><label for="season-league">COMPETITION</label><select id="season-league"><option value="ipl">IPL</option><option value="wpl">WPL</option><option value="clt20">CLT20</option></select><label for="season-select" class="sr-only">Choose season</label><select id="season-select" aria-controls="season-result"></select></div><div id="season-result" aria-live="polite"></div><a id="season-source" class="text-link" target="_blank" rel="noopener noreferrer">Season-by-season reference ↗</a></div></div>
+      <div id="ipl-record-panel" class="team-record-panel"><div class="team-record-heading"><div><p class="eyebrow">THE FULL IPL SEASON RECORD</p><h3>Win-rate chart &amp; complete 19-season table.</h3></div><p>Choose a year below.<br>Win rate excludes no-result matches.</p></div><div id="season-chart" class="season-chart" role="group" aria-label="Select an IPL season by win rate"></div><div id="team-season-summary" aria-live="polite"></div><details class="season-table-details" open><summary>View all 19 season records (2008–2026)</summary><div class="leaderboard-wrap"><table class="leaderboard"><caption>IPL results · League position is distinct from the final tournament finish</caption><thead><tr><th scope="col">Year</th><th scope="col">Captain(s)</th><th scope="col">Played</th><th scope="col">Won</th><th scope="col">Lost</th><th scope="col">NR / Tied</th><th scope="col">League Pos</th><th scope="col">Final Result</th><th scope="col">Key Highlight</th></tr></thead><tbody id="season-table-body"></tbody></table></div></details></div>
+    </section>
+  </main>
+  <footer class="footer section-shell"><div class="footer-top"><a class="brand" href="./index.html"><img class="brand-crest" src="./assets/mark.svg" alt="Royal Challengers Bengaluru crest" width="38" height="53"><span>RCB<span class="brand-sub">BENGALURU · FOREVER</span></span></a><p>Made of red. Made of belief.<br>An independent tribute to the Royal Challengers.</p><a class="back-top" href="#main">Back to top ↑</a></div><div class="footer-bottom"><span>UNOFFICIAL FAN PROJECT · NOT AFFILIATED WITH RCB, IPL OR WPL.</span><button id="sources-button" class="footer-button">Sources &amp; credits ↗</button><span>PLAY BOLD. ALWAYS.</span></div></footer>
+  <dialog id="sources-dialog" class="modal sources-modal" aria-labelledby="sources-title"><button class="modal-close" aria-label="Close sources">×</button><p class="eyebrow">TRANSPARENT BY DESIGN</p><h2 id="sources-title">Sources &amp; credits</h2><div id="research-credits"></div><h3 class="credits-heading">Photography &amp; licenses</h3><div id="photo-credits"></div></dialog>
+</body>
+</html>

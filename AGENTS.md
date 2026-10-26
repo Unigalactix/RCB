@@ -34,4 +34,5 @@
 - This is a static HTML/CSS/JavaScript site for GitHub Pages. Keep asset URLs relative and preserve repository-subpath compatibility.
 - Run `npm test` and `npm run build` before committing website changes. Do not commit generated `dist`, browser snapshots, or dependencies.
 - Preserve explicit historical season labels and source attribution; do not present archived facts as live scores or a current roster.
+- Use player photographs only when the player is visibly in RCB franchise kit or merchandise and reuse rights are verified. Do not use national-team, other-franchise, or casual portraits. Keep source/author/license credits; use a clearly labeled jersey illustration if no suitable photo is available.
 - See [README.md](README.md) for architecture, content scope, local preview, and deployment instructions.

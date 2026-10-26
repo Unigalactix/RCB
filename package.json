@@ -7,7 +7,15 @@
   "scripts": {
     "dev": "node scripts/serve.js",
     "build": "node scripts/build.js",
-    "test": "node --test"
+    "test": "node --test",
+    "media:refresh": "node scripts/import-media.js",
+    "data:refresh": "node scripts/import-season-data.js",
+    "rosters:refresh": "node scripts/import-rosters.js"
+  },
+  "devDependencies": {
+    "cheerio": "1.1.2",
+    "csv-parse": "6.1.0",
+    "fflate": "0.8.2"
   },
   "engines": { "node": ">=22" }
 }

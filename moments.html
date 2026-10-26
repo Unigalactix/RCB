@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101012">
+  <meta name="description" content="Royal Challengers Bengaluru Matchday Scoreboards, Official Video Highlights, Historical Moments Lightbox, and the Challenger Fan Quiz.">
+  <title>Moments &amp; Fan Quiz — RCB Forever</title>
+  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./hub.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement"><span class="live-dot"></span> ROYAL CHALLENGERS BENGALURU · MOMENTS, REELS &amp; FAN QUIZ <span class="announcement-end">JOIN THE 12TH MAN ROAR <span aria-hidden="true">↗</span></span></div>
+  <header class="header">
+    <a class="brand" href="./index.html" aria-label="RCB Forever home"><img class="brand-crest" src="./assets/mark.svg" alt="Royal Challengers Bengaluru crest" width="38" height="53"><span>RCB<span class="brand-sub">BENGALURU · FOREVER</span></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="./index.html">Overview</a><a href="./squad.html">Squad &amp; Stars</a><a href="./seasons.html">Seasons &amp; Rosters</a><a href="./history.html">History &amp; Crests</a><a href="./moments.html" class="active">Moments &amp; Quiz</a>
+    </nav>
+    <a class="header-cta" href="#fan-zone">Join the roar <span aria-hidden="true">↗</span></a>
+  </header>
+  <nav class="multipage-subnav section-shell" aria-label="Page navigation">
+    <a href="./index.html" class="subnav-pill">← Club Hub</a>
+    <a href="#championship" class="subnav-pill active">Championship Scoreboards</a>
+    <a href="#moments" class="subnav-pill">Official Reels &amp; Moments</a>
+    <a href="#fan-zone" class="subnav-pill">5-Question Challenger Quiz</a>
+  </nav>
+  <main id="main">
+    <section id="championship" class="matchday section-shell" aria-labelledby="championship-title">
+      <div class="matchday-heading"><div><p class="eyebrow light">THE MATCHDAY ARCHIVE</p><h1 id="championship-title" class="page-hero-heading">Big nights. <em>Bolder memories.</em></h1></div><div class="match-switch" role="group" aria-label="Choose an archived match"><button data-match="ipl-2026-final" aria-pressed="true" class="active">IPL final ’26</button><button data-match="wpl-2026-final" aria-pressed="false">WPL final ’26</button><button data-match="ipl-final" aria-pressed="false">IPL final ’25</button><button data-match="wpl-final" aria-pressed="false">WPL final ’24</button><button data-match="hyderabad" aria-pressed="false">Hyderabad ’24</button></div></div>
+      <div class="matchday-layout">
+        <figure class="matchday-photo" id="matchday-photo"><img src="./assets/photos/stadium.jpg" alt="An archival view of RCB’s home ground, M. Chinnaswamy Stadium" width="2241" height="1212" loading="lazy"><figcaption>Illustrative RCB home-ground photograph, not the venue or a photograph of the 2026 final.</figcaption></figure>
+        <div class="matchday-content" id="matchday-content" aria-live="polite"></div>
+      </div>
+    </section>
+    <section id="moments" class="moments-section section-shell" aria-labelledby="moments-title">
+      <div class="section-heading"><div><p class="eyebrow">SOME MOMENTS NEVER LEAVE YOU</p><h2 id="moments-title">Hit pause. <em>Feel it again.</em></h2></div><p>Explore the stories behind the milestones.<br>Open a card for the match, context, and sources.</p></div>
+      <div class="watch-heading"><div><p class="eyebrow">THE OFFICIAL WATCHLIST</p><h3>More than the final whistle.</h3></div><div class="watch-controls"><button id="watch-prev" aria-label="Scroll highlights left">←</button><button id="watch-next" aria-label="Scroll highlights right">→</button></div></div>
+      <div id="highlight-grid" class="highlight-grid" aria-label="Official RCB videos"></div><p class="archive-note">Match highlights, player reels, and interviews open on IPLT20 or WPLT20. Video assets and publisher thumbnails are not copied.</p>
+      <div class="filters moment-filters" role="group" aria-label="Filter historical moments"><button data-moment-league="all" class="filter active" aria-pressed="true">All moments</button><button data-moment-league="ipl" class="filter" aria-pressed="false">IPL</button><button data-moment-league="wpl" class="filter" aria-pressed="false">WPL</button><button data-moment-league="clt20" class="filter" aria-pressed="false">CLT20</button></div>
+      <div id="moments-grid" class="moments-grid"></div><p id="moments-status" class="sr-only" role="status"></p>
+      <aside class="official-gallery" aria-labelledby="official-gallery-title"><div><p class="eyebrow">FROM THE OFFICIAL &amp; EDITORIAL LENS</p><h3 id="official-gallery-title">The real moments.<br>At their source.</h3><p>Explore official IPL/WPL match photography, Getty Images’ editorial RCB archive, and community visual boards. Copyrighted agency and social-board images open directly at their publisher source.</p></div><div><a class="button button-red" href="https://www.iplt20.com/photos/royal-challengers-bengaluru-vs-gujarat-titans-final--2026" target="_blank" rel="noopener noreferrer">RCB’s 2026 final gallery ↗</a><a class="text-link" href="https://www.iplt20.com/photos" target="_blank" rel="noopener noreferrer">Official IPL photos ↗</a><a class="text-link" href="https://www.wplt20.com/teams/royal-challengers-bengaluru" target="_blank" rel="noopener noreferrer">RCB on WPLT20 ↗</a><a class="text-link" href="https://www.wplt20.com/teams" target="_blank" rel="noopener noreferrer">All WPL teams ↗</a><a class="text-link" href="https://www.gettyimages.com/photos/rcb" target="_blank" rel="noopener noreferrer">Getty Images RCB archive ↗</a><a class="text-link" href="https://www.pinterest.com/ideas/rcb-team/945061772190/" target="_blank" rel="noopener noreferrer">Pinterest RCB team board ↗</a></div></aside>
+    </section>
+    <section id="fan-zone" class="fan-zone section-shell" aria-labelledby="fan-title"><div><p class="eyebrow light">THE 12TH PLAYER IS YOU.</p><h2 id="fan-title">How red is<br><em>your heart?</em></h2><p>Five questions. A whole lot of RCB.<br>Put your Challenger knowledge to the test.</p><span class="quiz-note">No sign-up. Just bragging rights.</span></div><div class="quiz-panel" id="quiz-panel"></div></section>
+  </main>
+  <footer class="footer section-shell"><div class="footer-top"><a class="brand" href="./index.html"><img class="brand-crest" src="./assets/mark.svg" alt="Royal Challengers Bengaluru crest" width="38" height="53"><span>RCB<span class="brand-sub">BENGALURU · FOREVER</span></span></a><p>Made of red. Made of belief.<br>An independent tribute to the Royal Challengers.</p><a class="back-top" href="#main">Back to top ↑</a></div><div class="footer-bottom"><span>UNOFFICIAL FAN PROJECT · NOT AFFILIATED WITH RCB, IPL OR WPL.</span><button id="sources-button" class="footer-button">Sources &amp; credits ↗</button><span>PLAY BOLD. ALWAYS.</span></div></footer>
+  <dialog id="moment-dialog" class="modal moment-modal" aria-labelledby="moment-title"><button class="modal-close" aria-label="Close moment">×</button><div id="moment-content"></div><div class="moment-navigation"><button id="moment-prev" aria-label="Previous moment">← Previous</button><span id="moment-counter" aria-live="polite"></span><button id="moment-next" aria-label="Next moment">Next →</button></div></dialog>
+  <dialog id="sources-dialog" class="modal sources-modal" aria-labelledby="sources-title"><button class="modal-close" aria-label="Close sources">×</button><p class="eyebrow">TRANSPARENT BY DESIGN</p><h2 id="sources-title">Sources &amp; credits</h2><div id="research-credits"></div><h3 class="credits-heading">Photography &amp; licenses</h3><div id="photo-credits"></div></dialog>
+</body>
+</html>
