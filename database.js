@@ -76,14 +76,123 @@ export function filterGrounds(grounds, { country = 'all', typeFilter = 'all', qu
   });
 }
 
+export function filterCoaches(coaches, { league = 'all', role = 'all', query = '' } = {}) {
+  const q = query.trim().toLocaleLowerCase('en');
+  return coaches.filter(coach =>
+    (league === 'all' || coach.league.split(/\s*[&+]\s*/).includes(league)) &&
+    (role === 'all' || coach.role === role) &&
+    `${coach.name} ${coach.league} ${coach.role} ${coach.tenure} ${coach.country} ${coach.background} ${coach.achievements} ${coach.afterRcb}`.toLocaleLowerCase('en').includes(q)
+  );
+}
+
+export function filterSheetEntries(entries, { section = 'all', query = '' } = {}) {
+  const q = query.trim().toLocaleLowerCase('en');
+  return entries.filter(entry => (section === 'all' || entry.section === section) &&
+    `${entry.section} ${entry.item} ${entry.details}`.toLocaleLowerCase('en').includes(q));
+}
+
+export function coachMarkup(coach, source) {
+  return `<article class="sheet-coach-card" id="${escapeHtml(coach.id)}">
+    <p class="eyebrow">${escapeHtml(coach.league)} · ${escapeHtml(coach.tenure)}</p>
+    <h3>${escapeHtml(coach.name)}</h3>
+    <p class="sheet-coach-role">${escapeHtml(coach.role)} · ${escapeHtml(coach.country)}</p>
+    <details><summary>Background, RCB work &amp; later roles</summary>
+      <dl><dt>Background</dt><dd>${escapeHtml(coach.background) || 'Not supplied in the sheet.'}</dd>
+      <dt>At RCB / achievements</dt><dd>${escapeHtml(coach.achievements) || 'Not supplied in the sheet.'}</dd>
+      <dt>After RCB / status at the source cutoff</dt><dd>${escapeHtml(coach.afterRcb) || 'Not supplied in the sheet.'}</dd></dl>
+    </details>
+    <a class="sheet-row-source" href="${escapeHtml(source)}" target="_blank" rel="noopener noreferrer">Coaches sheet · row ${coach.sourceRow} ↗</a>
+  </article>`;
+}
+
+export function sheetEntriesMarkup(entries, source) {
+  const sections = [...new Set(entries.map(entry => entry.section))];
+  return sections.map(section => `<section class="sheet-story-group">
+    <h3>${escapeHtml(section)}</h3>
+    ${entries.filter(entry => entry.section === section).map(entry => `<details class="sheet-story" id="${escapeHtml(entry.id)}">
+      <summary>${escapeHtml(entry.item)}</summary><p>${escapeHtml(entry.details)}</p>
+      <a class="sheet-row-source" href="${escapeHtml(source)}" target="_blank" rel="noopener noreferrer">Published sheet · row ${entry.sourceRow} ↗</a>
+    </details>`).join('')}
+  </section>`).join('');
+}
+
+function initNewSheetSections(db) {
+  const sheetUrl = key => {
+    const sheet = db.sheets.find(item => item.key === key);
+    if (!sheet) throw new Error(`Missing source metadata for ${key}. Refresh the workbook import.`);
+    return sheet.url;
+  };
+  document.querySelectorAll('[data-sheet-count]').forEach(element => {
+    element.textContent = db.counts[element.dataset.sheetCount];
+  });
+  document.querySelectorAll('[data-sheet-refresh]').forEach(element => {
+    element.textContent = `Published workbook · ${db.sheets.length} tabs · Imported ${new Date(db.fetchedAt).toLocaleString('en-GB', { timeZone: 'UTC' })} UTC`;
+  });
+
+  const coachSection = document.querySelector('#sheet-coaches-section');
+  if (coachSection) {
+    const league = coachSection.querySelector('[data-coach-league]');
+    const role = coachSection.querySelector('[data-coach-role]');
+    const search = coachSection.querySelector('input[type="search"]');
+    const grid = coachSection.querySelector('[data-sheet-results]');
+    role.innerHTML += [...new Set(db.coaches.map(coach => coach.role))].sort()
+      .map(value => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`).join('');
+    const render = () => {
+      const records = filterCoaches(db.coaches, { league: league.value, role: role.value, query: search.value });
+      grid.innerHTML = records.map(coach => coachMarkup(coach, sheetUrl('coaches'))).join('') ||
+        '<p class="archive-note">No coaching or support-staff entries match these filters.</p>';
+      coachSection.querySelector('[role="status"]').textContent = `${records.length} of ${db.coaches.length} role/tenure entries. A person may appear more than once.`;
+    };
+    league.addEventListener('change', render);
+    role.addEventListener('change', render);
+    search.addEventListener('input', render);
+    render();
+  }
+
+  document.querySelectorAll('[data-sheet-explorer]').forEach(explorer => {
+    const key = explorer.dataset.sheetExplorer;
+    const entries = db[key];
+    const select = explorer.querySelector('select');
+    const search = explorer.querySelector('input[type="search"]');
+    const results = explorer.querySelector('[data-sheet-results]');
+    select.innerHTML += [...new Set(entries.map(entry => entry.section))]
+      .map(section => `<option value="${escapeHtml(section)}">${escapeHtml(section)}</option>`).join('');
+    const render = () => {
+      const visible = filterSheetEntries(entries, { section: select.value, query: search.value });
+      results.innerHTML = sheetEntriesMarkup(visible, sheetUrl(key)) ||
+        '<p class="archive-note">No entries match these filters. Clear the search or choose another section.</p>';
+      explorer.querySelector('[role="status"]').textContent = `${visible.length} of ${entries.length} published entries shown. Open a heading to read its full text and source.`;
+    };
+    select.addEventListener('change', render);
+    search.addEventListener('input', render);
+    render();
+  });
+
+  const hash = location.hash.slice(1);
+  const records = [...db.coaches, ...db.franchise, ...db.rcbCares];
+  if (records.some(record => record.id === hash)) {
+    const target = document.getElementById(hash);
+    const details = target?.matches('details') ? target : target?.querySelector('details');
+    if (details) details.open = true;
+    target?.scrollIntoView();
+  }
+}
+
 export async function initSpreadsheetDashboard() {
   let db;
   try {
     db = await loadDatabase();
   } catch (err) {
     console.error('Failed to initialize spreadsheet database:', err);
+    const alert = document.createElement('p');
+    alert.className = 'archive-feedback';
+    alert.setAttribute('role', 'alert');
+    alert.textContent = 'The published-sheet database could not be loaded. Reload the page or consult the published workbook; no replacement data is shown.';
+    document.querySelector('main').prepend(alert);
     return;
   }
+
+  initNewSheetSections(db);
 
   // Ensure a shared detail modal exists on every page for deep cross-linking
   let detailDialog = document.querySelector('#db-detail-dialog');
@@ -266,14 +375,17 @@ export async function initSpreadsheetDashboard() {
     function renderOmnibox(query) {
       const q = query.trim().toLowerCase();
       if (!q) {
-        omniboxResults.innerHTML = `<p class="archive-note">Type any player name (from all 223 RCB players), ground (31 venues), moment (45 milestones), or IPL/WPL franchise (20 teams) to jump straight to its record.</p>`;
+        omniboxResults.innerHTML = `<p class="archive-note">Search players, grounds, moments, coaching staff, franchise history, or remembrance and RCB Cares entries.</p>`;
         return;
       }
       const pHits = db.players.filter(p => `${p.name} ${p.role} ${p.country} ${p.seasons} ${p.status}`.toLowerCase().includes(q)).slice(0, 6);
       const mHits = db.keyMoments.filter(m => `${m.year} ${m.title} ${m.description} ${m.keyPlayers.join(' ')}`.toLowerCase().includes(q)).slice(0, 4);
       const gHits = db.grounds.filter(g => `${g.name} ${g.city} ${g.country} ${g.story}`.toLowerCase().includes(q)).slice(0, 4);
+      const cHits = filterCoaches(db.coaches, { query }).slice(0, 4);
+      const fHits = filterSheetEntries(db.franchise, { query }).slice(0, 3);
+      const rHits = filterSheetEntries(db.rcbCares, { query }).slice(0, 3);
 
-      if (!pHits.length && !mHits.length && !gHits.length) {
+      if (![pHits, mHits, gHits, cHits, fHits, rHits].some(hits => hits.length)) {
         omniboxResults.innerHTML = `<p class="archive-note">No matching records in the 2008–2026 database for "${escapeHtml(query)}".</p>`;
         return;
       }
@@ -282,6 +394,9 @@ export async function initSpreadsheetDashboard() {
           ${pHits.map(p => `<button type="button" class="omnibox-hit" data-open-player="${escapeHtml(p.name)}"><span class="db-pill league-${p.league.toLowerCase()}">${escapeHtml(p.league)} PLAYER</span><strong>${escapeHtml(p.name)}</strong><small>${escapeHtml(p.seasons)} · ${fmtNum(p.matches)} Mat · ${fmtNum(p.runs)} Runs · ${fmtNum(p.wickets)} Wkts · ${escapeHtml(p.status)}</small></button>`).join('')}
           ${mHits.map(m => `<button type="button" class="omnibox-hit" data-open-moment="${escapeHtml(m.id)}"><span class="db-pill star-pill">${escapeHtml(m.year)} MOMENT</span><strong>${escapeHtml(m.title)}</strong><small>${escapeHtml(m.date)} · ${escapeHtml(m.category)}</small></button>`).join('')}
           ${gHits.map(g => `<button type="button" class="omnibox-hit" data-open-ground="${escapeHtml(g.id)}"><span class="db-pill">GROUND</span><strong>${escapeHtml(g.name)}</strong><small>${escapeHtml(g.city)}, ${escapeHtml(g.country)} · ${escapeHtml(g.type)}</small></button>`).join('')}
+          ${cHits.map(coach => `<a class="omnibox-hit" href="./seasons.html#${escapeHtml(coach.id)}"><span class="db-pill">COACH / SUPPORT STAFF</span><strong>${escapeHtml(coach.name)}</strong><small>${escapeHtml(coach.league)} · ${escapeHtml(coach.role)} · ${escapeHtml(coach.tenure)}</small></a>`).join('')}
+          ${fHits.map(entry => `<a class="omnibox-hit" href="./history.html#${escapeHtml(entry.id)}"><span class="db-pill">${escapeHtml(entry.section)}</span><strong>${escapeHtml(entry.item)}</strong></a>`).join('')}
+          ${rHits.map(entry => `<a class="omnibox-hit" href="./cares.html#${escapeHtml(entry.id)}"><span class="db-pill">REMEMBRANCE &amp; RCB CARES</span><strong>${escapeHtml(entry.item)}</strong></a>`).join('')}
         </div>
       `;
     }
@@ -642,8 +757,13 @@ export async function initSpreadsheetDashboard() {
     renderSheetMoments();
   }
 
-  // 6. Populate Sources Modal with the 13 official spreadsheet source rows as well
-  const sheetSourcesContainer = document.querySelector('#sheet-sources-list');
+  let sheetSourcesContainer = document.querySelector('#sheet-sources-list');
+  if (!sheetSourcesContainer && document.querySelector('#research-credits')) {
+    const section = document.createElement('section');
+    section.innerHTML = '<h3 class="credits-heading">Published workbook sources</h3><ul id="sheet-sources-list" class="source-list"></ul>';
+    document.querySelector('#research-credits').append(section);
+    sheetSourcesContainer = section.querySelector('ul');
+  }
   if (sheetSourcesContainer) {
     sheetSourcesContainer.innerHTML = db.sources.map(s => `<li><strong>${escapeHtml(s.topic)}:</strong> <span>${escapeHtml(s.source)}</span></li>`).join('');
   }

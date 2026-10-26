@@ -2,7 +2,123 @@
   "title": "RCB Fan Tribute Database (2008–2026)",
   "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml",
   "generatedAt": "2026-10-26",
+  "fetchedAt": "2026-10-26T07:35:55.734Z",
+  "sheets": [
+    {
+      "key": "cover",
+      "name": "Cover",
+      "gid": "2130696117",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=2130696117",
+      "rows": 23
+    },
+    {
+      "key": "players",
+      "name": "Players",
+      "gid": "200468706",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=200468706",
+      "rows": 223
+    },
+    {
+      "key": "keyMoments",
+      "name": "Key Moments",
+      "gid": "194060723",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=194060723",
+      "rows": 45
+    },
+    {
+      "key": "grounds",
+      "name": "Grounds",
+      "gid": "228534019",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=228534019",
+      "rows": 31
+    },
+    {
+      "key": "logos",
+      "name": "Logos",
+      "gid": "372077781",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=372077781",
+      "rows": 4
+    },
+    {
+      "key": "allTeams",
+      "name": "All Teams (IPL & WPL)",
+      "gid": "552169413",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=552169413",
+      "rows": 20
+    },
+    {
+      "key": "starPlayers",
+      "name": "Star Players",
+      "gid": "229130160",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=229130160",
+      "rows": 40
+    },
+    {
+      "key": "seasons",
+      "name": "Seasons",
+      "gid": "409472281",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=409472281",
+      "rows": 23
+    },
+    {
+      "key": "captains",
+      "name": "Captains",
+      "gid": "120334465",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=120334465",
+      "rows": 10
+    },
+    {
+      "key": "coaches",
+      "name": "Coaches",
+      "gid": "1002528196",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=1002528196",
+      "rows": 51
+    },
+    {
+      "key": "records",
+      "name": "Records",
+      "gid": "1791808717",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=1791808717",
+      "rows": 23
+    },
+    {
+      "key": "squadOnly",
+      "name": "Squad Only (Never Played)",
+      "gid": "1459710848",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=1459710848",
+      "rows": 21
+    },
+    {
+      "key": "franchise",
+      "name": "Franchise & More",
+      "gid": "20147854",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=20147854",
+      "rows": 27
+    },
+    {
+      "key": "rcbCares",
+      "name": "4 June 2025 & RCB Cares",
+      "gid": "1162839396",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=1162839396",
+      "rows": 37
+    },
+    {
+      "key": "websiteGuide",
+      "name": "Website Guide",
+      "gid": "1475354806",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=1475354806",
+      "rows": 10
+    },
+    {
+      "key": "sources",
+      "name": "Sources",
+      "gid": "1392094468",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSf6EXr6CO83TubMGwoONrNvYeoCVID6GYhCC_Buwbe13zg2CbhRZMpYED4noPT5C80gK7UkBup7EmE/pubhtml/sheet?headers=false&gid=1392094468",
+      "rows": 16
+    }
+  ],
   "counts": {
+    "sheets": 16,
     "players": 223,
     "iplPlayers": 179,
     "wplPlayers": 43,
@@ -17,7 +133,10 @@
     "seasons": 23,
     "captains": 10,
     "records": 23,
-    "squadOnly": 21
+    "squadOnly": 21,
+    "coaches": 51,
+    "franchise": 27,
+    "rcbCares": 37
   },
   "coverLines": [
     "ROYAL CHALLENGERS BENGALURU - FAN TRIBUTE DATABASE",
@@ -30,6 +149,9 @@
     "All Teams (IPL & WPL) - every team that has ever played the IPL (15) and WPL (5): city, seasons, status, home ground, owner, titles, captain & coach, full name-change history and logo-change history, with the current logo embedded.",
     "Star Players - the all-time top 25 IPL icons and top 15 WPL stars, ranked, with why they're stars and their signature moment.",
     "Seasons - every season's finish, captain and coach, IPL + WPL.   Captains - every RCB captain.   Records - the RCB record book.",
+    "Coaches - all 51 documented RCB coaches and support staff, 2008-2026: head coaches, Directors of Cricket, batting/bowling/fielding coaches, mentors, S&C, physio and analysts for IPL, WPL and the CLT20 years - each with a photo.",
+    "Franchise & More - ownership history and the 2026 sale, brand value, the 12th Man Army and 'Ee Sala Cup Namde', the Green Game, Unbox and the Hall of Fame, anthems, the Innovation Lab and ventures, and the story of the women's team.",
+    "4 June 2025 & RCB Cares - a memorial sheet: the stadium tragedy in which eleven fans died, who they were, the response and the accountability that followed, how they were honoured in 2026 (eleven empty seats, No. 11 jerseys, the dedicated trophy), and the RCB Cares commitments.",
     "Squad Only - players who were in an RCB squad but never played a match (kept separate so the website never credits a match that didn't happen).",
     "Website Guide - how to turn each sheet into website pages, image file-naming, and credits.   Sources - where every fact and photo came from.",
     "HOW PHOTOS WORK IN THIS FILE",
@@ -128,6 +250,18 @@
     {
       "topic": "Ground details & capacities",
       "source": "Standard published stadium capacities (approx.) - verify the exact current figure on each stadium's/board's page before publishing; 4 ground rows are flagged 'RCB fixture to verify' where a fixture could not be confirmed from memory of records"
+    },
+    {
+      "topic": "Coaches sheet",
+      "source": "Compiled Oct 2026 from Wikipedia RCB season pages, royalchallengers.com staff announcements and news reports; uncertain tenures flagged in the research notes (research/coaches.md)"
+    },
+    {
+      "topic": "4 June 2025 & RCB Cares sheet",
+      "source": "News reporting: Wikipedia '2025 Bengaluru crowd crush'; Indian Express (hospital records before the Karnataka HC); The Hindu; Livemint; MyKhel; IPL.com (RCB Cares framework, 1 Sep 2025); Latestly/IANS (2026 tributes) - full list in research/june2025-and-rcb-cares.md"
+    },
+    {
+      "topic": "Franchise & More sheet",
+      "source": "Compiled Oct 2026: TOI, Storyboard18, Houlihan Lokey IPL brand valuation studies, RCB official channels - full list in research/franchise-and-more.md"
     },
     {
       "topic": "All Teams sheet (names, logos, owners, titles, captains/coaches 2026)",
@@ -8955,6 +9089,1072 @@
       "country": "India",
       "seasons": "2023-2026",
       "notes": "Only WPL captain RCB have had - title-winning captain in 2024 and 2026"
+    }
+  ],
+  "coaches": [
+    {
+      "id": "venkatesh-prasad-ipl-head-coach-2008",
+      "sourceRow": 2,
+      "name": "Venkatesh Prasad",
+      "league": "IPL",
+      "role": "Head Coach",
+      "tenure": "2008",
+      "country": "India",
+      "background": "Former India fast bowler; was India's bowling coach (2007-2009) around the same period",
+      "achievements": "Head coach for RCB's inaugural 2008 season (team finished 7th); moved to an assistant/bowling role when Ray Jennings took over for 2009",
+      "afterRcb": "Later chaired the BCCI junior selection committee and served as Kings XI Punjab bowling coach (2018)"
+    },
+    {
+      "id": "martin-crowe-ipl-chief-cricket-officer-2008",
+      "sourceRow": 3,
+      "name": "Martin Crowe",
+      "league": "IPL",
+      "role": "Chief Cricket Officer",
+      "tenure": "2008",
+      "country": "New Zealand",
+      "background": "Former New Zealand captain and one of the game's leading batting thinkers",
+      "achievements": "Held the top cricket role (chief cricketing officer) in RCB's first season, overseeing cricket operations and selection; resigned after the 2008 season",
+      "afterRcb": "Remained a respected broadcaster and writer until his death in 2016"
+    },
+    {
+      "id": "ray-jennings-ipl-head-coach-2009-2013",
+      "sourceRow": 4,
+      "name": "Ray Jennings",
+      "league": "IPL",
+      "role": "Head Coach",
+      "tenure": "2009-2013",
+      "country": "South Africa",
+      "background": "Former South Africa wicketkeeper and former South Africa national team coach, known as a strict disciplinarian",
+      "achievements": "Longest-serving early head coach; led RCB to the 2009 IPL final, 2010 semi-finals, 2011 IPL final and the 2016-era core's foundation years; also coached RCB at the CLT20 in 2009, 2010 (semi-final) and 2011 (final); replaced after the 2013 season",
+      "afterRcb": "Returned to coaching in South Africa; later worked with South African age-group/development sides (post-RCB roles thinly documented in sources checked)"
+    },
+    {
+      "id": "venkatesh-prasad-ipl-assistant-coach-bowling-coach-2009-2013",
+      "sourceRow": 5,
+      "name": "Venkatesh Prasad",
+      "league": "IPL",
+      "role": "Assistant Coach / Bowling Coach",
+      "tenure": "2009-2013",
+      "country": "India",
+      "background": "Former India fast bowler and India bowling coach",
+      "achievements": "Stayed on as Jennings' assistant and bowling coach after handing over the head coach role in 2009; part of the staff for the 2009 and 2011 final runs and the CLT20 campaigns",
+      "afterRcb": "See head coach row: BCCI junior selection committee chairman; KXIP bowling coach (2018)"
+    },
+    {
+      "id": "anil-kumble-ipl-chief-mentor-2011-2012",
+      "sourceRow": 6,
+      "name": "Anil Kumble",
+      "league": "IPL",
+      "role": "Chief Mentor",
+      "tenure": "2011-2012",
+      "country": "India",
+      "background": "India's greatest match-winning spinner; retired as RCB captain/player in January 2011",
+      "achievements": "Appointed chief mentor straight after retiring as a player; mentored the side to the 2011 IPL final and the 2011 CLT20 final; left in January 2013",
+      "afterRcb": "Became Mumbai Indians chief mentor (2013-2015, two titles); then India head coach (2016-2017) and Punjab Kings head coach/director (2020-2022)"
+    },
+    {
+      "id": "daniel-vettori-ipl-head-coach-2014-2018",
+      "sourceRow": 7,
+      "name": "Daniel Vettori",
+      "league": "IPL",
+      "role": "Head Coach",
+      "tenure": "2014-2018",
+      "country": "New Zealand",
+      "background": "Former New Zealand captain and left-arm spinner; had played for RCB (2011-2013) before retiring",
+      "achievements": "Appointed head coach in January 2014 after retiring as a player; led RCB to the 2016 IPL final (the 973-run Kohli season) and the 2015 playoffs; sacked in August 2018 after poor 2017-2018 seasons",
+      "afterRcb": "Became Australia's assistant/spin bowling coach (2022 onwards) and Sunrisers Hyderabad head coach (from IPL 2024)"
+    },
+    {
+      "id": "allan-donald-ipl-bowling-coach-2014-2016",
+      "sourceRow": 8,
+      "name": "Allan Donald",
+      "league": "IPL",
+      "role": "Bowling Coach",
+      "tenure": "2014-2016",
+      "country": "South Africa",
+      "background": "Legendary South Africa fast bowler ('White Lightning'); former South Africa bowling coach",
+      "achievements": "Appointed alongside Vettori in January 2014 as bowling coach; worked with RCB's pace attack through the 2016 final season (end year of tenure reported as 2016; see research notes)",
+      "afterRcb": "Later served as Bangladesh fast bowling coach (2022-2023) among other consultancy roles"
+    },
+    {
+      "id": "trent-woodhill-ipl-batting-and-fielding-coach-2014-2018",
+      "sourceRow": 9,
+      "name": "Trent Woodhill",
+      "league": "IPL",
+      "role": "Batting and Fielding Coach",
+      "tenure": "2014-2018",
+      "country": "Australia",
+      "background": "Australian coach known for analytics and innovative methods; had worked with Melbourne Stars and New South Wales",
+      "achievements": "Appointed batting and fielding coach in January 2014; in 2018 his role was broadened to batting talent development & analytics, fielding coach and head of scouting; removed in the August 2018 staff overhaul",
+      "afterRcb": "Continued in Australian domestic/franchise coaching and talent-development roles"
+    },
+    {
+      "id": "bharat-arun-ipl-assistant-coach-2015",
+      "sourceRow": 10,
+      "name": "Bharat Arun",
+      "league": "IPL",
+      "role": "Assistant Coach",
+      "tenure": "2015",
+      "country": "India",
+      "background": "Former India seamer; coach of India's 2012 U-19 World Cup-winning team; India's bowling coach from 2014",
+      "achievements": "Brought in as assistant coach for IPL 2015 only, alongside Vettori, Donald and Woodhill, while also serving as India's bowling coach; RCB reached the playoffs (qualifier 2) in 2015",
+      "afterRcb": "Continued as India's bowling coach until 2021; later became Kolkata Knight Riders bowling coach (2022-2024)"
+    },
+    {
+      "id": "andrew-mcdonald-ipl-bowling-coach-bowling-talent-development-and-analytics-2017-2018",
+      "sourceRow": 11,
+      "name": "Andrew McDonald",
+      "league": "IPL",
+      "role": "Bowling Coach / Bowling Talent Development and Analytics",
+      "tenure": "2017-2018",
+      "country": "Australia",
+      "background": "Former Australia all-rounder; had coached Leicestershire and Victoria",
+      "achievements": "Joined RCB in 2017 and served as bowling coach; for 2018 his brief shifted to bowling talent development and analytics when Ashish Nehra became bowling coach; removed in August 2018 overhaul (exact season split between the two roles is reported inconsistently - see research notes)",
+      "afterRcb": "Became Australia assistant coach (2019) and then Australia head coach (2022 onwards), winning the 2023 ODI World Cup"
+    },
+    {
+      "id": "gary-kirsten-ipl-batting-coach-and-mentor-2018",
+      "sourceRow": 12,
+      "name": "Gary Kirsten",
+      "league": "IPL",
+      "role": "Batting Coach and Mentor",
+      "tenure": "2018",
+      "country": "South Africa",
+      "background": "India's 2011 World Cup-winning head coach; former South Africa coach and Delhi Daredevils head coach",
+      "achievements": "Joined in January 2018 as batting coach and mentor under head coach Daniel Vettori; elevated to the top job for 2019 after Vettori's sacking",
+      "afterRcb": "See head coach row below"
+    },
+    {
+      "id": "gary-kirsten-ipl-head-coach-coach-and-mentor-2019",
+      "sourceRow": 13,
+      "name": "Gary Kirsten",
+      "league": "IPL",
+      "role": "Head Coach (Coach and Mentor)",
+      "tenure": "2019",
+      "country": "South Africa",
+      "background": "As above; one of the most respected coaches in world cricket",
+      "achievements": "Took over as head coach ('coach and mentor') for IPL 2019 under a split leadership model with bowling coach Ashish Nehra; RCB finished last (8th) and Kirsten was released in August 2019",
+      "afterRcb": "Became Gujarat Titans batting coach and mentor (2022-2023, title in 2022) and Pakistan white-ball head coach (2024, resigned the same year)"
+    },
+    {
+      "id": "ashish-nehra-ipl-bowling-coach-and-mentor-2018-2019",
+      "sourceRow": 14,
+      "name": "Ashish Nehra",
+      "league": "IPL",
+      "role": "Bowling Coach and Mentor",
+      "tenure": "2018-2019",
+      "country": "India",
+      "background": "Former India left-arm fast bowler; retired from playing in November 2017 with no previous formal coaching experience",
+      "achievements": "Joined in January 2018 as bowling coach and mentor under Vettori; retained when the rest of the 2018 staff was sacked and continued under Kirsten in 2019; released in August 2019",
+      "afterRcb": "Became Gujarat Titans head coach from their debut season (2022), winning the IPL 2022 title and building one of the league's most consistent sides"
+    },
+    {
+      "id": "mike-hesson-ipl-director-of-cricket-operations-2019-2023",
+      "sourceRow": 15,
+      "name": "Mike Hesson",
+      "league": "IPL",
+      "role": "Director of Cricket Operations",
+      "tenure": "2019-2023",
+      "country": "New Zealand",
+      "background": "Former New Zealand head coach (2012-2018, 2015 World Cup final); coached Kings XI Punjab in IPL 2019",
+      "achievements": "Appointed in August 2019 as RCB's first Director of Cricket Operations under a single-coach model, overseeing strategy, scouting and auctions; built the squads that reached the playoffs in 2020, 2021, 2022 and 2024-cycle; contract not renewed in 2023",
+      "afterRcb": "Appointed Pakistan men's white-ball head coach in 2025"
+    },
+    {
+      "id": "simon-katich-ipl-head-coach-2020-2021",
+      "sourceRow": 16,
+      "name": "Simon Katich",
+      "league": "IPL",
+      "role": "Head Coach",
+      "tenure": "2020-2021",
+      "country": "Australia",
+      "background": "Former Australia opener; had been Kolkata Knight Riders assistant coach (2015-2019)",
+      "achievements": "Appointed head coach in August 2019; led RCB to the playoffs in 2020 (their first since 2016) and to third place in the 2021 league stage; stepped down in August 2021 for personal reasons before the UAE leg of IPL 2021",
+      "afterRcb": "Coached Manchester Originals in The Hundred (2021-2023)"
+    },
+    {
+      "id": "mike-hesson-ipl-head-coach-interim-2021-uae-leg",
+      "sourceRow": 17,
+      "name": "Mike Hesson",
+      "league": "IPL",
+      "role": "Head Coach (Interim)",
+      "tenure": "2021 (UAE leg)",
+      "country": "New Zealand",
+      "background": "As above - already RCB's Director of Cricket Operations",
+      "achievements": "Stepped in as interim head coach for the UAE leg of IPL 2021 after Simon Katich stepped down, doubling up with his Director of Cricket role; RCB reached the Eliminator",
+      "afterRcb": "Continued as Director of Cricket Operations (see main row)"
+    },
+    {
+      "id": "sanjay-bangar-ipl-batting-consultant-2021",
+      "sourceRow": 18,
+      "name": "Sanjay Bangar",
+      "league": "IPL",
+      "role": "Batting Consultant",
+      "tenure": "2021",
+      "country": "India",
+      "background": "Former India all-rounder; India's batting coach (2014-2019); previously Kochi Tuskers batting coach and Kings XI Punjab head coach (2014 final)",
+      "achievements": "Joined as batting consultant in February 2021 for IPL 2021",
+      "afterRcb": "Elevated to head coach for 2022 (see next row)"
+    },
+    {
+      "id": "adam-griffith-ipl-bowling-coach-2020-2024",
+      "sourceRow": 19,
+      "name": "Adam Griffith",
+      "league": "IPL",
+      "role": "Bowling Coach",
+      "tenure": "2020-2024",
+      "country": "Australia",
+      "background": "Former Tasmania fast bowler; Tasmania head coach and former Australia stand-in bowling coach; worked under Justin Langer at Western Australia/Perth Scorchers",
+      "achievements": "Appointed in September 2019 as bowling coach, replacing Ashish Nehra; served five seasons (2020-2024) as pace-bowling lead under Katich, Bangar and Flower; replaced by Omkar Salvi after IPL 2024",
+      "afterRcb": "Appointed Cricket Australia's National Pace Bowling Coach (2025)"
+    },
+    {
+      "id": "sridharan-sriram-ipl-batting-and-spin-bowling-coach-2020-2022",
+      "sourceRow": 20,
+      "name": "Sridharan Sriram",
+      "league": "IPL",
+      "role": "Batting and Spin Bowling Coach",
+      "tenure": "2020-2022",
+      "country": "India",
+      "background": "Former India ODI all-rounder; long-time Australia spin consultant and assistant coach (Ashes and T20 World Cup wins); previously with Delhi and Punjab IPL franchises",
+      "achievements": "Appointed in September 2019; batting and spin-bowling coach for IPL 2020, 2021 and 2022 under Katich and Bangar; left after IPL 2022",
+      "afterRcb": "Became Bangladesh T20 technical consultant/head coach for the 2022 Asia Cup and T20 World Cup; Lucknow Super Giants assistant coach (2024); Chennai Super Kings assistant bowling coach (2025)"
+    },
+    {
+      "id": "sanjay-bangar-ipl-head-coach-2022-2023",
+      "sourceRow": 21,
+      "name": "Sanjay Bangar",
+      "league": "IPL",
+      "role": "Head Coach",
+      "tenure": "2022-2023",
+      "country": "India",
+      "background": "As above",
+      "achievements": "Elevated from batting consultant to head coach in November 2021 for a two-year term; led RCB to the playoffs (Qualifier 2) in 2022 and sixth place in 2023; contract not renewed after 2023",
+      "afterRcb": "Joined Punjab Kings as Head of Cricket Development ahead of IPL 2024 and continued media/commentary work"
+    },
+    {
+      "id": "malolan-rangarajan-ipl-head-of-scouting-performance-analysis-2020-2026",
+      "sourceRow": 22,
+      "name": "Malolan Rangarajan",
+      "league": "IPL",
+      "role": "Head of Scouting / Performance Analysis",
+      "tenure": "2020-2026",
+      "country": "India",
+      "background": "Former Tamil Nadu offspinner; worked in Tamil Nadu cricket analysis and talent identification",
+      "achievements": "Named Head of Scouting in RCB's 2020 staff list and became the franchise's lead scout/analyst across the Hesson and Bobat eras; also listed as fielding coach in the 2022 staff; remains RCB's lead scout and player-identification lead",
+      "afterRcb": "Still with RCB (also WPL head coach from 2026 - see WPL rows)"
+    },
+    {
+      "id": "malolan-rangarajan-ipl-assistant-coach-spin-bowling-coach-2024-2026",
+      "sourceRow": 23,
+      "name": "Malolan Rangarajan",
+      "league": "IPL",
+      "role": "Assistant Coach / Spin Bowling Coach",
+      "tenure": "2024-2026",
+      "country": "India",
+      "background": "As above",
+      "achievements": "Moved onto the men's coaching staff under Andy Flower: listed as assistant coach/fielding coach in 2024 and as spin bowling coach in 2025 and 2026 (cricket.one and ipl.com staff lists), part of the staff for the 2025 and 2026 title wins",
+      "afterRcb": "Still with RCB"
+    },
+    {
+      "id": "shanker-basu-ipl-strength-and-conditioning-coach-first-stint-before-2015-second-stint-2020-2026",
+      "sourceRow": 24,
+      "name": "Shanker Basu",
+      "league": "IPL",
+      "role": "Strength and Conditioning Coach",
+      "tenure": "First stint before 2015; second stint 2020-2026",
+      "country": "India",
+      "background": "One of India's best-known fitness trainers; was RCB's trainer before becoming India's strength and conditioning coach (2015-2019, including the 2019 World Cup)",
+      "achievements": "Returned to RCB in September 2019 for IPL 2020 and has remained head strength and conditioning coach through the Katich, Bangar and Flower eras, including the 2025 and 2026 titles; exact start year of his first RCB stint is not confirmed in sources checked",
+      "afterRcb": "Still with RCB (active in IPL 2026)"
+    },
+    {
+      "id": "evan-speechly-ipl-head-physiotherapist-until-2025-start-year-not-verified-in-role-by-the-mid-2010s",
+      "sourceRow": 25,
+      "name": "Evan Speechly",
+      "league": "IPL",
+      "role": "Head Physiotherapist",
+      "tenure": "Until 2025 (start year not verified; in role by the mid-2010s)",
+      "country": "South Africa",
+      "background": "Physiotherapist with experience in South African cricket",
+      "achievements": "Long-serving head of RCB's medical/physio setup, listed as team physio from the Vettori era through to IPL 2025 (ipl.com records him as serving until 2025)",
+      "afterRcb": "Not listed in RCB's IPL 2026 staff"
+    },
+    {
+      "id": "soumyadeep-pyne-ipl-team-manager-2020",
+      "sourceRow": 26,
+      "name": "Soumyadeep Pyne",
+      "league": "IPL",
+      "role": "Team Manager",
+      "tenure": "2020",
+      "country": "India",
+      "background": "Former Indian Army officer (Major)",
+      "achievements": "Listed as RCB team manager in the official IPL 2020 support staff announcement",
+      "afterRcb": "Became Head of Operations for the RCB women's team in WPL 2023 (see WPL row)"
+    },
+    {
+      "id": "andy-flower-ipl-head-coach-2024-2026",
+      "sourceRow": 27,
+      "name": "Andy Flower",
+      "league": "IPL",
+      "role": "Head Coach",
+      "tenure": "2024-2026",
+      "country": "Zimbabwe",
+      "background": "Former Zimbabwe captain and wicketkeeper; England head coach (2009-2014) who won the 2010 T20 World Cup and three Ashes series; title-winning franchise coach with Multan Sultans (PSL) and Trent Rockets (The Hundred); Lucknow Super Giants head coach (2022-2023)",
+      "achievements": "Appointed in August 2023, replacing Sanjay Bangar; reunited with captain Faf du Plessis; led RCB to the playoffs in 2024 and then to the franchise's first IPL title in 2025 and back-to-back titles in 2026 (as recorded in this database)",
+      "afterRcb": "Still RCB head coach through IPL 2026; also appointed London Spirit head coach in The Hundred from 2026"
+    },
+    {
+      "id": "mo-bobat-ipl-wpl-director-of-cricket-2024-2026",
+      "sourceRow": 28,
+      "name": "Mo Bobat",
+      "league": "IPL & WPL",
+      "role": "Director of Cricket",
+      "tenure": "2024-2026",
+      "country": "England",
+      "background": "ECB performance director (2019-2024) who helped build England's 2019 ODI and 2022 T20 World Cup-winning pathways; at the ECB from 2011; had previously consulted for RCB",
+      "achievements": "Appointed in September 2023 to replace Mike Hesson, overseeing recruitment and performance across the franchise; architect, with Andy Flower, of the squads that won IPL 2025 and 2026 and WPL 2026",
+      "afterRcb": "Still with RCB"
+    },
+    {
+      "id": "dinesh-karthik-ipl-batting-coach-and-mentor-2025-2026",
+      "sourceRow": 29,
+      "name": "Dinesh Karthik",
+      "league": "IPL",
+      "role": "Batting Coach and Mentor",
+      "tenure": "2025-2026",
+      "country": "India",
+      "background": "Former India wicketkeeper-batter; played for RCB in 2015 and 2022-2024, finishing his playing career at the franchise in 2024",
+      "achievements": "Appointed in 2024 (after retiring as a player) as batting coach and mentor from IPL 2025; part of the coaching group for the 2025 and 2026 title wins; had previously worked with Omkar Salvi at KKR",
+      "afterRcb": "Still with RCB (through IPL 2026)"
+    },
+    {
+      "id": "omkar-salvi-ipl-bowling-coach-2025-2026",
+      "sourceRow": 30,
+      "name": "Omkar Salvi",
+      "league": "IPL",
+      "role": "Bowling Coach",
+      "tenure": "2025-2026",
+      "country": "India",
+      "background": "Mumbai head coach who won the Ranji Trophy and Irani Cup in 2023-24; previously Kolkata Knight Riders assistant bowling coach (part of KKR's IPL 2024 title staff); brother of former India pacer Aavishkar Salvi",
+      "achievements": "Appointed on 18 November 2024, replacing Adam Griffith; joined after finishing Mumbai's domestic season in March 2025; bowling coach for the 2025 and 2026 title wins",
+      "afterRcb": "Still with RCB (through IPL 2026)"
+    },
+    {
+      "id": "richard-halsall-ipl-assistant-coach-fielding-coach-2025-2026-listed-possibly-from-2024-unverified",
+      "sourceRow": 31,
+      "name": "Richard Halsall",
+      "league": "IPL",
+      "role": "Assistant Coach / Fielding Coach",
+      "tenure": "2025-2026 (listed; possibly from 2024 - unverified)",
+      "country": "England (Zimbabwe-born)",
+      "background": "Former England assistant coach and lead fielding coach under Andy Flower; Bangladesh assistant head coach/fielding coach; Sussex academy director; Multan Sultans fielding coach under Flower",
+      "achievements": "Listed as RCB assistant coach in the 2025 staff (cricket.one) and as assistant coach/fielding support for IPL 2026 (ipl.com); profiled as RCB's fielding coach, a long-time Andy Flower ally",
+      "afterRcb": "Still with RCB (listed for IPL 2026)"
+    },
+    {
+      "id": "freddie-wilde-ipl-performance-analyst-2025-2026-listed",
+      "sourceRow": 32,
+      "name": "Freddie Wilde",
+      "league": "IPL",
+      "role": "Performance Analyst",
+      "tenure": "2025-2026 (listed)",
+      "country": "England",
+      "background": "Cricket data analyst and author associated with CricViz; co-author of 'Cricket 2.0'",
+      "achievements": "Listed as RCB's performance analyst in the 2025 staff list (cricket.one) and team analyst for IPL 2026 (ipl.com), part of Mo Bobat's data-led setup",
+      "afterRcb": "Still with RCB (listed for IPL 2026)"
+    },
+    {
+      "id": "james-pipe-ipl-physiotherapist-2025-2026",
+      "sourceRow": 33,
+      "name": "James Pipe",
+      "league": "IPL",
+      "role": "Physiotherapist",
+      "tenure": "2025-2026",
+      "country": "England",
+      "background": "English physiotherapist",
+      "achievements": "Listed as assistant physiotherapist in RCB's 2025 staff and as physiotherapist for IPL 2026, working under/alongside long-serving head physio Evan Speechly",
+      "afterRcb": "Still with RCB (listed for IPL 2026)"
+    },
+    {
+      "id": "navnita-gautam-ipl-athletic-therapist-sports-massage-therapist-2022-2026",
+      "sourceRow": 34,
+      "name": "Navnita Gautam",
+      "league": "IPL",
+      "role": "Athletic Therapist / Sports Massage Therapist",
+      "tenure": "2022-2026",
+      "country": "India",
+      "background": "Sports therapist who also worked with the RCB women's team from its first season",
+      "achievements": "Listed as sports massage therapist in RCB's 2022 staff and as athletic therapist in 2025-2026 staff lists; also head physio of the WPL side (see WPL row)",
+      "afterRcb": "Still with RCB"
+    },
+    {
+      "id": "ramesh-mane-ipl-masseur-listed-from-the-mid-2010s-to-2026-exact-start-unverified",
+      "sourceRow": 35,
+      "name": "Ramesh Mane",
+      "league": "IPL",
+      "role": "Masseur",
+      "tenure": "Listed from the mid-2010s to 2026 (exact start unverified)",
+      "country": "India",
+      "background": "Long-serving member of RCB's medical support unit",
+      "achievements": "Appears as masseur in RCB staff lists from the Vettori era (alchetron/Wikipedia snapshot) through the IPL 2025 and 2026 lists - one of the franchise's longest-serving support staff",
+      "afterRcb": "Still with RCB (listed for IPL 2026)"
+    },
+    {
+      "id": "dr-shikha-dhaundiyal-ipl-team-doctor-2026",
+      "sourceRow": 36,
+      "name": "Dr. Shikha Dhaundiyal",
+      "league": "IPL",
+      "role": "Team Doctor",
+      "tenure": "2026",
+      "country": "India",
+      "background": "Team doctor",
+      "achievements": "Listed as RCB team doctor in the IPL 2026 staff list (ipl.com)",
+      "afterRcb": "Still with RCB (listed for IPL 2026)"
+    },
+    {
+      "id": "mike-hesson-wpl-director-of-cricket-operations-2023",
+      "sourceRow": 37,
+      "name": "Mike Hesson",
+      "league": "WPL",
+      "role": "Director of Cricket Operations",
+      "tenure": "2023",
+      "country": "New Zealand",
+      "background": "As above - RCB's franchise Director of Cricket Operations",
+      "achievements": "Oversaw the women's team build for the inaugural WPL: announced the 2023 coaching staff and the auction strategy that bought Smriti Mandhana; RCB finished 4th in WPL 2023",
+      "afterRcb": "Left RCB in 2023 (see IPL row)"
+    },
+    {
+      "id": "ben-sawyer-wpl-head-coach-2023",
+      "sourceRow": 38,
+      "name": "Ben Sawyer",
+      "league": "WPL",
+      "role": "Head Coach",
+      "tenure": "2023",
+      "country": "Australia",
+      "background": "New Zealand women's head coach (from 2022); former Australia women's assistant coach (2017 World Cup winner); led Sydney Sixers to back-to-back WBBL titles (2016-17, 2017-18); Birmingham Phoenix coach",
+      "achievements": "First head coach of the RCB women's team for the inaugural WPL 2023; team finished 4th of 5 after losing its first five matches; replaced after one season",
+      "afterRcb": "Continued as New Zealand women's head coach, guiding them to the 2024 T20 World Cup title"
+    },
+    {
+      "id": "sania-mirza-wpl-mentor-2023",
+      "sourceRow": 39,
+      "name": "Sania Mirza",
+      "league": "WPL",
+      "role": "Mentor",
+      "tenure": "2023",
+      "country": "India",
+      "background": "Indian tennis legend; six Grand Slam doubles/mixed titles; retired from professional tennis in February 2023",
+      "achievements": "Appointed team mentor for the inaugural WPL season, working on the mental side of the game and as a role model for the squad",
+      "afterRcb": "Stepped away after the 2023 season; continued with media, commentary and business ventures"
+    },
+    {
+      "id": "malolan-rangarajan-wpl-assistant-coach-2023-2025",
+      "sourceRow": 40,
+      "name": "Malolan Rangarajan",
+      "league": "WPL",
+      "role": "Assistant Coach",
+      "tenure": "2023-2025",
+      "country": "India",
+      "background": "As above - RCB head of scouting (men's system)",
+      "achievements": "Assistant coach and head of scouting for the women's team from its first season: assistant under Ben Sawyer (2023) and under Luke Williams for the 2024 title win and the 2025 season",
+      "afterRcb": "Promoted to WPL head coach for 2026 (see row below); also on the IPL men's coaching staff"
+    },
+    {
+      "id": "vanitha-vr-wpl-fielding-coach-and-scout-2023",
+      "sourceRow": 41,
+      "name": "Vanitha VR",
+      "league": "WPL",
+      "role": "Fielding Coach and Scout",
+      "tenure": "2023",
+      "country": "India",
+      "background": "Former India women's opener from Karnataka; ran RCB's women's scouting programme before the first auction",
+      "achievements": "Named scout and fielding coach for WPL 2023 in RCB's official staff announcement (also contributed batting input)",
+      "afterRcb": "Not listed in RCB WPL staff announcements for later seasons in sources checked"
+    },
+    {
+      "id": "rx-murali-wpl-batting-coach-2023",
+      "sourceRow": 42,
+      "name": "RX Murali",
+      "league": "WPL",
+      "role": "Batting Coach",
+      "tenure": "2023",
+      "country": "India",
+      "background": "Respected Karnataka batting coach known for power-hitting work; has coached many Karnataka and India players (including Mayank Agarwal)",
+      "achievements": "Named batting coach for WPL 2023 in RCB's official staff announcement",
+      "afterRcb": "Post-2023 WPL role not confirmed in sources checked; note R Muralidhar (below) is listed as RCB WPL batting coach in 2025-2026 - possibly the same person under a fuller name, unverified (see research notes)"
+    },
+    {
+      "id": "dr-harini-wpl-team-manager-and-team-doctor-2023",
+      "sourceRow": 43,
+      "name": "Dr. Harini",
+      "league": "WPL",
+      "role": "Team Manager and Team Doctor",
+      "tenure": "2023",
+      "country": "India",
+      "background": "Doctor and team administrator",
+      "achievements": "Named team manager and team doctor for WPL 2023 in RCB's official support staff announcement",
+      "afterRcb": "Not listed in later WPL staff announcements in sources checked"
+    },
+    {
+      "id": "huzefa-talib-wpl-strength-and-conditioning-coach-2023",
+      "sourceRow": 44,
+      "name": "Huzefa Talib",
+      "league": "WPL",
+      "role": "Strength and Conditioning Coach",
+      "tenure": "2023",
+      "country": "India",
+      "background": "Strength and conditioning specialist",
+      "achievements": "Named strength and conditioning coach for WPL 2023 in RCB's official support staff announcement",
+      "afterRcb": "Not listed in later WPL staff announcements in sources checked"
+    },
+    {
+      "id": "sabyasachi-sahoo-wpl-head-physio-2023",
+      "sourceRow": 45,
+      "name": "Sabyasachi Sahoo",
+      "league": "WPL",
+      "role": "Head Physio",
+      "tenure": "2023",
+      "country": "India",
+      "background": "Physiotherapist",
+      "achievements": "Named head physio for WPL 2023 in RCB's official support staff announcement",
+      "afterRcb": "Not listed in later WPL staff announcements in sources checked"
+    },
+    {
+      "id": "soumyadeep-pyne-wpl-head-of-operations-2023",
+      "sourceRow": 46,
+      "name": "Soumyadeep Pyne",
+      "league": "WPL",
+      "role": "Head of Operations",
+      "tenure": "2023",
+      "country": "India",
+      "background": "Former Indian Army officer (Major); previously RCB men's team manager (IPL 2020)",
+      "achievements": "Named head of operations for the women's team in WPL 2023",
+      "afterRcb": "Continued in RCB franchise operations (details in sources checked are limited)"
+    },
+    {
+      "id": "navnita-gautam-wpl-head-athletic-therapist-head-physio-2023-2026",
+      "sourceRow": 47,
+      "name": "Navnita Gautam",
+      "league": "WPL",
+      "role": "Head Athletic Therapist / Head Physio",
+      "tenure": "2023-2026",
+      "country": "India",
+      "background": "Sports therapist; also part of the IPL men's support staff (see IPL row)",
+      "achievements": "Named head athletic therapist for WPL 2023; by WPL 2026 she was continuing as the women's team's head physio (ESPNcricinfo, November 2025)",
+      "afterRcb": "Still with RCB"
+    },
+    {
+      "id": "luke-williams-wpl-head-coach-2024-2025",
+      "sourceRow": 48,
+      "name": "Luke Williams",
+      "league": "WPL",
+      "role": "Head Coach",
+      "tenure": "2024-2025",
+      "country": "Australia",
+      "background": "Former South Australia player; Adelaide Strikers WBBL head coach (title 2022-23 after two runner-up finishes); Southern Brave assistant coach for their 2023 Women's Hundred title; South Australian Scorpions coach",
+      "achievements": "Appointed on 30 September 2023 to replace Ben Sawyer; led RCB to their first-ever trophy, the WPL 2024 title, in his first season; team finished 4th in 2025; could not continue for WPL 2026 because of his Adelaide Strikers BBL commitments in the rescheduled January-February window",
+      "afterRcb": "Became England Women's assistant coach (2025) and Adelaide Strikers head coach; appointed Mumbai Indians women's head coach ahead of WPL 2027"
+    },
+    {
+      "id": "sunetra-paranjape-wpl-bowling-coach-2024-2025",
+      "sourceRow": 49,
+      "name": "Sunetra Paranjape",
+      "league": "WPL",
+      "role": "Bowling Coach",
+      "tenure": "2024-2025",
+      "country": "India",
+      "background": "Former India women's fast bowler",
+      "achievements": "Reported by ESPNcricinfo as RCB's WPL bowling coach until 2025, i.e. during the Williams title-winning cycle; succeeded by Anya Shrubsole for 2026 (start season inferred as 2024 - see research notes)",
+      "afterRcb": "Replaced by Anya Shrubsole ahead of WPL 2026"
+    },
+    {
+      "id": "r-muralidhar-wpl-batting-coach-2025-2026",
+      "sourceRow": 50,
+      "name": "R Muralidhar",
+      "league": "WPL",
+      "role": "Batting Coach",
+      "tenure": "2025-2026",
+      "country": "India",
+      "background": "Batting coach (identity note: possibly the same person as RX Murali, the 2023 batting coach, under a fuller name - unverified)",
+      "achievements": "Reported as continuing as RCB's WPL batting coach into the 2026 season (ipl.com and ESPNcricinfo, November 2025)",
+      "afterRcb": "Still with RCB (WPL 2026)"
+    },
+    {
+      "id": "malolan-rangarajan-wpl-head-coach-2026",
+      "sourceRow": 51,
+      "name": "Malolan Rangarajan",
+      "league": "WPL",
+      "role": "Head Coach",
+      "tenure": "2026",
+      "country": "India",
+      "background": "As above - with RCB in various roles since 2019/2020; assistant coach of the women's team 2023-2025",
+      "achievements": "Appointed on 6 November 2025 to replace Luke Williams for WPL 2026; led RCB to the WPL 2026 title (as recorded in this database), the franchise's second women's crown",
+      "afterRcb": "Still with RCB (also IPL spin bowling coach/scout)"
+    },
+    {
+      "id": "anya-shrubsole-wpl-bowling-coach-2026",
+      "sourceRow": 52,
+      "name": "Anya Shrubsole",
+      "league": "WPL",
+      "role": "Bowling Coach",
+      "tenure": "2026",
+      "country": "England",
+      "background": "Former England fast bowler; 2017 ODI World Cup final player of the match (6/46); 227 international wickets; retired in 2022 and became a player-assistant coach at Southern Vipers",
+      "achievements": "Appointed in November 2025 as RCB's WPL bowling coach for 2026 (also announced by the franchise as an assistant coach), succeeding Sunetra Paranjape; part of the WPL 2026 title-winning staff",
+      "afterRcb": "Still with RCB (WPL 2026)"
+    }
+  ],
+  "franchise": [
+    {
+      "id": "ownership-founded-2008-111-6-million",
+      "sourceRow": 2,
+      "section": "OWNERSHIP",
+      "item": "Founded 2008 — $111.6 million",
+      "details": "At the BCCI's January 2008 franchise auction, Vijay Mallya's UB Group / United Spirits bought the Bengaluru franchise for US$111.6 million — the second-most expensive of the original eight (behind only Mumbai Indians). The team is named after United Spirits' Royal Challenge whisky brand; Mallya later said his 'sole purpose behind buying RCB was to promote my whisky brand.' Operating company: Royal Challengers Sports Pvt. Ltd. (RCSPL)."
+    },
+    {
+      "id": "ownership-the-diageo-era",
+      "sourceRow": 3,
+      "section": "OWNERSHIP",
+      "item": "The Diageo era",
+      "details": "Diageo acquired control of United Spirits (majority by 2014), making RCB a Diageo-group asset. Mallya exited in 2016 amid his debt and legal troubles and has had no role since. Under USL the franchise professionalised — lifestyle verticals, the WPL team (2023), the Innovation Lab — and won back-to-back IPL titles in 2025–2026."
+    },
+    {
+      "id": "ownership-key-executives",
+      "sourceRow": 4,
+      "section": "OWNERSHIP",
+      "item": "Key executives",
+      "details": "Vijay Mallya (founder-owner figure, 2008–2016) → chairmen including Amrit Thomas (mid-2010s), Anand Kripalu (early 2020s) and Prathmesh Mishra (mid-2020s). Rajesh V Menon — VP & Head from ~2020, referred to as CEO by 2025–26 — is the franchise's most visible executive of the decade."
+    },
+    {
+      "id": "ownership-the-2026-sale-16-660-crore",
+      "sourceRow": 5,
+      "section": "OWNERSHIP",
+      "item": "The 2026 sale — ₹16,660 crore",
+      "details": "November 2025: United Spirits announced a strategic review of RCB as a non-core asset. 24 March 2026: USL's board approved selling 100% of RCSPL — both the IPL and WPL teams — to a consortium of the Aditya Birla Group (lead), The Times Group, Bolt Ventures (David Blitzer) and Blackstone, for ₹16,660 crore (~US$1.78 billion), the biggest franchise sale in IPL history. The Competition Commission of India approved it on 30 June 2026; as of October 2026 no formal closing announcement had been reported, so ownership is best described as 'sold, pending formal completion', with Aryaman Vikram Birla named chairman and Satyan Gajwani (Times Group) vice-chairman. Value arc: $111.6m (2008) → ~$1.78bn (2026)."
+    },
+    {
+      "id": "brand-value-houlihan-lokey-estimates",
+      "sourceRow": 6,
+      "section": "BRAND VALUE",
+      "item": "Houlihan Lokey estimates",
+      "details": "US$227 million (2024) → US$269 million (2025 — #1 in the IPL for the first time, after the maiden title) → US$312 million (2026 — still #1, and reported as the first cricket team anywhere to cross a $300 million brand value). Other firms' tables differ materially — always show the firm and year with any figure."
+    },
+    {
+      "id": "fan-culture-the-12th-man-army",
+      "sourceRow": 7,
+      "section": "FAN CULTURE",
+      "item": "The 12th Man Army",
+      "details": "RCB's official name for its fans — the fans as the team's 12th player. The franchise addresses fans by this name across ticketing, social media and events, and built the Unbox festival around it. Related: the Bold Army (2016), an official cheer squad of superfans."
+    },
+    {
+      "id": "fan-culture-ee-sala-cup-namde",
+      "sourceRow": 8,
+      "section": "FAN CULTURE",
+      "item": "'Ee Sala Cup Namde'",
+      "details": "Kannada for 'This year, the cup is ours' — the defining slogan of the 17 title-less seasons, chanted at the Chinnaswamy and carried by the diaspora worldwide (fans were filmed chanting it at an India Women ODI in Brisbane in Dec 2024). After the WPL 2024 title fans flipped it to 'Ee Sala Cup Namdu' ('this year the cup IS ours'); the men's 2025 title retired the joke for good."
+    },
+    {
+      "id": "fan-culture-the-chinnaswamy-crowd",
+      "sourceRow": 9,
+      "section": "FAN CULTURE",
+      "item": "The Chinnaswamy crowd",
+      "details": "A sea of red and a reputation — repeated by visiting players and commentators — as one of the loudest, most atmospheric crowds in the IPL. RCB home fixtures routinely sell out within minutes of tickets opening (a formal consecutive-sellout streak is unverified)."
+    },
+    {
+      "id": "fan-culture-social-media",
+      "sourceRow": 10,
+      "section": "FAN CULTURE",
+      "item": "Social media",
+      "details": "Among the IPL's most-followed teams and widely reported as its most-engaged: ~45 million followers in total (Aug 2025 snapshot), with Instagram ~21.5–22 million — the most-followed IPL team account on Instagram. Multiple 2025 reports credit RCB with the IPL's highest fan engagement (~2 billion engagements in 2025, per aggregator reports)."
+    },
+    {
+      "id": "fan-culture-mr-nags-rcb-content",
+      "sourceRow": 11,
+      "section": "FAN CULTURE",
+      "item": "Mr. Nags & RCB content",
+      "details": "Since ~2015, comedian Danish Sait as 'Mr. Nags' — a stereotypical Bengalurean superfan — has hosted RCB Insider's deliberately awkward player interviews and behind-the-scenes content; widely credited with pioneering IPL dressing-room content, he is the franchise's de-facto on-screen face. Long-running properties: Bold Diaries, 12th Man TV, the RCB app. A fan-first touch: a dog enclosure at the stadium for pet parents (a first in the IPL, per RCB)."
+    },
+    {
+      "id": "green-game-go-green-since-2011",
+      "sourceRow": 12,
+      "section": "GREEN GAME",
+      "item": "Go Green — since 2011",
+      "details": "Once a season since 2011, RCB swaps the red home kit for a green jersey to promote environmental awareness. First green match: 8 May 2011 vs Kochi Tuskers Kerala (won by 9 wickets). The jerseys are made from recycled material; the captain traditionally presents a sapling to the opposing captain at the toss."
+    },
+    {
+      "id": "green-game-the-famous-green-games",
+      "sourceRow": 13,
+      "section": "GREEN GAME",
+      "item": "The famous green games",
+      "details": "14 May 2016 vs Gujarat Lions: Kohli (109) and AB de Villiers (129*) both scored hundreds in RCB's 248/3, a 144-run win. In 2021 RCB wore blue instead, honouring COVID-19 frontline workers. Green-game record before the 2026 edition: 15 played, 5 won, 9 lost, 1 no-result."
+    },
+    {
+      "id": "green-game-carbon-neutral-claim",
+      "sourceRow": 14,
+      "section": "GREEN GAME",
+      "item": "Carbon-neutral claim",
+      "details": "RCB states it is the world's only carbon-neutral T20 franchise and is working toward carbon-positive status, alongside stadium waste/recycling measures, fan-travel carbon surveys and (with Goodera) Bengaluru lake rejuvenation and a 'green schools' programme. This is a franchise claim — no independent certification was found in public sources."
+    },
+    {
+      "id": "unbox-hall-of-fame-rcb-unbox-since-2022",
+      "sourceRow": 15,
+      "section": "UNBOX & HALL OF FAME",
+      "item": "RCB Unbox — since 2022",
+      "details": "The pre-season fan festival. 2022 (Church Street): first edition; Faf du Plessis announced as captain. 2023 (Chinnaswamy): moved into the stadium; the RCB Hall of Fame launched. 2024: the Bengaluru name change and new crest unveiled, with a headline performance by Alan Walker. It has run annually since."
+    },
+    {
+      "id": "unbox-hall-of-fame-hall-of-fame-chris-gayle-2023",
+      "sourceRow": 16,
+      "section": "UNBOX & HALL OF FAME",
+      "item": "Hall of Fame — Chris Gayle (2023)",
+      "details": "Inducted at Unbox 2023. RCB 2011–17: 3,420 runs, five hundreds, the 175*. His jersey number 333 was retired."
+    },
+    {
+      "id": "unbox-hall-of-fame-hall-of-fame-ab-de-villiers-2023",
+      "sourceRow": 17,
+      "section": "UNBOX & HALL OF FAME",
+      "item": "Hall of Fame — AB de Villiers (2023)",
+      "details": "Inducted at Unbox 2023. RCB 2011–21: 4,522 runs in 157 matches. His jersey number 17 was retired."
+    },
+    {
+      "id": "unbox-hall-of-fame-hall-of-fame-r-vinay-kumar-2024",
+      "sourceRow": 18,
+      "section": "UNBOX & HALL OF FAME",
+      "item": "Hall of Fame — R Vinay Kumar (2024)",
+      "details": "Inducted at Unbox 2024. RCB's third-highest wicket-taker (80 wickets); led RCB's bowling in 2012 and 2013. No further inductions were reported through October 2026."
+    },
+    {
+      "id": "identity-anthems",
+      "sourceRow": 19,
+      "section": "IDENTITY",
+      "item": "Anthems",
+      "details": "'Jeetenge Hum Shaan Se' (earliest theme) → 'Game for More' (2009, hugely popular) → 'Play Bold' (2016, composed by Salim Merchant, released in six languages) — 'Play Bold' doubles as the franchise philosophy. Alan Walker produced a special RCB track for Unbox 2024. Other stock phrases: 'We Are Challengers', 'Namma RCB'."
+    },
+    {
+      "id": "identity-mascot",
+      "sourceRow": 20,
+      "section": "IDENTITY",
+      "item": "Mascot",
+      "details": "The crest's rampant lion is the franchise symbol and appears as a costumed mascot at matches (one blog names it 'Chinnaswamy' — unverified in official sources). In practice, Mr. Nags is the public face of the franchise off the field."
+    },
+    {
+      "id": "innovation-ventures-rcb-innovation-lab-2023",
+      "sourceRow": 21,
+      "section": "INNOVATION & VENTURES",
+      "item": "RCB Innovation Lab (2023)",
+      "details": "Launched 26 March 2023: sports ed-tech, performance R&D, health-tech startup accelerators and an AI-backed coaching/talent-ID platform. Its first international tie-up, with Leaders in Sport, produced the Leaders Meet India conclave in Bengaluru (29–30 Nov 2023) — speakers included Jay Shah, Brendon McCullum, Neeraj Chopra and Abhinav Bindra."
+    },
+    {
+      "id": "innovation-ventures-rcb-bar-caf",
+      "sourceRow": 22,
+      "section": "INNOVATION & VENTURES",
+      "item": "RCB Bar & Café",
+      "details": "Launched December 2020 on St Mark's Road / Church Street, Bengaluru (under a kilometre from the stadium); a second outlet opened at Kempegowda International Airport Terminal 2 in February 2024. Match screenings, player portraits, RCB-themed menu."
+    },
+    {
+      "id": "innovation-ventures-lifestyle-digital",
+      "sourceRow": 23,
+      "section": "INNOVATION & VENTURES",
+      "item": "Lifestyle & digital",
+      "details": "PUMA x RCB athleisure range (from 2021); Hustle by RCB fitness app (~11,000 subscriptions in its first three months, per a 2024 interview); the RCB official app for ticketing, gaming and content — the stated ambition is 'India's sports super app.'"
+    },
+    {
+      "id": "off-field-firsts-firsts-records",
+      "sourceRow": 24,
+      "section": "OFF-FIELD FIRSTS",
+      "item": "Firsts & records",
+      "details": "First IPL team with separate home and away kits (2016). Most valuable IPL franchise in 2025 and 2026 (Houlihan Lokey). Biggest franchise sale in IPL history (2026). Most-followed IPL team on Instagram. And the most expensive buy of the first WPL auction (below)."
+    },
+    {
+      "id": "rcb-women-the-story-bought-for-901-crore",
+      "sourceRow": 25,
+      "section": "RCB WOMEN — THE STORY",
+      "item": "Bought for ₹901 crore",
+      "details": "On 25 January 2023 the BCCI sold the five WPL teams; RCSPL won Bengaluru for ₹901 crore — the third-most expensive of the five. RCB had prepared for months, appointing former India cricketer Vanitha V. R. as scout well before the tender."
+    },
+    {
+      "id": "rcb-women-the-story-the-2023-auction",
+      "sourceRow": 26,
+      "section": "RCB WOMEN — THE STORY",
+      "item": "The 2023 auction",
+      "details": "A front-loaded, star-led strategy: ₹9 crore of the ₹12 crore purse went on the first five players — Smriti Mandhana ₹3.40 cr (the auction's top price and immediately captain), Richa Ghosh ₹1.90 cr, Ellyse Perry ₹1.70 cr, Renuka Singh ₹1.50 cr, and the steal of the auction, Sophie Devine for ₹50 lakh. Depth picks added three more international captains (Knight, van Niekerk, Schutt) and ₹10-lakh bargains Shreyanka Patil and Asha Sobhana — both title-winners in 2024."
+    },
+    {
+      "id": "rcb-women-the-story-the-guard-of-honour-19-mar-2024",
+      "sourceRow": 27,
+      "section": "RCB WOMEN — THE STORY",
+      "item": "The guard of honour (19 Mar 2024)",
+      "details": "Two days after the women won WPL 2024 in Delhi, they were the centrepiece of Unbox 2024 at the Chinnaswamy: the full men's squad formed a guard of honour as Mandhana led the champions in with the trophy, and during the victory lap she video-called the absent Ellyse Perry so she could share the moment — the defining image of RCB as one club."
+    },
+    {
+      "id": "rcb-women-the-story-the-first-trophy-was-the-women-s",
+      "sourceRow": 28,
+      "section": "RCB WOMEN — THE STORY",
+      "item": "The first trophy was the women's",
+      "details": "RCB Women's 2024 WPL title was the franchise's first-ever trophy — a year before the men's. With the women's 2026 title and the men's 2025–26 double, RCB became the first franchise to hold IPL and WPL crowns in the same period. Both teams were sold together in the 2026 ownership sale."
+    }
+  ],
+  "rcbCares": [
+    {
+      "id": "4-june-2025-what-happened-the-night-before",
+      "sourceRow": 2,
+      "section": "4 JUNE 2025 — WHAT HAPPENED",
+      "item": "The night before",
+      "details": "3 June 2025, Ahmedabad: RCB beat Punjab Kings by 6 runs to win their first IPL title in 18 seasons. The team flew home to Bengaluru the next day."
+    },
+    {
+      "id": "4-june-2025-what-happened-the-parade-that-wasn-t",
+      "sourceRow": 3,
+      "section": "4 JUNE 2025 — WHAT HAPPENED",
+      "item": "The parade that wasn't",
+      "details": "RCB announced an open-top bus parade from Vidhana Soudha to the Chinnaswamy Stadium. Bengaluru Police DENIED permission for the parade (traffic/CBD concerns). A state felicitation at the Vidhana Soudha and a stadium ceremony went ahead instead. The D'Cunha commission later found RCB had informed police on 3 June but had not obtained the mandatory permission (applications are required 7+ days ahead) and had shared no crowd estimate or security plan."
+    },
+    {
+      "id": "4-june-2025-what-happened-the-crowd",
+      "sourceRow": 4,
+      "section": "4 JUNE 2025 — WHAT HAPPENED",
+      "item": "The crowd",
+      "details": "An estimated 2–3 lakh (200,000–300,000) people gathered in the streets around a stadium whose capacity is about 35,000. A 3:14 pm RCB social post about free passes added confusion, and rumours of free tickets spread at the gates."
+    },
+    {
+      "id": "4-june-2025-what-happened-the-crushes",
+      "sourceRow": 5,
+      "section": "4 JUNE 2025 — WHAT HAPPENED",
+      "item": "The crushes",
+      "details": "Between about 3:30 and 5:30 pm, crowd crushes occurred at gates 1, 2/2A, 6, 7, 15, 17, 18 and 20/21 as fans forced barricades and gates were shut and opened under pressure. A temporary slab over a drain near the stadium also gave way. Deaths were recorded at hospitals from 3:45 pm to 5:15 pm."
+    },
+    {
+      "id": "4-june-2025-what-happened-the-toll",
+      "sourceRow": 6,
+      "section": "4 JUNE 2025 — WHAT HAPPENED",
+      "item": "The toll",
+      "details": "11 fans died and 56 were injured (the settled official figure). All eleven were under 40; the youngest was 13. Even as the crush unfolded, the Vidhana Soudha felicitation (4–5 pm) went ahead; the stadium ceremony was cut short once casualty reports emerged."
+    },
+    {
+      "id": "the-eleven-in-memoriam-divyanshi-b-s-13",
+      "sourceRow": 7,
+      "section": "THE ELEVEN — IN MEMORIAM",
+      "item": "Divyanshi B. S. (13)",
+      "details": "From: Bengaluru (Kannuru area). A Class 9 student who had gone with family. The Indian Express hospital-records account gives her age as 14; most reporting says 13 — the youngest victim."
+    },
+    {
+      "id": "the-eleven-in-memoriam-shivalingu-c-17",
+      "sourceRow": 8,
+      "section": "THE ELEVEN — IN MEMORIAM",
+      "item": "Shivalingu C. (17)",
+      "details": "From: Yadgir district (living in Yelahanka, Bengaluru). A student."
+    },
+    {
+      "id": "the-eleven-in-memoriam-chinmayi-shetty-19",
+      "sourceRow": 9,
+      "section": "THE ELEVEN — IN MEMORIAM",
+      "item": "Chinmayi Shetty (19)",
+      "details": "From: Bengaluru. A student. Died at Manipal (Vikram) Hospital."
+    },
+    {
+      "id": "the-eleven-in-memoriam-bhumik-l-20",
+      "sourceRow": 10,
+      "section": "THE ELEVEN — IN MEMORIAM",
+      "item": "Bhumik L. (20)",
+      "details": "From: Bengaluru. A student (described in some reports as an engineering student). Hospital-records account says 19."
+    },
+    {
+      "id": "the-eleven-in-memoriam-prajwal-g-20",
+      "sourceRow": 11,
+      "section": "THE ELEVEN — IN MEMORIAM",
+      "item": "Prajwal G. (20)",
+      "details": "From: Bengaluru. An engineering graduate working at a private firm. His was the first death recorded (3:45 pm, Vydehi Hospital). His mother recalled: 'He died in an RCB shirt.' Hospital-records account says 22."
+    },
+    {
+      "id": "the-eleven-in-memoriam-shravan-k-t-20",
+      "sourceRow": 12,
+      "section": "THE ELEVEN — IN MEMORIAM",
+      "item": "Shravan K. T. (20)",
+      "details": "From: Bengaluru. A student."
+    },
+    {
+      "id": "the-eleven-in-memoriam-sahana-rajesh-25",
+      "sourceRow": 13,
+      "section": "THE ELEVEN — IN MEMORIAM",
+      "item": "Sahana Rajesh (25)",
+      "details": "From: Bengaluru. Worked at Bosch; had left work with colleagues to join the celebrations. Hospital-records account says 23."
+    },
+    {
+      "id": "the-eleven-in-memoriam-akshata-pai-27",
+      "sourceRow": 14,
+      "section": "THE ELEVEN — IN MEMORIAM",
+      "item": "Akshata Pai (27)",
+      "details": "From: Bengaluru. A chartered accountant. Hospital-records account says 26."
+    },
+    {
+      "id": "the-eleven-in-memoriam-kamakshi-devi-s-29",
+      "sourceRow": 15,
+      "section": "THE ELEVEN — IN MEMORIAM",
+      "item": "Kamakshi Devi S. (29)",
+      "details": "From: Family from Tamil Nadu; working in Bengaluru. An Amazon employee and devoted RCB fan who had left her office mid-shift hoping to get an entry pass."
+    },
+    {
+      "id": "the-eleven-in-memoriam-poornachandra-c-age-unconfirmed-reported-20-26",
+      "sourceRow": 16,
+      "section": "THE ELEVEN — IN MEMORIAM",
+      "item": "Poornachandra C. (Age unconfirmed (reported 20–26))",
+      "details": "From: Mandya district, Karnataka. A civil engineer. His whole village mourned him; his family said he had recently become engaged."
+    },
+    {
+      "id": "the-eleven-in-memoriam-manoj-kumar-n-d-19",
+      "sourceRow": 17,
+      "section": "THE ELEVEN — IN MEMORIAM",
+      "item": "Manoj Kumar N. D. (19)",
+      "details": "From: Bengaluru. A college student, son of a pani puri vendor, who had gone with friends. Early police-based lists wrongly gave his age as 33."
+    },
+    {
+      "id": "the-eleven-in-memoriam-a-note-on-the-names",
+      "sourceRow": 18,
+      "section": "THE ELEVEN — IN MEMORIAM",
+      "item": "A note on the names",
+      "details": "Names and details are taken from published news reports, primarily the Indian Express account built from hospital records placed before the Karnataka High Court. Early lists also carried a name, 'Doresha (32)', which appears in no later, fuller account and is treated as an early reporting error. Ages marked with notes differ between early lists and hospital records — the discrepancies are shown rather than hidden."
+    },
+    {
+      "id": "the-response-rcb-5-june-2025",
+      "sourceRow": 19,
+      "section": "THE RESPONSE",
+      "item": "RCB — 5 June 2025",
+      "details": "RCB announced ₹10 lakh to the family of each fan who died, pledged to cover the injured fans' medical expenses, and created a fund for injured fans — the first use of the name 'RCB Cares'. Virat Kohli: 'At a loss for words. Absolutely gutted.'"
+    },
+    {
+      "id": "the-response-rcb-30-august-2025",
+      "sourceRow": 20,
+      "section": "THE RESPONSE",
+      "item": "RCB — 30 August 2025",
+      "details": "After nearly three months of social-media silence ('The silence was not absence, but grief'), RCB formally launched RCB Cares and announced ₹25 lakh to each of the eleven families — 'not just as financial aid, but as a promise of compassion, unity, and ongoing care.'"
+    },
+    {
+      "id": "the-response-karnataka-government",
+      "sourceRow": 21,
+      "section": "THE RESPONSE",
+      "item": "Karnataka government",
+      "details": "₹10 lakh compensation per bereaved family and free treatment for all injured; magisterial inquiry, a CID/SIT probe, and a one-man judicial commission were ordered; crowd-management SOPs for large gatherings followed."
+    },
+    {
+      "id": "accountability-the-fir",
+      "sourceRow": 22,
+      "section": "ACCOUNTABILITY",
+      "item": "The FIR",
+      "details": "Cubbon Park Police Station, Crime No. 123/2025 — accused: (1) RCB (Royal Challengers Sports Pvt. Ltd.), (2) DNA Entertainment Networks, (3) the KSCA Administrative Committee, under BNS sections including 105 (culpable homicide not amounting to murder)."
+    },
+    {
+      "id": "accountability-arrests-resignations",
+      "sourceRow": 23,
+      "section": "ACCOUNTABILITY",
+      "item": "Arrests & resignations",
+      "details": "Arrested 6 June 2025: Nikhil Sosale (RCB head of marketing & revenue) and DNA Entertainment officials Sunil Mathew, Kiran and Sumanth (later interim bail). KSCA secretary A. Shankar and treasurer E. S. Jairam resigned citing moral responsibility. Five police officers including Commissioner B. Dayananda were suspended — the Central Administrative Tribunal quashed Dayananda's suspension on 1 July 2025, holding RCB prima facie responsible."
+    },
+    {
+      "id": "accountability-the-d-cunha-commission",
+      "sourceRow": 24,
+      "section": "ACCOUNTABILITY",
+      "item": "The D'Cunha Commission",
+      "details": "Retired Justice John Michael D'Cunha's report (11 July 2025) held RCB, KSCA, DNA Entertainment and the police responsible through negligence: no official permission, free-entry announcements made without consulting police, gates not opened on time, no ambulances on site. The state cabinet accepted the report on 24 July 2025 and ordered legal action. The stadium was declared unsuitable for large events pending 17 corrective measures — Bengaluru lost its 2025 Women's World Cup matches as a result."
+    },
+    {
+      "id": "accountability-case-status-october-2026",
+      "sourceRow": 25,
+      "section": "ACCOUNTABILITY",
+      "item": "Case status (October 2026)",
+      "details": "The CID prepared a chargesheet of about 2,200 pages (Nov 2025), but the Karnataka High Court has directed that it not be filed without the court's leave; quash petitions by RCB, DNA and Sosale and the High Court's suo motu crowd-safety case remain pending. No trial outcome has been reported."
+    },
+    {
+      "id": "2026-remembrance-the-stadium-returns",
+      "sourceRow": 26,
+      "section": "2026 — REMEMBRANCE",
+      "item": "The stadium returns",
+      "details": "12 February 2026: conditional cabinet clearance after safety works — widened gates, internal holding areas, marked emergency access, ramps, fully digital ticketing, and 300–350 AI-enabled CCTV cameras proposed and funded by RCB (~₹4.5 crore). RCB played five home games at Chinnaswamy and two in Raipur in IPL 2026."
+    },
+    {
+      "id": "2026-remembrance-eleven-empty-seats",
+      "sourceRow": 27,
+      "section": "2026 — REMEMBRANCE",
+      "item": "Eleven empty seats",
+      "details": "Announced 27 March 2026 by RCB CEO Rajesh Menon: eleven seats in the P1 stand at Chinnaswamy will remain permanently unoccupied at all matches — 'a quiet tribute to their memory.' Players wear No. 11 practice/warm-up jerseys through the season and black armbands, and a memorial plaque stands near the stadium's inner entrance."
+    },
+    {
+      "id": "2026-remembrance-the-opener-28-march-2026",
+      "sourceRow": 28,
+      "section": "2026 — REMEMBRANCE",
+      "item": "The opener, 28 March 2026",
+      "details": "Before RCB vs Sunrisers Hyderabad — the first match at Chinnaswamy since the tragedy — players, officials and fans observed a minute's silence; both teams wore black armbands; RCB warmed up in No. 11 jerseys; KSCA unveiled the memorial plaque."
+    },
+    {
+      "id": "2026-remembrance-the-second-title-no-parade",
+      "sourceRow": 29,
+      "section": "2026 — REMEMBRANCE",
+      "item": "The second title — no parade",
+      "details": "31 May 2026: RCB beat Gujarat Titans to win back-to-back titles. There was deliberately NO victory parade and no public celebration in Bengaluru (police advisory; RCB asked fans to celebrate at home). Captain Rajat Patidar dedicated the trophy to the eleven: 'We dedicate this trophy to our fans — actually not fans, family members — who passed away in the tragedy last year.'"
+    },
+    {
+      "id": "2026-remembrance-since-then",
+      "sourceRow": 30,
+      "section": "2026 — REMEMBRANCE",
+      "item": "Since then",
+      "details": "No separate large public event was reported for the first anniversary (4 June 2026); remembrance centred on the March tributes and the trophy dedication. Discussions on further support for the families were reported as ongoing under RCB Cares. The stadium hosted its first international since the tragedy — India v West Indies T20I — on 17 October 2026."
+    },
+    {
+      "id": "rcb-cares-what-it-is",
+      "sourceRow": 31,
+      "section": "RCB CARES",
+      "item": "What it is",
+      "details": "RCB's long-term commitment platform, born of the tragedy: first announced as a fund for injured fans on 5 June 2025, formally launched 30 August 2025, with its framework published on 1 September 2025 — 'a long-term commitment to support, empower and elevate our 12th Man Army.'"
+    },
+    {
+      "id": "rcb-cares-commitment-1-support-beyond-financial-aid",
+      "sourceRow": 32,
+      "section": "RCB CARES",
+      "item": "Commitment 1: Support beyond financial aid",
+      "details": "Fast, transparent and human support to impacted fans and families."
+    },
+    {
+      "id": "rcb-cares-commitment-2-safe-inclusive-environments",
+      "sourceRow": 33,
+      "section": "RCB CARES",
+      "item": "Commitment 2: Safe & inclusive environments",
+      "details": "Work with stadium authorities, sporting bodies and league partners to design better crowd-management protocols."
+    },
+    {
+      "id": "rcb-cares-commitment-3-empower-communities",
+      "sourceRow": 34,
+      "section": "RCB CARES",
+      "item": "Commitment 3: Empower communities",
+      "details": "Social development programmes in rural Karnataka, beginning with the Siddi community (reported as already begun by Sept 2025)."
+    },
+    {
+      "id": "rcb-cares-commitment-4-independent-crowd-safety-research",
+      "sourceRow": 35,
+      "section": "RCB CARES",
+      "item": "Commitment 4: Independent crowd-safety research",
+      "details": "Fund independent research, create a fan-safety audit framework, and train on-ground partners annually on crowd management and emergency response."
+    },
+    {
+      "id": "rcb-cares-commitment-5-a-permanent-fan-tribute",
+      "sourceRow": 36,
+      "section": "RCB CARES",
+      "item": "Commitment 5: A permanent fan tribute",
+      "details": "'Elevate fan memory into something permanent' — a dedicated space in Bengaluru honouring the names, stories and spirit of RCB's fans. The Chinnaswamy memorial plaque and the eleven empty seats are its visible fulfilment."
+    },
+    {
+      "id": "rcb-cares-commitment-6-futures-through-sport",
+      "sourceRow": 37,
+      "section": "RCB CARES",
+      "item": "Commitment 6: Futures through sport",
+      "details": "Create in-stadia jobs, nurture local talent, and support the next generation of sports professionals."
+    },
+    {
+      "id": "rcb-cares-not-the-same-as-go-green",
+      "sourceRow": 38,
+      "section": "RCB CARES",
+      "item": "Not the same as Go Green",
+      "details": "RCB's environmental programme (the Green Game, since 2011) is older and separate from RCB Cares — the two should not be conflated."
     }
   ]
 }

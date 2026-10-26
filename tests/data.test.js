@@ -50,12 +50,17 @@ test('season archive covers all 18 seasons with correct championship and finals'
   for (const season of seasons) assert.ok(season.stage);
 });
 test('all local HTML assets exist and internal anchor targets resolve across all multi-page HTML files', async () => {
-  for (const pageFile of ['index.html', 'squad.html', 'seasons.html', 'history.html', 'moments.html']) {
+  const pages = ['index.html', 'squad.html', 'seasons.html', 'history.html', 'moments.html', 'cares.html'];
+  for (const pageFile of pages) {
     const html = await readFile(new URL(`../${pageFile}`, import.meta.url), 'utf8');
     const ids = [...html.matchAll(/\bid="([^"]+)"/g)].map(match => match[1]);
     assert.equal(new Set(ids).size, ids.length, `Duplicate ID in ${pageFile}`);
     for (const [, target] of html.matchAll(/href="#([^"]+)"/g)) assert.ok(ids.includes(target), `${pageFile} missing target: ${target}`);
     for (const [, path] of html.matchAll(/(?:src|href)="\.\/([^"#]+)"/g)) await readFile(new URL(`../${path}`, import.meta.url));
+    for (const [, targetPage, targetId] of html.matchAll(/href="\.\/([^"#]+\.html)#([^"]+)"/g)) {
+      const targetHtml = await readFile(new URL(`../${targetPage}`, import.meta.url), 'utf8');
+      assert.ok(targetHtml.includes(`id="${targetId}"`), `${pageFile}: missing ${targetPage}#${targetId}`);
+    }
     assert.doesNotMatch(html, /(?:src|href)="\/(?:assets|styles|app)/);
   }
 });

@@ -33,7 +33,7 @@ Repository: [Unigalactix/RCB](https://github.com/Unigalactix/RCB). Commit and pu
 ## Features
 
 - **Published Google Sheet Source of Truth (`RCB Fan Tribute Database 2008–2026`)**:
-  - Imported via `scripts/import-sheet.js` into `assets/data/database.json` and rendered across all 5 pages by `database.js`:
+  - Imported via [scripts/import-sheet.js](scripts/import-sheet.js) into [assets/data/database.json](assets/data/database.json) and rendered by [database.js](database.js). The current workbook has **16 tabs**:
     - **All 223 RCB Players (`Players` sheet)**: 179 IPL men + 43 WPL women + 1 CLT20-only player (Nayan Doshi), with photo credits, RCB matches/runs/wickets, and 2026 status (`Still RCB`, `Moved`, `Retired`).
     - **Top 40 Ranked Star Players (`Star Players` sheet)**: Top 25 IPL icons (#1 Virat Kohli to #25 Wanindu Hasaranga) and Top 15 WPL stars (#1 Smriti Mandhana to #15 S. Meghana & K. Ahuja), plus the Homepage Top 5 Icons showcase.
     - **All 45 Defining Key Moments (`Key Moments` sheet)**: 2008 debut to 2026 Back-to-Back IPL & WPL titles (including 6 CLT20 moments), with `TITLE` moments highlighted in gold and bidirectional links to Grounds and Key Players.
@@ -41,7 +41,10 @@ Repository: [Unigalactix/RCB](https://github.com/Unigalactix/RCB). Commit and pu
     - **4 Official Crest Eras (`Logos` sheet)** & **5 Individual Transparent Crests (`assets/logos/`)**.
     - **All 20 IPL & WPL Franchises Encyclopedia (`All Teams (IPL & WPL)` sheet)**: 15 IPL teams (10 active + 5 defunct) and 5 WPL teams with full ownership, titles, 2026 captains/coaches, name history, and logo history.
     - **All 23 Seasons (`Seasons` sheet)**, **10 RCB Captains (`Captains` sheet)**, **23 Franchise Records (`Records` sheet)**, and **21 Squad-Only Zero-Match Members (`Squad Only (Never Played)` sheet)**.
-- **Multi-page architecture** (`index.html`, `squad.html`, `seasons.html`, `history.html`, `moments.html`) with a Dribbble-inspired Club Team Page Bento Dashboard (`#club-dashboard`) and unified RCB Obsidian Black (`#0B0B0B`), Crimson Red (`#CC1F26`), and Championship Gold (`#D4AF37`) glassmorphic visual system.
+    - **51 coaching/support-staff role and tenure entries** on [Seasons](seasons.html#sheet-coaches-section), searchable by name, league, role and background. Shared IPL/WPL roles appear in both league filters; repeated people are not merged across roles.
+    - **27 Franchise & More entries** on [History](history.html#sheet-franchise-section), grouped by ownership, brand value, fan culture, Green Game, Unbox, identity, ventures and the women's team.
+    - **37 remembrance and RCB Cares entries** on a separate [Remembrance](cares.html) page without horns, confetti or game controls. Names, reporting discrepancies, alleged conduct, inquiry findings and pending legal status retain the source's qualifications.
+- **Multi-page architecture** (`index.html`, `squad.html`, `seasons.html`, `history.html`, `moments.html`, `cares.html`) with a Dribbble-inspired Club Team Page Bento Dashboard (`#club-dashboard`) and unified RCB Obsidian Black (`#0B0B0B`), Crimson Red (`#CC1F26`), and Championship Gold (`#D4AF37`) glassmorphic visual system.
 - **"The Chronicles of Bold" Interactive Infographic & Fan Experience (`infographic.js`)**:
   - **Cinematic Hero & Live Season Countdown (`#season-countdown` & `#stadium-ambient-canvas`)**: Ambient M. Chinnaswamy floodlight/crowd canvas loop and real-time countdown to the next season opener.
   - **Scroll-Driven Logo & Jersey Evolution (`#vertical-evolution`)**: Vertical timeline dynamically transitioning the 2008–2026 RCB crests, SVG jersey silhouettes, and era background glow.
@@ -71,6 +74,12 @@ Repository: [Unigalactix/RCB](https://github.com/Unigalactix/RCB). Commit and pu
 - Static content remains readable without JavaScript; interactive components need JavaScript.
 
 ## Content and editorial scope
+
+### Refreshing the published workbook
+
+Run `npm run sheet:refresh`, then `npm test` and `npm run build`. The importer fetches the live published workbook, discovers tab IDs by name (they change when the workbook is republished), validates all 16 schemas, and replaces the bundled JSON only after every sheet succeeds. It never reads a shared temporary cache. A missing, empty, renamed or unknown sheet, changed schema, or HTTP error fails visibly rather than silently retaining partial data. Added tabs require an explicit mapping so content is not silently omitted.
+
+The JSON records `fetchedAt` and a `sheets` manifest with current tab IDs, source URLs and row counts. New coaching, franchise and remembrance entries retain their source row and full text; the UI links back to the respective published tab. These are attributed workbook accounts, not independently verified new claims. Coaches' embedded Google image URLs are transient and lack reusable-license metadata, so the new staff directory is text-only. RCB Cares remains separate from Go Green.
 
 This is a **sourced historical fan hub**, not a live scoreboard or exhaustive current database. Championship coverage is verified through the completed 2026 IPL/WPL seasons. Featured comparison snapshots remain IPL 2025/WPL 2024, while the separate full-season explorer covers every IPL season from 2008 through 2026 and every WPL season from 2023 through 2026. CLT20 appearances are 2009, 2010, and 2011; no additional RCB league participation was verified.
 

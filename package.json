@@ -10,6 +10,7 @@
     "test": "node --test",
     "media:refresh": "node scripts/import-media.js",
     "data:refresh": "node scripts/import-season-data.js",
+    "sheet:refresh": "node scripts/import-sheet.js",
     "rosters:refresh": "node scripts/import-rosters.js"
   },
   "devDependencies": {
